@@ -1,14 +1,26 @@
 import './App.css'
 
-import HowTheyTalkAboutItData from './ScorecardData.js'
 import React, {Component} from 'react'
 
 function ScorecardTable(props) {
-  const rows = props.data.categories.map(category =>
-    <tr><td>{category.name}</td></tr>
+  const headers = props.data.candidates.map(candidate =>
+    <th>{candidate.name}</th>
   )
 
-  return <table>{rows}</table>
+  const rows = props.data.categories.map(category =>
+    <tr><td>
+      {category.name}
+      <span>(out of {category.outOf})</span>
+    </td></tr>
+  )
+
+  return <table>
+    <tr>
+      <th></th>
+      {headers}
+    </tr>
+    {rows}
+  </table>
 }
 
 function HowTheyTalkAboutIt(props) {
@@ -26,7 +38,7 @@ class Scorecard extends Component {
       <h1>The Sunrise Presidential Scorecard</h1>
       <p>Click on a candidate's score for more details on their plan.</p>
 
-      <HowTheyTalkAboutIt tableData={HowTheyTalkAboutItData}/>
+      <HowTheyTalkAboutIt tableData={this.props.tableData}/>
     </div>
   }
 }
