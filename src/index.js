@@ -1,12 +1,8 @@
-(function() {
-  'use strict';
+import './index.css'
 
-  function start() {
-    var root = document.getElementById('scorecard-root');
-    var content = document.createElement('div');
-    content.innerHTML = "Hello world";
-    root.appendChild(content);
-  }
+import React from 'react'
+import {render} from 'react-dom'
 
-  document.addEventListener('DOMContentLoaded', start);
-})()
+import Scorecard from './Scorecard'
+
+render(<Scorecard/>, document.querySelector('#app'))
