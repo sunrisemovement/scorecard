@@ -1,0 +1,17 @@
+.navbar {
+    margin: 0 34px;
+    display: flex;
+}
+
+.nav-item {
+    padding: 1em;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    color: #74756E;
+    cursor: pointer;
+}
+
+.nav-item.first{
+    padding-left: 0;
+}

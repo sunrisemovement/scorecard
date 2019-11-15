@@ -1,0 +1,38 @@
+.header-container {
+    position: fixed;
+    top: 0;
+    background: white;
+    min-width: 100%;
+    border-bottom: 1px solid #ddd;
+
+}
+
+header {
+	max-width: 100%;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    margin: 0 30px;
+}
+
+.caption {
+    font-size: 18px;
+    color: #33342E;
+}
+
+.main-header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.header-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 52px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #33342E;
+    margin-bottom: .4em;
+}

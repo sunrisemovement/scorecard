@@ -1,26 +1,39 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ScorecardApp from './ScorecardApp.js';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      selected: null,
+      candidate: null,
+      row: null,
+      lastClicked: null
+    };
+  }
+
+  onClickCell = (e, candidate) => {
+    console.log(e, candidate);
+    }
+
+  onClickNav = (e) => {
+    // console.log(e);
+
+    // var tableId = "#table-" + e
+    // var table = document.querySelector(tableId);
+    // table.scrollIntoView();
+    }
+
+  render () {
+    return (
+      <div className="App">
+        <ScorecardApp onClickCell={this.onClickCell} onClickNav={this.onClickNav}/>
+      </div>
+    );
+  }
 }
 
 export default App;
