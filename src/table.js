@@ -31,7 +31,7 @@ function Table(props) {
     }
 
     return (
-        <div  id={props.table.id}>
+        <div id={props.table.id} name={props.table.id}>
 
         { isGNDVisionTable()
             ? <div><h2 id='title' className="table-title">{props.table.categorytitle}  </h2><span className="table-points">(out of {props.table.categorypoints})</span></div>
