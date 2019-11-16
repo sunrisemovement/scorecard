@@ -6,7 +6,9 @@ function Table(props) {
 
     const handleClick = (e) => {
         e.preventDefault();
-        props.onClickCell(e.target.parentElement.id, e.target.id);
+
+        // pass in row index, table index, and candidate
+        props.onClickCell(e.target.parentElement.id, props.id, e.target.id,);
     }
 
     const isGNDVisionTable = () => {
@@ -18,13 +20,13 @@ function Table(props) {
 
     const renderTableData = () => {
     return props.table.rows.map((row, index) => {
-        const { id, title, biden, warren, sanders } = row //destructuring
+        const {title, biden, warren, sanders } = row //destructuring
         return (
-            <tr id={id} key={id}>
+            <tr id={index} key={index}>
                 <td className="row-title"><img className="info-icon" alt="Information Icon" src={icon}></img> {title}</td>
-                <td onClick={handleClick} id="biden">{biden}</td>
-                <td onClick={handleClick} id="warren">{warren}</td>
-                <td onClick={handleClick} id="sanders">{sanders}</td>
+                <td onClick={handleClick} id="biden">{biden.score}</td>
+                <td onClick={handleClick} id="warren">{warren.score}</td>
+                <td onClick={handleClick} id="sanders">{sanders.score}</td>
             </tr>
         )
     });
@@ -42,19 +44,19 @@ function Table(props) {
             <div className="table-description">{props.table.description}</div>
             <table>
                 <tbody>
-                <tr id="header">
-                    <th></th>
-                    <th>Biden</th>
-                    <th>Warren</th>
-                    <th>Sanders</th>
-                </tr>
-                {renderTableData()}
-                <tr className="subtotals">
-                    <td>Subtotals</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
+                    <tr id="header">
+                        <th></th>
+                        <th>Biden</th>
+                        <th>Warren</th>
+                        <th>Sanders</th>
+                    </tr>
+                    {renderTableData()}
+                    <tr className="subtotals">
+                        <td>Subtotal <span className="row-points">(out of {props.table.points})</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
                 </tbody>
             </table>
         </div>

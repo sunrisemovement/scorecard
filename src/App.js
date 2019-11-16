@@ -11,16 +11,19 @@ class App extends React.Component {
     super(props);
     this.state = {
       candidate: null,
+      table: null,
       row: null,
       lastClicked: null
     };
   }
 
-  onClickCell = (row, candidate) => {
+  onClickCell = (row, table, candidate) => {
     let lastClicked = {candidate: candidate, row: row };
+    console.log(table)
 
     this.setState({
       candidate: candidate,
+      table: table,
       row: row
     });
 
@@ -33,6 +36,7 @@ class App extends React.Component {
       this.setState({
         candidate: null,
         row: null,
+        table: null,
         lastClicked: lastClicked
       });
     }
@@ -43,6 +47,7 @@ class App extends React.Component {
         this.setState({
           candidate: null,
           row: null,
+          table: null,
           lastClicked: lastClicked
         });
       }
