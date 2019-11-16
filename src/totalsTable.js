@@ -1,23 +1,19 @@
 import React from 'react';
 import './totalsTable.css';
-// import icon from './assets/i.png';
 
 function TotalsTable(props) {
 
 
-    // const renderTableData = () => {
-    // return props.table.rows.map((row, index) => {
-    //     const { id, title, biden, warren, sanders } = row //destructuring
-    //     return (
-    //         <tr id={id} key={id}>
-    //             <td className="row-title"><img className="info-icon" alt="Information Icon" src={icon}></img> {title}</td>
-    //             <td onClick={handleClick} id="biden">{biden}</td>
-    //             <td onClick={handleClick} id="warren">{warren}</td>
-    //             <td onClick={handleClick} id="sanders">{sanders}</td>
-    //         </tr>
-    //     )
-    // });
-    // }
+    // const calculateTotals = () => {
+    //  var bidenScores = props.scorecardData.details[0].scores;
+    //  var sum = 0;
+    //  console.log(bidenScores)
+    // //  for(var i = 0; i < tds.length; i ++) {
+    // //          sum += isNaN(tds[i].innerHTML) ? 0 : parseInt(tds[i].innerHTML);
+    // //          console.log(sum)
+    //  }
+
+    //  calculateTotals();
 
     return (
         <div id="totals-table">

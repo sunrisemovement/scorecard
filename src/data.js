@@ -143,69 +143,47 @@ const scorecardData = {
     
 ],
     "details": [{
-            "name": "sanders",
-            "rows": {
-                "1": "Medicare for All. Supports negotiating drug costs and promoting generics.",
-                "2": "Supports and expands upon the Green New Deal. Supports ban on fracking and shutting down existing nuclear power reactors.",
-                "3": "Raise taxes on wealthy with new estate taxes. Expand social programs and establish a federal jobs guarantee. Raise the federal minimum wage to $15/hour. Supports universal paid family and medical leave program. Supports a modernized Glass-Steagall which would break up some of the biggest banks. Supports a commission to study reparations.",
-                "4": "Free tuition at public colleges and universities. Cancellation of all student loan debt. Would work with states to set a minimum salary for teachers of $60,000.",
-                "5": "Supports citizenship for dreamers. Would repeal the illegal entry statute which has been used to separate families at the border. Opposed to border wall funding.",
-                "6": "Supports a voluntary buyback program and universal background checks.",
-                "7": "Abolish the death penalty and end the cash bail system. Eliminate private prisons and all mandatory minimum sentences. Eliminate the crack cocaine sentencing disparity by reducing it from 18:1 to 1:1.",
-                "8": "Slash the defense budget and bring troops home from post-9/11 wars."
-            }
-        },
-        {
-            "name": {
-                "title": "Senator",
-                "first": "elizabeth",
-                "last": "warren"
-            },
+            "name": "biden",
             "scores": {
-                "healthcare": "Supports Sanders' Medicare for All bill. Supports drug price negotiation, reference pricing and allowing the U.S. government to make generics",
-                "environment": "Supports the Green New Deal and a ban on fracking. Plans to accelerate the transition to clean energy.",
-                "economy": "Raise taxes on wealthy via 'Ultra-Millionaire Tax' to expand social programs like universal childcare. Federal funds to build and perserve more affordable housing. Raise the federal minimum wage to $15/hour. Supports universal paid family and medical leave program.  Supports a modernized Glass-Steagall which would break up some of the biggest banks. Supports a commission to study reparations.",
-                "education": "Free tuition at public colleges and universities. Student loan forgiveness for low and middle-income borrowers.",
-                "immigration": "Supports citizenship for dreamers. Would repeal the illegal entry statute which has been used to separate families at the border. Opposed to border wall funding.",
-                "guncontrol": "Supports a ban on assualt weapons and universal background checks.",
-                "criminaljustice": "Abolish the death penalty and end the cash bail system. Eliminate private prisons and all mandatory minimum sentences.",
-                "military": "Slash the defense budget and bring troops home from post-9/11 wars."
-            },
-            "picture": {
-                "icon": "https://i.imgur.com/z8aYo5h.jpg"}
-        },
-        {
-            "name": {
-                "title": "mr",
-                "first": "joe",
-                "last": "biden"
-            },
-            "scores": {
-                "healthcare": "Opposes Medicare for All, but would expand coverage, building on the Affordable Care Act. Supports negotiating for Medicare drug prices and international reference pricing.",
-                "environment": "Supports the Green New Deal. Supports developing new nuclear technologies to fight climate change.",
-                "economy": "Raise the federal minimum wage to $15/hour. Supports a commission to study reparations but has not explicitly supported one of the existing bills.",
-                "education": "Free two-year community college. Expand or fix existing debt-relief programs. Would Increase Title I funding to give educators more competitive salaries.",
-                "immigration": "Supports citizenship for dreamers.",
-                "guncontrol": "Supports a voluntary buyback program and universal background checks.",
-                "criminaljustice": "Abolish the death penalty and end the cash bail system. Eliminate private prisons and mandatory minimum sentences for nonviolent crimes. Supports elimination of the crack cocaine sentencing disparity.",
-                "military": "Increase defense spending and keep the troops deployed."
-
-            },
-            "picture": {
-                "icon": "https://i.imgur.com/Bmd86mT.jpg",            },
-        }
+                "1": {
+                    "score": "5",
+                    "description":"Medicare for All. Supports negotiating drug costs and promoting generics."
+                    },
+                "2": {
+                    "score": "3",
+                    "description":"Medicare for All. Supports negotiating drug costs and promoting generics."
+                    }
+                }
+             },
+                
+             {
+                "name": "warren",
+                "scores": {
+                    "1": {
+                        "score": "5",
+                        "description":"Medicare for All. Supports negotiating drug costs and promoting generics."
+                        },
+                    "2": {
+                        "score": "3",
+                        "description":"Medicare for All. Supports negotiating drug costs and promoting generics."
+                        }
+                    }
+                 },
+                 {
+                    "name": "sanders",
+                    "scores": {
+                        "1": {
+                            "score": "5",
+                            "description":"Medicare for All. Supports negotiating drug costs and promoting generics."
+                            },
+                        "2": {
+                            "score": "3",
+                            "description":"Medicare for All. Supports negotiating drug costs and promoting generics."
+                            }
+                        }
+                     }
     ]
 }
 
-// function alphaCompare(a, b) {
-//     a = a.toLowerCase();
-//     b = b.toLowerCase();
-  
-//     return (a < b) ? -1 : (a > b) ? 1 : 0;
-//   }
-
-// const sortedScorecardData = scorecardData.sort(function(a, b) {
-//     return alphaCompare(a.name.last, b.name.last);
-// });
 
 export default scorecardData;
