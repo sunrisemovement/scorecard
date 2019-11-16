@@ -1,0 +1,18 @@
+#totals-table *:hover {
+    pointer-events:none;
+    cursor: auto;
+}
+
+
+#totals-row {
+    background: #33342E;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FBFAED;
+}
+
+.row-points {
+    color: #74756E;
+    font-size: .8em;
+}

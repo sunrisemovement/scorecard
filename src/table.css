@@ -47,6 +47,10 @@ td.row-title:hover{
   cursor: auto;
 }
 
+#biden, #warren, #sanders {
+  text-align: center;
+}
+
 .subtotals td {
   border-bottom: 0px;
   text-align: left;

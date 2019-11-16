@@ -1,5 +1,6 @@
 import React from 'react';
 import Table from './table.js';
+import TotalsTable from './totalsTable.js'
 import './tables.css';
 
 const Tables = (props) => (
@@ -14,6 +15,7 @@ const Tables = (props) => (
           />
         })
       }
+      <TotalsTable scorecardData={props.scorecardData}/>
     </div>
 );
 
