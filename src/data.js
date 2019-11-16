@@ -85,7 +85,7 @@ const scorecardData = {
             },
             {
                 "title": "",
-                "id":"table-6",
+                "id":"table-5",
                 "points": "25",
                 "description": "",
                 "subtitle": "Investments in infrastructure and industry",

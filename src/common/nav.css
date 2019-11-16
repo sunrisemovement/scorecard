@@ -1,6 +1,7 @@
 .navbar {
     margin: 0 34px;
     display: flex;
+    flex-direction: row;
 }
 
 .nav-item {
@@ -16,7 +17,7 @@
     padding-left: 0;
 }
 
-.nav-item:hover{
+.nav-item:hover, .is-current{
     color: #33342E;
-    border-bottom: 3px solid #FFDE16;
+    border-bottom: 4px solid #FFDE16;
 }
