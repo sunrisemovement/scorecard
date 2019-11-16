@@ -10,32 +10,44 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      selected: null,
       candidate: null,
       row: null,
       lastClicked: null
     };
   }
 
-  onClickCell = (e, candidate) => {
-    console.log(e, candidate);
-    // Get the modal
-var modal = document.getElementById("info-modal");
-var span = document.getElementsByClassName("close")[0];
+  onClickCell = (row, candidate) => {
+    let lastClicked = {candidate: candidate, row: row };
 
-modal.style.display = "block";
+    this.setState({
+      candidate: candidate,
+      row: row
+    });
 
-span.onclick = function() {
-  modal.style.display = "none";
-}
+    var modal = document.getElementById("info-modal");
+    var span = document.getElementsByClassName("close")[0];
+    modal.style.display = "block";
 
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
+    span.onclick = (event) => {
+      modal.style.display = "none";
+      this.setState({
+        candidate: null,
+        row: null,
+        lastClicked: lastClicked
+      });
     }
+
+    window.onclick = (event) => {
+      if (event.target === modal) {
+        modal.style.display = "none";
+        this.setState({
+          candidate: null,
+          row: null,
+          lastClicked: lastClicked
+        });
+      }
+    }
+  }
 
   onClickNav = (e) => {
     var tableId = "#table-" + e
