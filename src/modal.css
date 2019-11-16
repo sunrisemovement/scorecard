@@ -2,7 +2,7 @@
     display: none;
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 200px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -15,9 +15,9 @@
   .modal-box {
     background-color: #fefefe;
     margin: auto;
-    padding: 20px;
     border: 1px solid #888;
     width: 80%;
+    min-height: 60%;
   }
   
   .close {
@@ -36,4 +36,27 @@
 
   .modal-content {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
   }
+
+  .modal-description{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    background-color: #33342E;
+    min-height: 400px;
+    padding: 1em;
+  }
+
+  .modal-candidate-info{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 2;
+    align-items: center;
+    min-height: 400px;
+    padding: 1em;
+}
