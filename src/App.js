@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import ScorecardApp from './ScorecardApp.js';
+import scorecardData from './data.js';
 
 
 class App extends React.Component {
@@ -30,7 +31,8 @@ class App extends React.Component {
   render () {
     return (
       <div className="App">
-        <ScorecardApp onClickCell={this.onClickCell} onClickNav={this.onClickNav}/>
+        <ScorecardApp onClickCell={this.onClickCell} onClickNav={this.onClickNav}
+                      scorecardData={scorecardData}/>
       </div>
     );
   }

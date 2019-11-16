@@ -1,12 +1,11 @@
 import React from 'react';
-import scorecardData from './data.js';
 import Table from './table.js';
 import './tables.css';
 
 const Tables = (props) => (
     <div className="tables-container">
       {
-        scorecardData.tables.map(function (table, i) {
+        props.scorecardData.tables.map(function (table, i) {
           return <Table 
           table = {table}
           key = {i}

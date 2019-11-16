@@ -43,12 +43,18 @@ function Table(props) {
             <table>
                 <tbody>
                 <tr id="header">
-                <th></th>
-                <th>Biden</th>
-                <th>Warren</th>
-                <th>Sanders</th>
-            </tr>
+                    <th></th>
+                    <th>Biden</th>
+                    <th>Warren</th>
+                    <th>Sanders</th>
+                </tr>
                 {renderTableData()}
+                <tr className="subtotals">
+                    <td>Subtotals</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
                 </tbody>
             </table>
         </div>

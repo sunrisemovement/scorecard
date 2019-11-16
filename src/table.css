@@ -1,4 +1,4 @@
-table, td, th {  
+ td, th {  
   border: 1px solid #ddd;
   border-left: 0px;
   border-top: 0px;
@@ -45,6 +45,16 @@ td:hover{
 td.row-title:hover{
   background: #F4F4F4;
   cursor: auto;
+}
+
+.subtotals td {
+  border-bottom: 0px;
+  text-align: left;
+  cursor: auto;
+}
+
+.subtotals:hover td {
+  background: white;
 }
 
 .table-title {
