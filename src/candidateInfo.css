@@ -3,6 +3,7 @@
     flex-direction: column;
     flex-basis: 100%;
     flex: 2;
+    min-height: 550px;
     max-height: 550px;
     overflow-x: hidden;
     /* padding: 1em; */
@@ -47,6 +48,10 @@
     letter-spacing: 0.09em;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+.nav-selected {
+    background: white;
 }
 
 .modal-nav-item:hover {

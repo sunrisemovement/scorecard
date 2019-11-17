@@ -60,6 +60,14 @@ class App extends React.Component {
     window.scrollTo(0, (table.offsetTop - 260))
     }
 
+  onClickModalNav = (e) => {
+    let newCandidate = e.target.dataset.name
+
+    this.setState({
+      candidate: newCandidate
+    })
+    }
+
   render () {
     return (
       <div className="App">
@@ -70,7 +78,8 @@ class App extends React.Component {
         <InfoModal scorecardData={scorecardData} 
                    candidate={this.state.candidate}
                    row={this.state.row}
-                   table={this.state.table}/>
+                   table={this.state.table}
+                   onClickModalNav={this.onClickModalNav}/>
       </div>
     );
   }

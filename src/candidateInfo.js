@@ -6,16 +6,16 @@ function CandidateInfo(props) {
 
     const handleClick = (e) => {
         e.preventDefault();
-        console.log(e);
+        props.onClickModalNav(e);
     }
 
     return ( 
         <div className="modal-candidate-info">
             <div className="modal-nav-container">
                 <div className="modal-nav">
-                    <div id="1" onClick={handleClick} className="modal-nav-item">Biden {props.row.biden.score}</div>
-                    <div id="2" onClick={handleClick} className="modal-nav-item">Warren {props.row.warren.score}</div>
-                    <div id="3" onClick={handleClick} className="modal-nav-item">Sanders {props.row.sanders.score}</div>
+                    <div id="1" data-name="biden" onClick={handleClick} className={"modal-nav-item " + (props.candidateName === "biden" ? 'nav-selected' : '')}>Biden {props.row.biden.score}</div>
+                    <div id="2" data-name="warren" onClick={handleClick} className={"modal-nav-item " + (props.candidateName === "warren" ? 'nav-selected' : '')}>Warren {props.row.warren.score}</div>
+                    <div id="3" data-name="sanders" onClick={handleClick} className={"modal-nav-item " + (props.candidateName === "sanders" ? 'nav-selected' : '')}>Sanders {props.row.sanders.score}</div>
                     <span className="close">&times;</span>
                 </div>
             </div>

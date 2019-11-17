@@ -31,7 +31,8 @@ function InfoModal(props) {
                                row={row} 
                                candidateName={props.candidate}
                                candidateObject={candidate(selectedCandidate)}
-                               scorecardData={props.scorecardData}/>
+                               scorecardData={props.scorecardData}
+                               onClickModalNav={props.onClickModalNav}/>
                 </div>
             </div>
       </div>
