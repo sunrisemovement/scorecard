@@ -61,7 +61,7 @@
     color: #FFFFFF;
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 810px) {
   .modal {
     padding-top: 3vh;
   }
@@ -87,6 +87,14 @@
     min-width: 100vw;
     overflow: scroll;
     padding: .7em;
+  }
+
+  .modal-table-title{
+    display: none;
+  }
+
+  .modal-row-title {
+    padding-top: 1em;
   }
 
 }

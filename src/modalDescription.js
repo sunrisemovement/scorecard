@@ -8,6 +8,7 @@ function ModalDescription(props) {
     return ( 
         <div className="modal-description">
             <span className="modal-table-title">
+                Green New Deal: <br></br>
                 {props.table.title}
                 {props.table.subtitle}
             </span>
