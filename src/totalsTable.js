@@ -3,18 +3,6 @@ import './totalsTable.css';
 
 function TotalsTable(props) {
 
-
-    // const calculateTotals = () => {
-    //  var bidenScores = props.scorecardData.details[0].scores;
-    //  var sum = 0;
-    //  console.log(bidenScores)
-    // //  for(var i = 0; i < tds.length; i ++) {
-    // //          sum += isNaN(tds[i].innerHTML) ? 0 : parseInt(tds[i].innerHTML);
-    // //          console.log(sum)
-    //  }
-
-    //  calculateTotals();
-
     return (
         <div className="totals-table" id="table-8">
             <h2 id='title' className="table-title">Totals</h2> <span className="table-points">(out of 200)</span>
