@@ -1,0 +1,54 @@
+.modal-candidate-info{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 2;
+    min-height: 550px;
+    overflow: hidden;
+    /* padding: 1em; */
+}
+
+.modal-nav-container {
+    min-width: 100%;
+}
+
+.modal-nav {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.close {
+    color: #74756E;
+    float: right;
+    /* padding-left: 1em; */
+    font-size: 28px;
+    font-weight: bold;
+    flex: .3;
+    background: #F4F4F4;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.modal-nav-item {
+    flex: 1;
+    padding: .75em;
+    line-height: 27px;
+    background-color: #F4F4F4;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.modal-nav-item:hover {
+    background: #E0E0E0;
+}

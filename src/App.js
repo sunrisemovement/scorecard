@@ -31,15 +31,15 @@ class App extends React.Component {
     var span = document.getElementsByClassName("close")[0];
     modal.style.display = "block";
 
-    span.onclick = (event) => {
-      modal.style.display = "none";
-      this.setState({
-        candidate: null,
-        row: 0,
-        table: 0,
-        lastClicked: lastClicked
-      });
-    }
+    // span.onclick = (event) => {
+    //   modal.style.display = "none";
+    //   this.setState({
+    //     candidate: null,
+    //     row: 0,
+    //     table: 0,
+    //     lastClicked: lastClicked
+    //   });
+    // }
 
     window.onclick = (event) => {
       if (event.target === modal) {

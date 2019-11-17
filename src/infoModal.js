@@ -10,7 +10,6 @@ function InfoModal(props) {
     return ( 
         <div id="info-modal" className="modal">
             <div className="modal-box">
-                <span className="close">&times;</span>
                 <div className="modal-content">
                 <ModalDescription table={table} row={row}/>
                 <CandidateInfo table={table} row={row} candidate={props.candidate}/>
@@ -21,3 +20,5 @@ function InfoModal(props) {
 }
 
 export default InfoModal;
+
+// <span className="close">&times;</span>
