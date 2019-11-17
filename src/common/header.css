@@ -45,8 +45,11 @@ header {
         flex-wrap: nowrap;
     }
 
+    .header-title{
+        margin-top: .25em;
+    }
+
     header {
-        padding-top: 1em;
         padding-bottom: .9em;
         margin: 0 30px;
     }
