@@ -16,27 +16,27 @@ function TotalsTable(props) {
                 </tr>
                 <tr className="">
                     <td>How they talk about it <span className="row-points">(Out of 35)</span></td>
-                    <td id="biden">150</td>
-                    <td id="warren">175</td>
-                    <td id="sanders">200</td>
+                    <td id="biden">12</td>
+                    <td id="warren">20</td>
+                    <td id="sanders">30</td>
                 </tr>
                 <tr className="">
                     <td>How much they talk about it <span className="row-points">(Out of 30)</span></td>
-                    <td id="biden">150</td>
-                    <td id="warren">175</td>
-                    <td id="sanders">200</td>
+                    <td id="biden">5</td>
+                    <td id="warren">15</td>
+                    <td id="sanders">25</td>
                 </tr>
                 <tr className="">
                     <td>Plan to win <span className="row-points">(Out of 35)</span></td>
-                    <td id="biden">150</td>
-                    <td id="warren">175</td>
-                    <td id="sanders">200</td>
+                    <td id="biden">12</td>
+                    <td id="warren">25</td>
+                    <td id="sanders">30</td>
                 </tr>
                 <tr className="">
                     <td>Green New Deal vision <span className="row-points">(Out of 100)</span></td>
-                    <td id="biden">150</td>
-                    <td id="warren">175</td>
-                    <td id="sanders">200</td>
+                    <td id="biden">50</td>
+                    <td id="warren">75</td>
+                    <td id="sanders">90</td>
                 </tr>
                 <tr id="totals-row">
                     <td>Total <span className="row-points">(out of 200)</span></td>

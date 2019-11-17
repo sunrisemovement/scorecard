@@ -26,7 +26,7 @@
     text-align: left;
   }
 
-  .modal-description{
+  .modal-description {
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
@@ -101,6 +101,8 @@
 
   .modal-row-title {
     padding-top: 1em;
+    font-size: 24px;
+    line-height: 28px;
   }
 
 }
