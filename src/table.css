@@ -94,7 +94,7 @@ td.row-title:hover{
   line-height: 22px;
   margin-top: 1em;
   color: #33342E;
-  max-width: 58%;
+  max-width: 50%;
 }
 
 .table-points{
@@ -108,11 +108,22 @@ td.row-title:hover{
   margin-bottom: -3px;
 }
 
+@media screen and (max-width: 1200px) {
+  .table-description{
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .table-description{
+    max-width: 80%;
+  }
+}
+
 @media screen and (max-width: 790px) {
   .table-description{
     max-width: 100%;
   }
-
 }
 
 
