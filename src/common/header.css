@@ -51,9 +51,8 @@ header {
         margin: 0 30px;
     }
 
-    .caption {
-        /* position: relative;
-        left: -5em; */
+    .header-container {
+        position: static;
     }
 
     .sunrise-logo {
