@@ -19,8 +19,14 @@ function CandidateInfo(props) {
                     <span className="close">&times;</span>
                 </div>
             </div>
-        <div className="analysis">
-          {props.candidate}
+        <div className="analysis-container">
+          <div className="candidate-score">
+            <span className="candidate-name">{props.candidateName}</span>'s score: {props.candidateObject.score}/{props.row.total}
+          </div>
+          <div id="analysis-title">Analysis</div>
+            <div className="analysis-text">
+                {props.candidateObject.analysis}
+            </div>
         </div>
          </div>
     );

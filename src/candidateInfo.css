@@ -3,8 +3,8 @@
     flex-direction: column;
     flex-basis: 100%;
     flex: 2;
-    min-height: 550px;
-    overflow: hidden;
+    max-height: 550px;
+    overflow-x: hidden;
     /* padding: 1em; */
 }
 
@@ -51,4 +51,34 @@
 
 .modal-nav-item:hover {
     background: #E0E0E0;
+}
+
+.candidate-name{
+    text-transform: capitalize;
+}
+
+.candidate-score {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 35px;
+    color: #33342E;
+    padding-bottom: 1em;
+}
+
+.analysis-container {
+    padding: 1.5em;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    color: #33342E;
+    overflow-y: scroll;
+}
+
+.analysis-text {
+    font-weight: normal;
+}
+
+#analysis-title {
+    font-weight: bold;
+    padding-bottom: .5em;
 }

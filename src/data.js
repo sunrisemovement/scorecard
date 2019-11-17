@@ -10,6 +10,24 @@ const scorecardData = {
            {
               "title":"A national, comprehensive mobilization",
               "description":" A national call-to-arms, once-in-a-generation, comprehensive mobilization of all sectors—not just a “climate bill,” a single policy, or a set of policies, but a governing vision and agenda. Recognizes that the Green New Deal is not necessarily a single, omnibus piece of legislation but will, in its entirety, provide a comprehensive, integrated, and systemic response to the crises of climate, inequality, and democracy at hand.",
+              "total": "4",
+              "biden":{
+                 "score":"2",
+                 "analysis":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac augue ac odio consequat tincidunt. Aenean lacinia, sapien sit amet accumsan sollicitudin, quam massa elementum magna, ut consequat dolor velit non ante.” In ut metus mollis, vehicula ligula ut, mattis libero. Proin eget lacinia leo. Nam bibendum mi libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi. Aliquam consequat magna nunc, ut sagittis velit pretium a. Nullam interdum magna mi, ac ullamcorper enim sagittis in. Pellentesque enim erat, luctus ut finibus consequat, posuere nec nisi. Maecenas justo dui, semper ut ante id, feugiat tempor metus. Aenean mi arcu, hendrerit a pellentesque ut, pretium quis augue. Suspendisse aliquam orci ut tortor euismod ultricies at id purus. Ut non vulputate nibh. Vestibulum vitae scelerisque magna. Etiam lacinia elit egestas, pulvinar ex eget, dapibus metus. Mauris pulvinar facilisis bibendum. Morbi cursus lorem sed accumsan tristique. Proin sed leo nulla. Praesent sollicitudin odio sed libero dignissim mattis. Integer lacus neque, dignissim ut libero at, volutpat viverra nisl. Vestibulum est sapien, ullamcorper non efficitur vel, hendrerit vel eros. Nam a orci mauris. Fusce eleifend placerat ornare. Nullam vehicula laoreet leo. Pellentesque nisl turpis, lacinia et scelerisque nec, viverra at libero. Aliquam arcu velit, vulputate sit amet egestas in, eleifend quis eros."
+              },
+              "warren":{
+                 "score":"4",
+                 "analysis":"sdlkafjdskfjskldfjsksdlkf"
+              },
+              "sanders":{
+                 "score":"4",
+                 "analysis":"sdlkafjdskfjskldfjsksdlkf"
+              }
+           },
+           {
+              "title":"Plans include policies focused on creating jobs",
+              "description":"",
+              "total": "4",
               "biden":{
                  "score":"2",
                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
@@ -26,22 +44,7 @@ const scorecardData = {
            {
               "title":"Plans include policies focused on creating jobs",
               "description":"",
-              "biden":{
-                 "score":"2",
-                 "analysis":"sdlkafjdskfjskldfjsksdlkf"
-              },
-              "warren":{
-                 "score":"4",
-                 "analysis":"sdlkafjdskfjskldfjsksdlkf"
-              },
-              "sanders":{
-                 "score":"4",
-                 "analysis":"sdlkafjdskfjskldfjsksdlkf"
-              }
-           },
-           {
-              "title":"Plans include policies focused on creating jobs",
-              "description":"",
+              "total": "4",
               "biden":{
                  "score":"2",
                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
@@ -67,6 +70,7 @@ const scorecardData = {
            {
               "title":"A national, comprehensive mobilization",
               "description":"",
+              "total": "4",
               "biden":{
                  "score":"2",
                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
@@ -83,6 +87,7 @@ const scorecardData = {
            {
               "title":"Plans include policies focused on creating jobs",
               "description":"",
+              "total": "4",
               "biden":{
                  "score":"2",
                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
@@ -108,6 +113,7 @@ const scorecardData = {
            {
               "title":"A national, comprehensive mobilization",
               "description":"",
+              "total": "4",
               "biden":{
                  "score":"2",
                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
@@ -124,6 +130,7 @@ const scorecardData = {
            {
               "title":"Plans include policies focused on creating jobs",
               "description":"",
+              "total": "4",
               "biden":{
                  "score":"2",
                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
@@ -151,6 +158,7 @@ const scorecardData = {
            {
               "title":"A national, comprehensive mobilization",
               "description":"",
+              "total": "4",
               "biden":{
                  "score":"2",
                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
@@ -167,6 +175,7 @@ const scorecardData = {
            {
               "title":"Plans include policies focused on creating jobs",
               "description":"",
+              "total": "4",
               "biden":{
                  "score":"2",
                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
@@ -192,6 +201,7 @@ const scorecardData = {
            {
               "title":"A national, comprehensive mobilization",
               "description":"",
+              "total": "4",
               "biden":{
                  "score":"2",
                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
@@ -208,6 +218,7 @@ const scorecardData = {
            {
               "title":"Plans include policies focused on creating jobs",
               "description":"",
+              "total": "4",
               "biden":{
                  "score":"2",
                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
@@ -233,6 +244,7 @@ const scorecardData = {
            {
               "title":"A national, comprehensive mobilization",
               "description":"",
+              "total": "4",
               "biden":{
                  "score":"2",
                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
@@ -249,6 +261,7 @@ const scorecardData = {
            {
               "title":"Plans include policies focused on creating jobs",
               "description":"",
+              "total": "4",
               "biden":{
                  "score":"2",
                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
@@ -274,6 +287,7 @@ const scorecardData = {
            {
               "title":"A national, comprehensive mobilization",
               "description":"",
+              "total": "4",
               "biden":{
                  "score":"2",
                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
@@ -290,6 +304,7 @@ const scorecardData = {
            {
               "title":"Plans include policies focused on creating jobs",
               "description":"",
+              "total": "4",
               "biden":{
                  "score":"2",
                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
