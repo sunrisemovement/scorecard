@@ -5,6 +5,11 @@ const scorecardData = {
         "id":"table-1",
         "subtitle":"",
         "points":"35",
+        "subtotals": {
+           "biden": "10",
+           "warren": "20",
+           "sanders": "30"
+        },
         "description":"This section scores the candidate’s framing and messaging when it comes to the Green New Deal. The criteria below were chosen as a representation of points Sunrise finds crucial to the scope of a Green New Deal. The scoring is based on the candidate’s Green New Deal climate plan.",
         "rows":[
            {
@@ -64,6 +69,11 @@ const scorecardData = {
         "title":"How much they talk about it",
         "id":"table-2",
         "points":"35",
+        "subtotals": {
+         "biden": "10",
+         "warren": "20",
+         "sanders": "30"
+          },
         "description":"This section scores each candidate based on how frequently they use their platform to talk about the climate crisis and climate action. Candidates will be scored and ranked based on data from their Twitter accounts. This section is included as a representation of how politicians should use their voices to reach as much of the public as possible due to the urgency of climate crisis’ effects and how little time there is to avoid catastrophe.",
         "subtitle":"",
         "rows":[
@@ -107,6 +117,11 @@ const scorecardData = {
         "title":"Plan to win",
         "id":"table-3",
         "points":"35",
+        "subtotals": {
+         "biden": "10",
+         "warren": "20",
+         "sanders": "30"
+          },
         "description":"This section scores each candidate’s plan to make a Green New Deal the law of the land and a part of the nation’s governing agenda. Candidates will be judged on their messaging and platform regarding key steps Sunrise believes are crucial to passing a Green New Deal through Congress while using the power of the office of the President. This section will consist of quotations from the candidates’ platforms, plans, debate speeches, etc.",
         "subtitle":"",
         "rows":[
@@ -152,6 +167,11 @@ const scorecardData = {
         "categorypoints":"100",
         "id":"table-4",
         "points":"20",
+        "subtotals": {
+         "biden": "10",
+         "warren": "20",
+         "sanders": "30"
+          },
         "description":"This section scores the details of each candidate’s Green New Deal climate plan. There are five sections within Green New Deal Vision, each of which Sunrise holds to be crucial to a successful Green New Deal as a solution to the climate crisis.",
         "subtitle":"Net zero emissions",
         "rows":[
@@ -196,6 +216,11 @@ const scorecardData = {
         "id":"table-5",
         "points":"25",
         "description":"",
+        "subtotals": {
+         "biden": "10",
+         "warren": "20",
+         "sanders": "30"
+          },
         "subtitle":"Investments in infrastructure and industry",
         "rows":[
            {
@@ -239,6 +264,11 @@ const scorecardData = {
         "id":"table-6",
         "points":"20",
         "description":"",
+        "subtotals": {
+         "biden": "10",
+         "warren": "20",
+         "sanders": "30"
+          },
         "subtitle":"Sustainable environment",
         "rows":[
            {
@@ -282,6 +312,11 @@ const scorecardData = {
         "id":"table-6",
         "points":"20",
         "description":"",
+        "subtotals": {
+         "biden": "10",
+         "warren": "20",
+         "sanders": "30"
+          },
         "subtitle":"Equity and Justice",
         "rows":[
            {

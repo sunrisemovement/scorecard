@@ -53,9 +53,9 @@ function Table(props) {
                     {renderTableData()}
                     <tr className="subtotals">
                         <td className="subtotal-title">Subtotal <span className="row-points">(out of {props.table.points})</span></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td id="biden" >{props.table.subtotals.biden}</td>
+                        <td id="warren" >{props.table.subtotals.warren}</td>
+                        <td id="sanders" >{props.table.subtotals.sanders}</td>
                     </tr>
                 </tbody>
             </table>

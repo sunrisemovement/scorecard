@@ -124,7 +124,7 @@ td.row-title:hover{
     max-width: 100%;
   }
 
-  .table-title {
+  .table-title, .table-subtitle {
     font-size: 18px;
     line-height: 27px;
   }
