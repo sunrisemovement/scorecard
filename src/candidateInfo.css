@@ -79,6 +79,7 @@
     line-height: 27px;
     color: #33342E;
     overflow-y: scroll;
+    background: white;
 }
 
 .analysis-text {
@@ -95,6 +96,37 @@
 @media screen and (max-width: 790px) {
     .modal-candidate-info{
       min-width: 80vw;
-      overflow-x: scroll;
     }
   }
+
+  @media screen and (max-width: 520px) {
+    .modal {
+      padding-top: 0;
+    }
+  
+    .modal-candidate-info{
+      min-width: 100vw;
+      overflow-y: hidden;
+    }
+
+    .analysis-container {
+        padding: .7em;
+        min-height: 100%;
+    }
+
+    .modal-nav-item {
+        padding: .7em;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .close {
+        position: fixed;
+        top: 0;
+        right: .3em;
+        background: none;
+        font-size: 35px;
+        color: #FD9014;
+      }
+}

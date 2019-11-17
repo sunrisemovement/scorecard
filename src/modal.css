@@ -76,3 +76,16 @@
     overflow-x: scroll;
   }
 }
+
+@media screen and (max-width: 520px) {
+  .modal {
+    padding-top: 0;
+  }
+
+  .modal-description{
+    min-width: 100vw;
+    overflow: scroll;
+    padding: .7em;
+  }
+
+}
