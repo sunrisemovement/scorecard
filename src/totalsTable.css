@@ -14,6 +14,11 @@
 
 .row-points {
     color: #74756E;
+    font-weight: normal;
     font-size: .8em;
 }
 
+@media screen and (max-width: 520px) {
+  
+  
+  }

@@ -52,7 +52,7 @@ function Table(props) {
                     </tr>
                     {renderTableData()}
                     <tr className="subtotals">
-                        <td>Subtotal <span className="row-points">(out of {props.table.points})</span></td>
+                        <td className="subtotal-title">Subtotal <span className="row-points">(out of {props.table.points})</span></td>
                         <td></td>
                         <td></td>
                         <td></td>

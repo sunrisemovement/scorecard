@@ -15,7 +15,7 @@
   .modal-box {
     background-color: #fefefe;
     margin: auto;
-    border: 1px solid #888;
+    /* border: 1px solid rgb(201, 201, 201); */
     width: 80%;
     min-height: 65%;
   }
@@ -32,8 +32,8 @@
     flex-direction: column;
     flex-basis: 100%;
     flex: 1.1;
-    background-color: #33342E;
-    min-height: 570px;
+    background: #33342E;
+    min-height: 590px;
     padding: 1.5em;
   }
 
@@ -77,12 +77,13 @@
   }
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 550px) {
   .modal {
     padding-top: 0;
   }
 
   .modal-description{
+    min-height: 30vh;
     min-width: 100vw;
     overflow: scroll;
     padding: .7em;

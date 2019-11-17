@@ -4,3 +4,18 @@
     padding-bottom: 5em;
   }
 
+  @media screen and (max-width: 790px) {
+    .tables-container {
+      padding-top: 16.5em;
+    }
+  }
+
+
+  @media screen and (max-width: 520px) {
+    .tables-container {
+      margin: 0 15px;
+      padding-top: 0;
+      padding-bottom: 3em;
+    }
+  }
+

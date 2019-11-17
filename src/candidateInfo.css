@@ -3,8 +3,8 @@
     flex-direction: column;
     flex-basis: 100%;
     flex: 2;
-    min-height: 570px;
-    max-height: 570px;
+    min-height: 590px;
+    max-height: 590px;
     overflow-x: hidden;
     /* padding: 1em; */
 }
@@ -79,7 +79,7 @@
     line-height: 27px;
     color: #33342E;
     overflow-y: scroll;
-    background: white;
+    background-color: white;
 }
 
 .analysis-text {
@@ -99,10 +99,7 @@
     }
   }
 
-  @media screen and (max-width: 520px) {
-    .modal {
-      padding-top: 0;
-    }
+  @media screen and (max-width: 550px) {
   
     .modal-candidate-info{
       min-width: 100vw;
@@ -122,11 +119,17 @@
     }
 
     .close {
-        position: fixed;
+        position: absolute;
         top: 0;
         right: .3em;
         background: none;
         font-size: 35px;
         color: #FD9014;
       }
+
+    .close:hover,
+    .close:focus {
+    color: white;
+  }
+  
 }

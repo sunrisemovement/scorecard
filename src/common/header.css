@@ -20,7 +20,8 @@ header {
 }
 
 .main-header{
-	display: flex;
+    display: flex;
+    flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -36,3 +37,45 @@ header {
     color: #33342E;
     margin-bottom: .3em;
 }
+
+@media screen and (max-width: 790px) {
+    .main-header{
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+    }
+
+    header {
+        padding-top: 0.5em;
+        padding-bottom: .9em;
+        margin: 0 30px;
+    }
+
+    .caption {
+        /* position: relative;
+        left: -5em; */
+    }
+
+    .sunrise-logo {
+        order: -1;
+        padding-right: 2em;
+    }
+    
+  }
+
+  @media screen and (max-width: 520px) {
+    .header-title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .caption {
+        font-size: 14px;
+        float: left;
+    }
+
+    .header-container {
+        position: static;
+    }
+  
+  }

@@ -107,3 +107,49 @@ td.row-title:hover{
   padding-right: 6px;
   margin-bottom: -3px;
 }
+
+@media screen and (max-width: 790px) {
+  .table-description{
+    max-width: 100%;
+  }
+
+}
+
+
+@media screen and (max-width: 520px) {
+  .table-description{
+    font-size: 12px;
+    line-height: 18px;
+    color: #33342E;
+    max-width: 100%;
+  }
+
+  .table-title {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  td {
+    text-align: left;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  th {
+    font-size: 11px;
+    padding: 8px;
+    padding-top: 20px;
+  }
+
+  #biden, #warren, #sanders {
+    padding: 8px;
+  }
+
+  .info-icon {
+    display: none;
+  }
+
+  .subtotal-title {
+    padding-left: 10px;
+  }
+}

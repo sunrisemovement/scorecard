@@ -21,3 +21,11 @@
     color: #33342E;
     border-bottom: 4px solid #FFDE16;
 }
+
+@media screen and (max-width: 790px) {
+
+    .navbar {
+        display: none;
+    }
+    
+  }
