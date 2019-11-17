@@ -7,7 +7,7 @@ function Table(props) {
     const handleClick = (e) => {
         e.preventDefault();
 
-        // pass in row index, table index, and candidate
+        // pass in row index, table index, and candidate to update state
         props.onClickCell(e.target.parentElement.id, props.id, e.target.id,);
     }
 

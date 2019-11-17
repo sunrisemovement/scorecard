@@ -57,7 +57,7 @@ class App extends React.Component {
   onClickNav = (e) => {
     var tableId = "#table-" + e
     var table = document.querySelector(tableId);
-    window.scrollTo(0, (table.offsetTop - 290))
+    window.scrollTo(0, (table.offsetTop - 260))
     }
 
   render () {

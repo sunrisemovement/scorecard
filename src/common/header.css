@@ -3,14 +3,14 @@
     top: 0;
     background: white;
     min-width: 100%;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 3px solid #F4F4F4;
 
 }
 
 header {
 	max-width: 100%;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
+    padding-top: .72em;
+    padding-bottom: .72em;
     margin: 0 30px;
 }
 
@@ -34,5 +34,5 @@ header {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #33342E;
-    margin-bottom: .4em;
+    margin-bottom: .3em;
 }
