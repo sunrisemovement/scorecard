@@ -3,8 +3,8 @@
     flex-direction: column;
     flex-basis: 100%;
     flex: 2;
-    min-height: 550px;
-    max-height: 550px;
+    min-height: 570px;
+    max-height: 570px;
     overflow-x: hidden;
     /* padding: 1em; */
 }
@@ -52,6 +52,8 @@
 
 .nav-selected {
     background: white;
+    pointer-events: none;
+    cursor: auto;
 }
 
 .modal-nav-item:hover {
@@ -81,9 +83,18 @@
 
 .analysis-text {
     font-weight: normal;
+    padding-bottom: 2em;
 }
 
 #analysis-title {
     font-weight: bold;
     padding-bottom: .5em;
 }
+
+
+@media screen and (max-width: 790px) {
+    .modal-candidate-info{
+      min-width: 80vw;
+      overflow-x: scroll;
+    }
+  }
