@@ -11,8 +11,8 @@ class App extends React.Component {
     super(props);
     this.state = {
       candidate: null,
-      table: null,
-      row: null,
+      table: 0,
+      row: 0,
       lastClicked: null
     };
   }
@@ -23,8 +23,8 @@ class App extends React.Component {
 
     this.setState({
       candidate: candidate,
-      table: table,
-      row: row
+      table: parseInt(table),
+      row: parseInt(row)
     });
 
     var modal = document.getElementById("info-modal");
@@ -35,8 +35,8 @@ class App extends React.Component {
       modal.style.display = "none";
       this.setState({
         candidate: null,
-        row: null,
-        table: null,
+        row: 0,
+        table: 0,
         lastClicked: lastClicked
       });
     }
@@ -46,16 +46,16 @@ class App extends React.Component {
         modal.style.display = "none";
         this.setState({
           candidate: null,
-          row: null,
-          table: null,
+          row: 0,
+          table: 0,
           lastClicked: lastClicked
         });
       }
     }
   }
 
-  onClickNav = (e) => {
-    var tableId = "#table-" + e
+  onClickNav = (id) => {
+    var tableId = "#table-" + id
     var table = document.querySelector(tableId);
     window.scrollTo(0, (table.offsetTop - 260))
     }
@@ -63,9 +63,14 @@ class App extends React.Component {
   render () {
     return (
       <div className="App">
-        <ScorecardApp onClickCell={this.onClickCell} onClickNav={this.onClickNav}
-                      scorecardData={scorecardData}/>
-        <InfoModal />
+        <ScorecardApp onClickCell={this.onClickCell} 
+                      onClickNav={this.onClickNav}
+                      scorecardData={scorecardData}
+                      />
+        <InfoModal scorecardData={scorecardData} 
+                   candidate={this.state.candidate}
+                   row={this.state.row}
+                   table={this.state.table}/>
       </div>
     );
   }
