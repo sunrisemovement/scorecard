@@ -12,6 +12,7 @@ const Tables = (props) => (
           key = {i}
           id = {i}
           onClickCell={props.onClickCell}
+          onClickIcon={props.onClickIcon}
           />
         })
       }

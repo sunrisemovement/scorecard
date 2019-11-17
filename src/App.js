@@ -19,10 +19,44 @@ class App extends React.Component {
 
   onClickCell = (row, table, candidate) => {
     let lastClicked = {candidate: candidate, row: row };
-    console.log(table)
 
     this.setState({
       candidate: candidate,
+      table: parseInt(table),
+      row: parseInt(row)
+    });
+
+    var modal = document.getElementById("info-modal");
+    var span = document.getElementsByClassName("close")[0];
+    modal.style.display = "block";
+
+    span.onclick = (event) => {
+      modal.style.display = "none";
+      this.setState({
+        candidate: null,
+        row: 0,
+        table: 0,
+        lastClicked: lastClicked
+      });
+    }
+
+    window.onclick = (event) => {
+      if (event.target === modal) {
+        modal.style.display = "none";
+        this.setState({
+          candidate: null,
+          row: 0,
+          table: 0,
+          lastClicked: lastClicked
+        });
+      }
+    }
+  }
+
+  onClickIcon = (row, table) => {
+    let lastClicked = {candidate: null, row: row };
+
+    this.setState({
       table: parseInt(table),
       row: parseInt(row)
     });
@@ -74,6 +108,7 @@ class App extends React.Component {
         <ScorecardApp onClickCell={this.onClickCell} 
                       onClickNav={this.onClickNav}
                       scorecardData={scorecardData}
+                      onClickIcon={this.onClickIcon}
                       />
         <InfoModal scorecardData={scorecardData} 
                    candidate={this.state.candidate}

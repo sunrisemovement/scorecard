@@ -1,6 +1,7 @@
 import React from 'react';
-import './modal.css';
 import './candidateInfo.css';
+import CandidateAnalysis from './candidateAnalysis';
+import ModalSplash from './modalSplash.js';
 
 function CandidateInfo(props) {
 
@@ -19,16 +20,15 @@ function CandidateInfo(props) {
                     <span className="close">&times;</span>
                 </div>
             </div>
-        <div className="analysis-container">
-          <div className="candidate-score">
-            <span className="candidate-name">{props.candidateName}</span>'s score: {props.candidateObject.score}/{props.row.total}
-          </div>
-          <div id="analysis-title">Analysis</div>
-            <div className="analysis-text">
-                {props.candidateObject.analysis}
+         <div className="analysis-container">
+            {props.candidateName !== null ? (
+                <CandidateAnalysis candidateName={props.candidateName}
+                                candidateObject={props.candidateObject}
+                                row={props.row}/>
+                ) : ( <ModalSplash />)
+            }  
             </div>
         </div>
-         </div>
     );
 }
 

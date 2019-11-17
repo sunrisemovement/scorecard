@@ -8,18 +8,22 @@ function InfoModal(props) {
     var row = props.scorecardData.tables[props.table].rows[props.row];
     var selectedCandidate = props.candidate;
 
-    const candidate =(selectedCandidate) => {
-        let biden = row.biden;
-        let warren = row.warren;
-        let sanders = row.sanders;
+    const candidate = (selectedCandidate) => {
 
-        if (selectedCandidate === "biden") {
-            return biden
-        }
-         if (selectedCandidate === "warren") {
-            return warren
-        }
-         return sanders
+        if (selectedCandidate !== null) {
+            let biden = row.biden;
+            let warren = row.warren;
+            let sanders = row.sanders;
+
+            if (selectedCandidate === "biden") {
+                return biden
+            }
+            if (selectedCandidate === "warren") {
+                return warren
+            }
+            return sanders
+        } else return {}
+
     }
 
     return ( 

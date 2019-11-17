@@ -92,6 +92,23 @@
     padding-bottom: .5em;
 }
 
+.no-candidate-selected {
+    padding-top: 4em;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #A5A6A3;
+}
+
+.no-candidate-title{
+    font-weight: bold;
+}
+
+.person-icon{
+    height: 6.3em;
+}
+
 
 @media screen and (max-width: 790px) {
     .modal-candidate-info{

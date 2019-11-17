@@ -6,9 +6,16 @@ function Table(props) {
 
     const handleClick = (e) => {
         e.preventDefault();
-
+        
         // pass in row index, table index, and candidate to update state
         props.onClickCell(e.target.parentElement.id, props.id, e.target.id,);
+    }
+
+    const handleIconClick = (e) => {
+        e.preventDefault();
+        
+        // pass in row index and table index
+        props.onClickIcon(e.target.parentElement.parentElement.id, props.id);
     }
 
     const isGNDVisionTable = () => {
@@ -23,7 +30,7 @@ function Table(props) {
         const {title, biden, warren, sanders } = row //destructuring
         return (
             <tr id={index} key={index}>
-                <td className="row-title"><img className="info-icon" alt="Information Icon" src={icon}></img> {title}</td>
+                <td className="row-title"><img onClick={handleIconClick} className="info-icon" alt="Information Icon" src={icon}></img> {title}</td>
                 <td onClick={handleClick} id="biden">{biden.score}</td>
                 <td onClick={handleClick} id="warren">{warren.score}</td>
                 <td onClick={handleClick} id="sanders">{sanders.score}</td>
