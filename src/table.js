@@ -25,6 +25,13 @@ function Table(props) {
         else return false;
     }
 
+    // const isHowMuchTable = () => {
+    //     if(props.table.title !== "" && props.table.title === "How much they talk about it") {
+    //         return true
+    //     }
+    //     else return false;
+    // }
+
     const subtitleIsPresent = (props.table.subtitle !== "")
 
     const renderTableData = () => {

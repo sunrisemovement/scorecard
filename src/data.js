@@ -47,9 +47,128 @@ const scorecardData = {
                }
             },
             {
-               "title":"Plans include policies focused on creating jobs",
+               "title":"Centrality of justice, equity, and frontline communities",
                "description":"",
                "total":"4",
+               "biden":{
+                  "score":"2",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "warren":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "sanders":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               }
+            },
+            {
+               "title":"Federal government leadership",
+               "description":"",
+               "total":"1",
+               "biden":{
+                  "score":"2",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "warren":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "sanders":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               }
+            },
+            {
+               "title":"Supports supplemental state and local action",
+               "description":"",
+               "total":"1",
+               "biden":{
+                  "score":"2",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "warren":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "sanders":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               }
+            },
+            {
+               "title":"Proposes solutions beyond taxes and regulation ",
+               "description":"",
+               "total":"4",
+               "biden":{
+                  "score":"2",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "warren":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "sanders":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               }
+            },
+            {
+               "title":"Directly invests in “green” industries and technologies",
+               "description":"",
+               "total":"1",
+               "biden":{
+                  "score":"2",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "warren":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "sanders":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               }
+            },
+            {
+               "title":"Directly confronts fossil fuel executives",
+               "description":"",
+               "total":"4",
+               "biden":{
+                  "score":"2",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "warren":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "sanders":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               }
+            },
+            {
+               "title":"Frames the Green New Deal as top priority",
+               "description":"",
+               "total":"9",
+               "biden":{
+                  "score":"2",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "warren":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "sanders":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               }
+            },
+            {
+               "title":"Recognizes government’s responsibility to ensure basic needs",
+               "description":"",
+               "total":"3",
                "biden":{
                   "score":"2",
                   "analysis":"sdlkafjdskfjskldfjsksdlkf"
@@ -77,40 +196,7 @@ const scorecardData = {
          "description":"This section scores each candidate based on how frequently they use their platform to talk about the climate crisis and climate action. Candidates will be scored and ranked based on data from their Twitter accounts. This section is included as a representation of how politicians should use their voices to reach as much of the public as possible due to the urgency of climate crisis’ effects and how little time there is to avoid catastrophe.",
          "subtitle":"",
          "rows":[
-            {
-               "title":"A national, comprehensive mobilization",
-               "description":"",
-               "total":"4",
-               "biden":{
-                  "score":"2",
-                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
-               },
-               "warren":{
-                  "score":"4",
-                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
-               },
-               "sanders":{
-                  "score":"4",
-                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
-               }
-            },
-            {
-               "title":"Plans include policies focused on creating jobs",
-               "description":"",
-               "total":"4",
-               "biden":{
-                  "score":"2",
-                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
-               },
-               "warren":{
-                  "score":"4",
-                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
-               },
-               "sanders":{
-                  "score":"4",
-                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
-               }
-            }
+    
          ]
       },
       {
@@ -126,9 +212,9 @@ const scorecardData = {
          "subtitle":"",
          "rows":[
             {
-               "title":"A national, comprehensive mobilization",
+               "title":"Plan for democracy reform measures",
                "description":"",
-               "total":"4",
+               "total":"7",
                "biden":{
                   "score":"2",
                   "analysis":"sdlkafjdskfjskldfjsksdlkf"
@@ -143,9 +229,60 @@ const scorecardData = {
                }
             },
             {
-               "title":"Plans include policies focused on creating jobs",
+               "title":"Plan for federal and administrative reform measures",
                "description":"",
-               "total":"4",
+               "total":"7",
+               "biden":{
+                  "score":"2",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "warren":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "sanders":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               }
+            },
+            {
+               "title":"Plan to hold decision-makers accountable",
+               "description":"",
+               "total":"7",
+               "biden":{
+                  "score":"2",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "warren":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "sanders":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               }
+            },
+            {
+               "title":"Plan to leverage presidential power to achieve these goals",
+               "description":"",
+               "total":"7",
+               "biden":{
+                  "score":"2",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "warren":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "sanders":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               }
+            },
+            {
+               "title":"Plan for strategially sequencing GND policy fights",
+               "description":"",
+               "total":"7",
                "biden":{
                   "score":"2",
                   "analysis":"sdlkafjdskfjskldfjsksdlkf"
@@ -176,9 +313,9 @@ const scorecardData = {
          "subtitle":"Net zero emissions",
          "rows":[
             {
-               "title":"A national, comprehensive mobilization",
+               "title":"Mobilizing resources",
                "description":"",
-               "total":"4",
+               "total":"5",
                "biden":{
                   "score":"2",
                   "analysis":"sdlkafjdskfjskldfjsksdlkf"
@@ -193,9 +330,43 @@ const scorecardData = {
                }
             },
             {
-               "title":"Plans include policies focused on creating jobs",
+               "title":"Emissions timeline",
                "description":"",
-               "total":"4",
+               "total":"6",
+               "biden":{
+                  "score":"2",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "warren":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "sanders":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               }
+            },
+            {
+               "title":"Energy transition ",
+               "description":"",
+               "total":"6",
+               "biden":{
+                  "score":"2",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "warren":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "sanders":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               }
+            },
+            {
+               "title":"International engagement and exchange",
+               "description":"",
+               "total":"6",
                "biden":{
                   "score":"2",
                   "analysis":"sdlkafjdskfjskldfjsksdlkf"
@@ -214,6 +385,176 @@ const scorecardData = {
       {
          "title":"",
          "id":"table-5",
+         "points":"20",
+         "description":"",
+         "subtotals":{
+            "biden":"10",
+            "warren":"20",
+            "sanders":"30"
+         },
+         "subtitle":"Jobs and economic security",
+         "rows":[
+            {
+               "title":"Job training",
+               "description":"",
+               "total":"5",
+               "biden":{
+                  "score":"2",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "warren":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "sanders":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               }
+            },
+            {
+               "title":"Creating high-quality jobs",
+               "description":"",
+               "total":"6",
+               "biden":{
+                  "score":"2",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "warren":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "sanders":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               }
+            }
+            ,
+            {
+               "title":"Guaranteeing the right to a good job",
+               "description":"",
+               "total":"6",
+               "biden":{
+                  "score":"2",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "warren":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "sanders":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               }
+            }
+            ,
+            {
+               "title":"A just economic transition",
+               "description":"",
+               "total":"6",
+               "biden":{
+                  "score":"2",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "warren":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "sanders":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               }
+            }
+            ,
+            {
+               "title":"Workers’ rights",
+               "description":"",
+               "total":"6",
+               "biden":{
+                  "score":"2",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "warren":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "sanders":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               }
+            },
+            {
+               "title":"Labor standards",
+               "description":"",
+               "total":"2",
+               "biden":{
+                  "score":"2",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "warren":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "sanders":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               }
+            },
+            {
+               "title":"Ensuring domestic job growth",
+               "description":"",
+               "total":"2",
+               "biden":{
+                  "score":"2",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "warren":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "sanders":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               }
+            },
+            {
+               "title":"Health care ",
+               "description":"",
+               "total":"2",
+               "biden":{
+                  "score":"2",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "warren":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "sanders":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               }
+            },
+            {
+               "title":"Support for working families",
+               "description":"",
+               "total":"2",
+               "biden":{
+                  "score":"2",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "warren":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "sanders":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               }
+            }
+         ]
+      },
+      {
+         "title":"",
+         "id":"table-6",
          "points":"25",
          "description":"",
          "subtotals":{
@@ -224,9 +565,9 @@ const scorecardData = {
          "subtitle":"Investments in infrastructure and industry",
          "rows":[
             {
-               "title":"A national, comprehensive mobilization",
+               "title":"Investments across all levels of government",
                "description":"",
-               "total":"4",
+               "total":"2",
                "biden":{
                   "score":"2",
                   "analysis":"sdlkafjdskfjskldfjsksdlkf"
@@ -241,9 +582,162 @@ const scorecardData = {
                }
             },
             {
-               "title":"Plans include policies focused on creating jobs",
+               "title":"Energy democracy",
                "description":"",
-               "total":"4",
+               "total":"2",
+               "biden":{
+                  "score":"2",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "warren":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "sanders":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               }
+            },
+            {
+               "title":"Private sector investment",
+               "description":"",
+               "total":"2",
+               "biden":{
+                  "score":"2",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "warren":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "sanders":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               }
+            },
+            {
+               "title":"Investment in frontline communities",
+               "description":"",
+               "total":"3",
+               "biden":{
+                  "score":"2",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "warren":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "sanders":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               }
+            },
+            {
+               "title":"Research and development",
+               "description":"",
+               "total":"2",
+               "biden":{
+                  "score":"2",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "warren":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "sanders":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               }
+            },
+            {
+               "title":"Climate resiliency",
+               "description":"",
+               "total":"2",
+               "biden":{
+                  "score":"2",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "warren":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "sanders":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               }
+            },
+            {
+               "title":"Public infrastructure",
+               "description":"",
+               "total":"2",
+               "biden":{
+                  "score":"2",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "warren":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "sanders":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               }
+            },
+            {
+               "title":"Energy investment",
+               "description":"",
+               "total":"2",
+               "biden":{
+                  "score":"2",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "warren":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "sanders":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               }
+            },
+            {
+               "title":"Building infrastructure",
+               "description":"",
+               "total":"3",
+               "biden":{
+                  "score":"2",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "warren":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "sanders":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               }
+            },
+            {
+               "title":"Transportation infrastructure",
+               "description":"",
+               "total":"3",
+               "biden":{
+                  "score":"2",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "warren":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "sanders":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               }
+            },
+            {
+               "title":"Domestic manufacturing",
+               "description":"",
+               "total":"2",
                "biden":{
                   "score":"2",
                   "analysis":"sdlkafjdskfjskldfjsksdlkf"
@@ -261,7 +755,7 @@ const scorecardData = {
       },
       {
          "title":"",
-         "id":"table-6",
+         "id":"table-7",
          "points":"20",
          "description":"",
          "subtotals":{
@@ -272,9 +766,9 @@ const scorecardData = {
          "subtitle":"Sustainable environment",
          "rows":[
             {
-               "title":"A national, comprehensive mobilization",
+               "title":"Sustainable agriculture",
                "description":"",
-               "total":"4",
+               "total":"3",
                "biden":{
                   "score":"2",
                   "analysis":"sdlkafjdskfjskldfjsksdlkf"
@@ -289,9 +783,77 @@ const scorecardData = {
                }
             },
             {
-               "title":"Plans include policies focused on creating jobs",
+               "title":"Sustainable forestry",
                "description":"",
-               "total":"4",
+               "total":"3",
+               "biden":{
+                  "score":"2",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "warren":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "sanders":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               }
+            },
+            {
+               "title":"Sustainable marine equipment",
+               "description":"",
+               "total":"2",
+               "biden":{
+                  "score":"2",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "warren":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "sanders":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               }
+            },
+            {
+               "title":"Freshwater conservation and distribution",
+               "description":"",
+               "total":"3",
+               "biden":{
+                  "score":"2",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "warren":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "sanders":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               }
+            },
+            {
+               "title":"Public lands",
+               "description":"",
+               "total":"3",
+               "biden":{
+                  "score":"2",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "warren":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "sanders":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               }
+            },
+            {
+               "title":"Ecosystem restoration and remediation",
+               "description":"",
+               "total":"2",
                "biden":{
                   "score":"2",
                   "analysis":"sdlkafjdskfjskldfjsksdlkf"
@@ -309,7 +871,7 @@ const scorecardData = {
       },
       {
          "title":"",
-         "id":"table-6",
+         "id":"table-8",
          "points":"20",
          "description":"",
          "subtotals":{
@@ -320,9 +882,9 @@ const scorecardData = {
          "subtitle":"Equity and Justice",
          "rows":[
             {
-               "title":"A national, comprehensive mobilization",
+               "title":"Creating economic equity",
                "description":"",
-               "total":"4",
+               "total":"2",
                "biden":{
                   "score":"2",
                   "analysis":"sdlkafjdskfjskldfjsksdlkf"
@@ -337,9 +899,111 @@ const scorecardData = {
                }
             },
             {
-               "title":"Plans include policies focused on creating jobs",
+               "title":"Inclusion of indigenous communities and sovreignty",
                "description":"",
-               "total":"4",
+               "total":"3",
+               "biden":{
+                  "score":"2",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "warren":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "sanders":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               }
+            },
+            {
+               "title":"Inclusion of frontline communities",
+               "description":"",
+               "total":"3",
+               "biden":{
+                  "score":"2",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "warren":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "sanders":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               }
+            },
+            {
+               "title":"Remediation and restoration",
+               "description":"",
+               "total":"2",
+               "biden":{
+                  "score":"2",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "warren":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "sanders":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               }
+            },
+            {
+               "title":"Pollution reduction",
+               "description":"",
+               "total":"3",
+               "biden":{
+                  "score":"2",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "warren":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "sanders":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               }
+            },
+            {
+               "title":"Preventing further environmental injustice",
+               "description":"",
+               "total":"3",
+               "biden":{
+                  "score":"2",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "warren":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "sanders":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               }
+            },
+            {
+               "title":"International environmental justice",
+               "description":"",
+               "total":"2",
+               "biden":{
+                  "score":"2",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "warren":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               },
+               "sanders":{
+                  "score":"4",
+                  "analysis":"sdlkafjdskfjskldfjsksdlkf"
+               }
+            },
+            {
+               "title":"Immigration and climate refugees",
+               "description":"",
+               "total":"2",
                "biden":{
                   "score":"2",
                   "analysis":"sdlkafjdskfjskldfjsksdlkf"
