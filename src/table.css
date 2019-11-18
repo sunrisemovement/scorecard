@@ -161,4 +161,8 @@ td.row-title:hover{
   .subtotal-title {
     padding-left: 10px;
   }
+
+  .table-points {
+    display: none;
+  }
 }
