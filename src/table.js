@@ -81,7 +81,7 @@ function Table(props) {
                     </tr>
                     {renderTableData()}
                     <tr className="subtotals">
-                        <td className="subtotal-title">Subtotal <span className="row-points">(out of {props.table.points})</span></td>
+                        <td width="65%" className="subtotal-title">Subtotal <span className="row-points">(out of {props.table.points})</span></td>
                         <td id="biden" >{props.table.subtotals.biden}</td>
                         <td id="warren" >{props.table.subtotals.warren}</td>
                         <td id="sanders" >{props.table.subtotals.sanders}</td>
