@@ -89,10 +89,14 @@
   }
 
   .modal-description{
-    min-height: 35vh;
+    min-height: 30vh;
     min-width: 100vw;
     overflow: scroll;
-    padding: .7em;
+    padding: .8em;
+  }
+
+  .modal-row-description {
+    padding-bottom: 1em;
   }
 
   .modal-table-title{

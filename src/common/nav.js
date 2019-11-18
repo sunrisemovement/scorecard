@@ -16,7 +16,7 @@ function Nav(props) {
             <div id="2" onClick={handleClick} className="nav-item" >How much they talk about it</div>
             <div id="3" onClick={handleClick} className="nav-item" >Plan to win</div>
             <div id="4" onClick={handleClick} className="nav-item" >Green New Deal vision</div>
-            <div id="8" onClick={handleClick} className="nav-item" >Totals</div>
+            <div id="9" onClick={handleClick} className="nav-item" >Totals</div>
         </Scrollspy>
     );
 }

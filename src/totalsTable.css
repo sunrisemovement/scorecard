@@ -1,4 +1,4 @@
-#table-8{
+#table-9{
     pointer-events:none;
     cursor: auto;
 }
@@ -19,6 +19,8 @@
 }
 
 @media screen and (max-width: 520px) {
-  
+  .total-points{
+      display: block;
+     }
   
   }

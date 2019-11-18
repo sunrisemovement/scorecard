@@ -1,6 +1,7 @@
 import React from 'react';
 import './table.css';
 import icon from './assets/i.png';
+import expand from './assets/expand.png';
 
 function Table(props) {
 
@@ -18,19 +19,19 @@ function Table(props) {
         props.onClickIcon(e.target.parentElement.parentElement.id, props.id);
     }
 
+    const handleRowClick = (e) => {
+        e.preventDefault();
+                
+        // pass in row index and table index
+        props.onClickIcon(e.target.parentElement.parentElement.id, props.id);
+    }
+
     const isGNDVisionTable = () => {
         if(props.table.categorytitle !== undefined && props.table.categorytitle === "Green New Deal vision") {
             return true
         }
         else return false;
     }
-
-    // const isHowMuchTable = () => {
-    //     if(props.table.title !== "" && props.table.title === "How much they talk about it") {
-    //         return true
-    //     }
-    //     else return false;
-    // }
 
     const subtitleIsPresent = (props.table.subtitle !== "")
 
@@ -43,6 +44,7 @@ function Table(props) {
                 <td onClick={handleClick} id="biden">{biden.score}</td>
                 <td onClick={handleClick} id="warren">{warren.score}</td>
                 <td onClick={handleClick} id="sanders">{sanders.score}</td>
+                <td id="icon-cell"> &nbsp;<img className="expand-icon" onClick={handleRowClick} alt="Information Icon" src={expand}></img></td>
             </tr>
         )
     });
