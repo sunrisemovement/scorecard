@@ -60,10 +60,8 @@ td.row-title:hover{
   border-bottom: 0px;
   text-align: left;
   cursor: auto;
-}
-
-.subtotals:hover td {
-  background: white;
+  background-color: #F4F4F4;
+  pointer-events: none;;
 }
 
 .table-title {
