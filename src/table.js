@@ -54,8 +54,7 @@ function Table(props) {
             ? 
             <div>
                 <div className="table-description">{props.table.description}</div>
-                <h4 className="table-subtitle">{props.table.subtitle} </h4>  
-                <span className="table-subtitle">&nbsp; (out of {props.table.points})</span>
+                <h4 className="table-subtitle">{props.table.subtitle}&nbsp;(out of {props.table.points})</h4>  
             </div>
             : 
             <div>

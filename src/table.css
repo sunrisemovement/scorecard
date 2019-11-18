@@ -162,6 +162,10 @@ td.row-title:hover{
     padding-left: 10px;
   }
 
+  .table-subtitle {
+    font-size: 17px;
+  }
+
   .table-points {
     display: none;
   }
