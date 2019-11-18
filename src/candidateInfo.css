@@ -143,6 +143,10 @@
         line-height: 24px;
     }
 
+    .modal-nav-item:hover{
+        background: white;
+    }
+
     .close {
         position: absolute;
         top: 0;
