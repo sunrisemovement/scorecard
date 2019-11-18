@@ -25,6 +25,8 @@ function Table(props) {
         else return false;
     }
 
+    const subtitleIsPresent = (props.table.subtitle !== "")
+
     const renderTableData = () => {
     return props.table.rows.map((row, index) => {
         const {title, total, biden, warren, sanders } = row //destructuring
@@ -43,12 +45,26 @@ function Table(props) {
         <div id={props.table.id} name={props.table.id}>
 
         { isGNDVisionTable()
-            ? <div><h2 id='title' className="table-title">{props.table.categorytitle}  </h2><span className="table-points">(out of {props.table.categorypoints})</span></div>
+            ? <div><h2 id='title' className="table-title">{props.table.categorytitle}</h2>
+                    <span className="table-points"> (out of {props.table.categorypoints})</span></div>
             : <span></span>
           }
 
-            <h2 id='title' className="table-title">{props.table.title}</h2><h4 className="table-subtitle">{props.table.subtitle}</h4> <span className="table-points">(out of {props.table.points})</span>
-            <div className="table-description">{props.table.description}</div>
+          { subtitleIsPresent
+            ? 
+            <div>
+                 <div className="table-description">{props.table.description}</div>
+                <h4 className="table-subtitle">{props.table.subtitle}</h4>  
+                <span className="table-points"> (out of {props.table.points})</span>
+            </div>
+            : 
+            <div>
+                <h2 id='title' className="table-title">{props.table.title}</h2>
+                <span className="table-points"> (out of {props.table.points})</span>
+                <div className="table-description">{props.table.description}</div>
+            </div>
+            }
+
             <table>
                 <tbody>
                     <tr id="header">
