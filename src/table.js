@@ -27,10 +27,10 @@ function Table(props) {
 
     const renderTableData = () => {
     return props.table.rows.map((row, index) => {
-        const {title, biden, warren, sanders } = row //destructuring
+        const {title, total, biden, warren, sanders } = row //destructuring
         return (
             <tr id={index} key={index}>
-                <td className="row-title"><img onClick={handleIconClick} className="info-icon" alt="Information Icon" src={icon}></img> {title}</td>
+                <td className="row-title"><img onClick={handleIconClick} className="info-icon" alt="Information Icon" src={icon}></img>{title} <span className="row-points">(Out of {total})</span></td>
                 <td onClick={handleClick} id="biden">{biden.score}</td>
                 <td onClick={handleClick} id="warren">{warren.score}</td>
                 <td onClick={handleClick} id="sanders">{sanders.score}</td>
