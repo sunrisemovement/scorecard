@@ -53,9 +53,9 @@ function Table(props) {
           { subtitleIsPresent
             ? 
             <div>
-                 <div className="table-description">{props.table.description}</div>
-                <h4 className="table-subtitle">{props.table.subtitle}</h4>  
-                <span className="table-points"> (out of {props.table.points})</span>
+                <div className="table-description">{props.table.description}</div>
+                <h4 className="table-subtitle">{props.table.subtitle} </h4>  
+                <span className="table-subtitle">&nbsp; (out of {props.table.points})</span>
             </div>
             : 
             <div>
