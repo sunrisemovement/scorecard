@@ -1,4 +1,4 @@
-#table-8 *:hover {
+#table-8{
     pointer-events:none;
     cursor: auto;
 }
