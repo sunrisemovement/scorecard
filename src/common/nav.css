@@ -1,0 +1,31 @@
+.navbar {
+    margin: 0 34px;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-item {
+    padding: 1em;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    color: #74756E;
+    cursor: pointer;
+}
+
+.nav-item.first{
+    padding-left: 0;
+}
+
+.nav-item:hover, .is-current{
+    color: #33342E;
+    border-bottom: 4px solid #FFDE16;
+}
+
+@media screen and (max-width: 790px) {
+
+    .navbar {
+        display: none;
+    }
+    
+  }

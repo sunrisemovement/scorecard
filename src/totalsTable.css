@@ -1,0 +1,26 @@
+#table-9{
+    pointer-events:none;
+    cursor: auto;
+}
+
+
+#totals-row td {
+    background: #33342E;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 27px;
+    color: #FBFAED;
+}
+
+.row-points {
+    color: #74756E;
+    font-weight: normal;
+    font-size: .8em;
+}
+
+@media screen and (max-width: 520px) {
+  .total-points{
+      display: block;
+     }
+  
+  }

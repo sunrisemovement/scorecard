@@ -1,24 +1,34 @@
 {
-  "name": "scorecard",
-  "version": "1.0.0",
-  "description": "A candidate scorecard widget",
+  "name": "scorecard_poc",
+  "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "build": "nwb build-react-app",
-    "clean": "nwb clean-app",
-    "start": "nwb serve-react-app",
-    "test": "nwb test-react",
-    "test:coverage": "nwb test-react --coverage",
-    "test:watch": "nwb test-react --server"
-  },
   "dependencies": {
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0"
+    "preact": "^10.0.5",
+    "preact-compat": "^3.19.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.2.0",
+    "react-scrollspy": "^3.4.0"
   },
-  "devDependencies": {
-    "nwb": "0.23.x"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "author": "",
-  "license": "MIT",
-  "repository": ""
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }

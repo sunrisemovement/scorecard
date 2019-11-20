@@ -1,0 +1,11 @@
+.scorecard-app {
+  /* text-align: center; */
+  min-width: 100%;
+}
+
+#sc-root * {
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+
