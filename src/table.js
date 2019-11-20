@@ -73,7 +73,7 @@ function Table(props) {
             </div>
             }
 
-            <table>
+            <table className="sc-table">
                 <tbody>
                     <tr id="header">
                         <th></th>

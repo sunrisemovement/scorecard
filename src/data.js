@@ -1,3 +1,5 @@
+// Dummy data to fill scorecard until official release.
+
 const scorecardData ={ 
    "tables":[ 
       { 

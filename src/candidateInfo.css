@@ -13,14 +13,14 @@
     min-width: 100%;
 }
 
-.modal-nav {
+.sc-modal-nav {
     text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.close {
+.sc-modal-close {
     color: #74756E;
     float: right;
     /* padding-left: 1em; */
@@ -30,8 +30,8 @@
     background: #F4F4F4;
   }
   
-  .close:hover,
-  .close:focus {
+  .sc-modal-close:hover,
+  .sc-modal-close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
@@ -147,7 +147,7 @@
         background: white;
     }
 
-    .close {
+    .sc-modal-close {
         position: absolute;
         top: 0;
         right: .3em;
@@ -156,8 +156,8 @@
         color: #FD9014;
       }
 
-    .close:hover,
-    .close:focus {
+    .sc-modal-close:hover,
+    .sc-modal-close:focus {
     color: white;
   }
   

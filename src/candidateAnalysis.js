@@ -1,5 +1,4 @@
 import React from 'react';
-// import './modal.css';
 import './candidateInfo.css';
 
 function CandidateAnalysis(props) {

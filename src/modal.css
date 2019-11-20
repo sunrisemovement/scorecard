@@ -1,4 +1,4 @@
-.modal {
+.sc-modal {
     display: none;
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -12,14 +12,14 @@
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
   
-  .modal-box {
+  .sc-modal-box {
     background-color: #fefefe;
     margin: auto;
     width: 78%;
     min-height: 65%;
   }
 
-  .modal-content {
+  .sc-modal-content {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -61,18 +61,18 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .modal-box {
+  .sc-modal-box {
     width: 90%;
   }
 
 }
 
 @media screen and (max-width: 810px) {
-  .modal {
+  .sc-modal {
     padding-top: 3vh;
   }
 
-  .modal-content {
+  .sc-modal-content {
     flex-direction: column;
   }
 
@@ -84,7 +84,7 @@
 }
 
 @media screen and (max-width: 550px) {
-  .modal {
+  .sc-modal {
     padding-top: 0;
   }
 

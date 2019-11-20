@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import ScorecardApp from './ScorecardApp.js';
 import InfoModal from './infoModal.js'
+// Import dummy data to fill scorecard
 import scorecardData from './data.js';
 
 
@@ -27,7 +28,7 @@ class App extends React.Component {
     });
 
     var modal = document.getElementById("info-modal");
-    var span = document.getElementsByClassName("close")[0];
+    var span = document.getElementsByClassName("sc-modal-close")[0];
     modal.style.display = "block";
 
     span.onclick = (event) => {
@@ -62,7 +63,7 @@ class App extends React.Component {
     });
 
     var modal = document.getElementById("info-modal");
-    var span = document.getElementsByClassName("close")[0];
+    var span = document.getElementsByClassName("sc-modal-close")[0];
     modal.style.display = "block";
 
     span.onclick = (event) => {
@@ -104,7 +105,7 @@ class App extends React.Component {
 
   render () {
     return (
-      <div className="App">
+      <div className="App scorecard-app">
         <ScorecardApp onClickCell={this.onClickCell} 
                       onClickNav={this.onClickNav}
                       scorecardData={scorecardData}

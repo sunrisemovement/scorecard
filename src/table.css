@@ -1,16 +1,16 @@
- td, th {  
+ .sc-table td, th {  
   border: 1px solid #74756E;
   border-left: 0px;
   border-top: 0px;
   text-align: left;
 }
 
-table {
+.sc-table {
   border-collapse: collapse;
   width: 100%;
 }
 
-th, td {
+.sc-table th, td {
     padding: 15px;
     text-align: left;
     font-size: 18px;
@@ -20,7 +20,7 @@ th, td {
   padding-left: 10px;
 }
 
-th {
+.sc-table th {
   border-left: 0px;
   border-right: 0px;
   text-transform: uppercase;
@@ -30,20 +30,20 @@ th {
   color: #33342E;
 }
 
-tr:hover {
+.sc-table tr:hover {
   background: #F4F4F4;
 }
 
-tr#header:hover{
+.sc-table tr#header:hover{
   background: white;
 }
 
-td:hover{
+.sc-table td:hover{
   background: #E0E0E0;
   cursor: pointer;
 }
 
-td.row-title:hover{
+.sc-table td.row-title:hover{
   background: #F4F4F4;
   cursor: auto;
 }
@@ -162,13 +162,13 @@ td.row-title:hover{
     line-height: 27px;
   }
 
-  td {
+  .sc-table td {
     text-align: left;
     font-size: 13px;
     line-height: 18px;
   }
 
-  th {
+  .sc-table th {
     font-size: 11px;
     padding: 8px;
     padding-top: 20px;

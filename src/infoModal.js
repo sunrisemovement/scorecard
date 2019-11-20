@@ -27,9 +27,9 @@ function InfoModal(props) {
     }
 
     return ( 
-        <div id="info-modal" className="modal">
-            <div className="modal-box">
-                <div className="modal-content">
+        <div id="info-modal" className="sc-modal">
+            <div className="sc-modal-box">
+                <div className="sc-modal-content">
                 <ModalDescription table={table} row={row}/>
                 <CandidateInfo table={table} 
                                row={row} 

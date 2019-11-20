@@ -7,19 +7,16 @@
 
 }
 
-header {
-	max-width: 100%;
-    padding-top: .72em;
-    padding-bottom: .72em;
-    margin: 0 30px;
-}
-
 .caption {
     font-size: 18px;
     color: #33342E;
 }
 
 .main-header{
+    max-width: 100%;
+    padding-top: .72em;
+    padding-bottom: .72em;
+    margin: 0 30px;
     display: flex;
     flex-direction: row;
 	align-items: center;
@@ -43,15 +40,12 @@ header {
         align-items: center;
         justify-content: flex-start;
         flex-wrap: nowrap;
+        padding-bottom: .9em;
+        margin: 0 30px;
     }
 
     .header-title{
         margin-top: .25em;
-    }
-
-    header {
-        padding-bottom: .9em;
-        margin: 0 30px;
     }
 
     .header-container {
