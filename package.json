@@ -1,6 +1,8 @@
 {
-  "name": "scorecard_poc",
+  "name": "scorecard-widget",
   "version": "0.1.0",
+  "description": "A scorecard widget for presidential candidates",
+  "author": "Sunrise",
   "private": true,
   "dependencies": {
     "preact": "^10.0.5",
@@ -10,11 +12,20 @@
     "react-scripts": "3.2.0",
     "react-scrollspy": "^3.4.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sunrisemovement/scorecard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sunrisemovement/scorecard/issues"
+  },
+  "homepage": "https://github.com/sunrisemovement/scorecard",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build:deploy": "scripts/deploy.sh"
   },
   "eslintConfig": {
     "extends": "react-app"
