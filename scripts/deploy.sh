@@ -10,4 +10,3 @@ npm run build
 cd build
 mv static/js/main.*.js main.js
 mv static/css/main.*.css main.css
-rm -rf static
