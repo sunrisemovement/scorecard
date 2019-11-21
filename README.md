@@ -52,6 +52,8 @@ Netlify also makes the our static assets available a la carte, so that we can em
 To embed, add the following to your project:
 ```
 <div id="sc-root"></div>
+<script src="https://priceless-williams-fb7e44.netlify.com/runtime.js"></script>
 <script src="https://priceless-williams-fb7e44.netlify.com/main.js"></script>
+<script src="https://priceless-williams-fb7e44.netlify.com/2.js"></script>
 <link rel="stylesheet" type="text/css" href="https://priceless-williams-fb7e44.netlify.com/main.css" />
 ```

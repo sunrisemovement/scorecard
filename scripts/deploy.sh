@@ -9,4 +9,6 @@ set -euxo pipefail
 npm run build
 cd build
 mv static/js/main.*.js main.js
+mv static/js/runtime-main.*.js runtime.js
+mv static/js/2.*.js 2.js
 mv static/css/main.*.css main.css
