@@ -26,18 +26,18 @@ function Table(props) {
         props.onClickIcon(e.target.parentElement.parentElement.id, props.id);
     }
 
-    const isGNDVisionTable = () => {
-        if(props.table.categorytitle !== undefined && props.table.categorytitle === "Green New Deal vision") {
-            return true
-        }
-        else return false;
-    }
+    // If there's a category title, it is the GND Vision section
+    const isGNDVisionTable = (props.table.categorytitle) ? true : false;
 
+    // Check for 'How Much' table id so we can render it appropriately
+    const isHowMuchTable = (props.id === 1) ? true : false;
+
+    // Checks for subtitles so we can render subtitle and points correctly
     const subtitleIsPresent = (props.table.subtitle !== "")
 
     const renderTableData = () => {
     return props.table.rows.map((row, index) => {
-        const {title, total, biden, warren, sanders } = row //destructuring
+        const {title, total, biden, warren, sanders } = row;
         return (
             <tr id={index} key={index}>
                 <td className="row-title"><img onClick={handleIconClick} className="info-icon" alt="Information Icon" src={icon}></img>{title} <span className="row-points">(Out of {total})</span></td>
@@ -53,7 +53,7 @@ function Table(props) {
     return (
         <div id={props.table.id} name={props.table.id}>
 
-        { isGNDVisionTable()
+        { isGNDVisionTable
             ? <div><h2 id='title' className="table-title">{props.table.categorytitle}</h2>
                     <span className="table-points"> (out of {props.table.categorypoints})</span></div>
             : <span></span>
@@ -76,18 +76,23 @@ function Table(props) {
             <table className="sc-table">
                 <tbody>
                     <tr id="header">
-                        <th></th>
+                        <th width="65%"></th>
                         <th>Biden</th>
                         <th>Warren</th>
                         <th>Sanders</th>
                     </tr>
                     {renderTableData()}
+                    {isHowMuchTable
+                    ? 
+                    <span></span>
+                    :
                     <tr className="subtotals">
                         <td width="65%" className="subtotal-title">Subtotal <span className="row-points">(out of {props.table.points})</span></td>
                         <td id="biden" >{props.table.subtotals.biden}</td>
                         <td id="warren" >{props.table.subtotals.warren}</td>
                         <td id="sanders" >{props.table.subtotals.sanders}</td>
                     </tr>
+                }
                 </tbody>
             </table>
         </div>
