@@ -1,3 +1,7 @@
+# Scorecard Project
+
+## Development
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -37,32 +41,19 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Deployment
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This widget is deployed with [netlify](https://www.netlify.com/). It automatically deploys upon merging to master. You can preview the widget here: https://priceless-williams-fb7e44.netlify.com/
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Netlify also makes the our static assets available a la carte, so that we can embed them in other Sunrise sites. Netlify is configured to run `npm run build:deploy` as a build script, which makes our assets available for use here:
+- [JavaScript](https://priceless-williams-fb7e44.netlify.com/main.js)
+- [CSS](https://priceless-williams-fb7e44.netlify.com/main.css)
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+To embed, add the following to your project:
+```
+<div id="sc-root"></div>
+<script src="https://priceless-williams-fb7e44.netlify.com/runtime.js"></script>
+<script src="https://priceless-williams-fb7e44.netlify.com/main.js"></script>
+<script src="https://priceless-williams-fb7e44.netlify.com/2.js"></script>
+<link rel="stylesheet" type="text/css" href="https://priceless-williams-fb7e44.netlify.com/main.css" />
+```
