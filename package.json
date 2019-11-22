@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/sunrisemovement/scorecard/issues"
   },
-  "homepage": "https://github.com/sunrisemovement/scorecard",
+  "homepage": ".",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
