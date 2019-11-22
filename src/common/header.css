@@ -1,5 +1,5 @@
 .header-container {
-    position: fixed;
+    position: sticky;
     top: 0;
     background: white;
     min-width: 100%;

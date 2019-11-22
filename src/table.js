@@ -54,7 +54,7 @@ function Table(props) {
         <div id={props.table.id} name={props.table.id}>
 
         { isGNDVisionTable
-            ? <div><h2 id='title' className="table-title">{props.table.categorytitle}</h2>
+            ? <div><div id='title' className="table-title">{props.table.categorytitle}</div>
                     <span className="table-points"> (out of {props.table.categorypoints})</span></div>
             : <span></span>
           }
@@ -67,7 +67,7 @@ function Table(props) {
             </div>
             : 
             <div>
-                <h2 id='title' className="table-title">{props.table.title}</h2>
+                <div id='title' className="table-title">{props.table.title}</div>
                 <span className="table-points"> (out of {props.table.points})</span>
                 <div className="table-description">{props.table.description}</div>
             </div>
