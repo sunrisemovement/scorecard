@@ -30,6 +30,8 @@ class App extends React.Component {
     var modal = document.getElementById("info-modal");
     var span = document.getElementsByClassName("sc-modal-close")[0];
     modal.style.display = "block";
+    modal.scrollTop = 0;
+
 
     span.onclick = (event) => {
       modal.style.display = "none";
@@ -65,6 +67,7 @@ class App extends React.Component {
     var modal = document.getElementById("info-modal");
     var span = document.getElementsByClassName("sc-modal-close")[0];
     modal.style.display = "block";
+    modal.scrollTop = 0;
 
     span.onclick = (event) => {
       modal.style.display = "none";
