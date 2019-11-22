@@ -6,7 +6,7 @@ function TotalsTable(props) {
 
     return (
         <div className="totals-table" id="table-9">
-            <h2 id='title' className="table-title">Totals</h2> <span className="table-points">(out of 200)</span>
+            <div id='title' className="table-title">Totals</div> <span className="table-points">(out of 200)</span>
             <table className="sc-table">
                 <tbody>
                 <tr id="header">
