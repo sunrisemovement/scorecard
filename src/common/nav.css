@@ -22,6 +22,22 @@
     border-bottom: 4px solid #FFDE16;
 }
 
+@media screen and (max-width: 940px) {
+
+    .nav-item {
+        font-size: 16px;
+        /* line-height: 22px; */
+    }
+    
+  }
+
+  @media screen and (max-width: 850px) {
+    .nav-item {
+        font-size: 14.7px;
+        /* line-height: 19px; */
+    }
+  }
+
 @media screen and (max-width: 790px) {
 
     .navbar {
