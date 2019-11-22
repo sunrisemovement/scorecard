@@ -51,6 +51,7 @@
 
 .expand-icon {
   display: none;
+  max-width: 18px;
 }
 
 #icon-cell {
