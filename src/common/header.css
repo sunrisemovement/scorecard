@@ -7,6 +7,10 @@
 
 }
 
+#sunrise-img {
+    min-width: 62px;
+}
+
 .caption {
     font-size: 18px;
     color: #33342E;
@@ -21,7 +25,7 @@
     flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 }
 
 .header-title {
