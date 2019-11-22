@@ -16,7 +16,8 @@
     background-color: #fefefe;
     margin: auto;
     width: 78%;
-    min-height: 65%;
+    max-width: 1250px;
+    min-height: 25%;
   }
 
   .sc-modal-content {
