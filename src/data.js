@@ -197,7 +197,23 @@ const scorecardData ={
          },
          "description":"This section scores each candidate based on how frequently they use their platform to talk about the climate crisis and climate action. Candidates will be scored and ranked based on data from their Twitter accounts. This section is included as a representation of how politicians should use their voices to reach as much of the public as possible due to the urgency of climate crisis’ effects and how little time there is to avoid catastrophe.",
          "subtitle":"",
-         "rows":[ 
+         "rows":[ { 
+            "title":"Subtotal",
+            "description":"",
+            "total":"35",
+            "biden":{ 
+               "score":"20",
+               "analysis":"Candidate score analysis will go here"
+            },
+            "warren":{ 
+               "score":"30",
+               "analysis":"Candidate score analysis will go here"
+            },
+            "sanders":{ 
+               "score":"30",
+               "analysis":"Candidate score analysis will go here"
+            }
+         }
 
          ]
       },
