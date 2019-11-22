@@ -51,6 +51,9 @@
 
 .expand-icon {
   display: none;
+}
+
+#expand-icon {
   max-width: 18px;
 }
 
