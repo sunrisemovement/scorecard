@@ -1,0 +1,78 @@
+.sunrise-navbar {
+    display: flex;
+    flex-flow: row nowrap;
+    top: 0;
+    min-height: 110px;
+    min-width: 100%;
+    background: #33342e;
+    align-items: center;
+    padding: 1em 5em;
+    justify-content: space-between;
+}
+
+#sunrise-text-logo{
+    height: 27.34px;
+}
+
+#hamburger-menu {
+    display: none;
+    max-height: 22px;
+    cursor: pointer;
+}
+
+.sunrise-nav-links {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    letter-spacing: .15em;
+}
+
+#sunrise-nav-item{
+    padding: 0 .7em;
+    color: #ffde16;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1020px) {
+    .sunrise-navbar {
+        padding: 1em 2em;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    #sunrise-text-logo{
+        display: none;
+    }
+
+    .sunrise-nav-links {
+        align-items: center;
+    }
+
+    .sunrise-navbar {
+        min-height: 50px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #sunrise-text-logo{
+        display: none;
+    }
+
+    .sunrise-nav-links {
+        align-items: center;
+        display: none;
+    }
+
+    .sunrise-navbar {
+        min-height: 30px;
+        justify-content: flex-end;
+        position: sticky;
+        top: 0;
+    }
+
+    #hamburger-menu {
+        display: inline;
+    }
+}

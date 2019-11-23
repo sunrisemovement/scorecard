@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import ScorecardApp from './ScorecardApp.js';
 import InfoModal from './infoModal.js'
+import SunriseNav from './common/sunriseNav.js'
 // Import dummy data to fill scorecard
 import scorecardData from './data.js';
 
@@ -70,7 +71,7 @@ class App extends React.Component {
         lastClicked: lastClicked
       });
     };
-    
+
     window.onclick = (event) => {
       if (event.target === modal) {
         modal.style.display = "none";
@@ -87,6 +88,7 @@ class App extends React.Component {
   render () {
     return (
       <div className="App scorecard-app">
+        <SunriseNav />
         <ScorecardApp onClickCell={this.onClickCell} 
                       onClickNav={this.onClickNav}
                       scorecardData={scorecardData}
