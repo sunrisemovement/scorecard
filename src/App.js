@@ -27,33 +27,7 @@ class App extends React.Component {
       row: parseInt(row)
     });
 
-    var modal = document.getElementById("info-modal");
-    var span = document.getElementsByClassName("sc-modal-close")[0];
-    modal.style.display = "block";
-    modal.scrollTop = 0;
-
-
-    span.onclick = (event) => {
-      modal.style.display = "none";
-      this.setState({
-        candidate: null,
-        row: 0,
-        table: 0,
-        lastClicked: lastClicked
-      });
-    }
-
-    window.onclick = (event) => {
-      if (event.target === modal) {
-        modal.style.display = "none";
-        this.setState({
-          candidate: null,
-          row: 0,
-          table: 0,
-          lastClicked: lastClicked
-        });
-      }
-    }
+    this.openModal(lastClicked);
   }
 
   onClickIcon = (row, table) => {
@@ -64,32 +38,7 @@ class App extends React.Component {
       row: parseInt(row)
     });
 
-    var modal = document.getElementById("info-modal");
-    var span = document.getElementsByClassName("sc-modal-close")[0];
-    modal.style.display = "block";
-    modal.scrollTop = 0;
-
-    span.onclick = (event) => {
-      modal.style.display = "none";
-      this.setState({
-        candidate: null,
-        row: 0,
-        table: 0,
-        lastClicked: lastClicked
-      });
-    }
-
-    window.onclick = (event) => {
-      if (event.target === modal) {
-        modal.style.display = "none";
-        this.setState({
-          candidate: null,
-          row: 0,
-          table: 0,
-          lastClicked: lastClicked
-        });
-      }
-    }
+    this.openModal(lastClicked);
   }
 
   onClickNav = (id) => {
@@ -105,6 +54,35 @@ class App extends React.Component {
       candidate: newCandidate
     })
     }
+
+  openModal(lastClicked) {
+    var modal = document.getElementById("info-modal");
+    var span = document.getElementsByClassName("sc-modal-close")[0];
+    modal.style.display = "block";
+    modal.scrollTop = 0;
+
+    span.onclick = (event) => {
+      modal.style.display = "none";
+      this.setState({
+        candidate: null,
+        row: 0,
+        table: 0,
+        lastClicked: lastClicked
+      });
+    };
+    
+    window.onclick = (event) => {
+      if (event.target === modal) {
+        modal.style.display = "none";
+        this.setState({
+          candidate: null,
+          row: 0,
+          table: 0,
+          lastClicked: lastClicked
+        });
+      }
+    };
+  }
 
   render () {
     return (

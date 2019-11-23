@@ -19,11 +19,18 @@ function Table(props) {
         props.onClickIcon(e.target.parentElement.parentElement.id, props.id);
     }
 
-    const handleRowClick = (e) => {
+    const handleChevronClick = (e) => {
         e.preventDefault();
                 
         // pass in row index and table index
         props.onClickIcon(e.target.parentElement.parentElement.id, props.id);
+    }
+
+    const handleRowClick = (e) => {
+        e.preventDefault();
+                
+        // pass in row index and table index
+        props.onClickIcon(e.target.parentElement.id, props.id);
     }
 
     // If there's a category title, it is the GND Vision section
@@ -40,11 +47,11 @@ function Table(props) {
         const {title, total, biden, warren, sanders } = row;
         return (
             <tr id={index} key={index}>
-                <td className="row-title"><img onClick={handleIconClick} className="info-icon" alt="Information Icon" src={icon}></img>{title} <span className="row-points">(Out of {total})</span></td>
+                <td onClick={handleRowClick}  className="row-title"><img onClick={handleIconClick} className="info-icon" alt="Information Icon" src={icon}></img>{title} <span className="row-points">(Out of {total})</span></td>
                 <td onClick={handleClick} id="biden">{biden.score}</td>
                 <td onClick={handleClick} id="warren">{warren.score}</td>
                 <td onClick={handleClick} id="sanders">{sanders.score}</td>
-                <td id="icon-cell"> &nbsp;<img id="expand-icon" className="expand-icon" onClick={handleRowClick} alt="Information Icon" src={expand}></img></td>
+                <td id="icon-cell"> &nbsp;<img id="expand-icon" className="expand-icon" onClick={handleChevronClick} alt="Information Icon" src={expand}></img></td>
             </tr>
         )
     });
