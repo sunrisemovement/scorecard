@@ -28,7 +28,7 @@ function Table(props) {
 
     const handleRowClick = (e) => {
         e.preventDefault();
-                
+        console.log(e.target.parentElement.id)
         // pass in row index and table index
         props.onClickIcon(e.target.parentElement.id, props.id);
     }
@@ -47,7 +47,7 @@ function Table(props) {
         const {title, total, biden, warren, sanders } = row;
         return (
             <tr id={index} key={index}>
-                <td onClick={handleRowClick}  className="row-title"><img onClick={handleIconClick} className="info-icon" alt="Information Icon" src={icon}></img>{title} <span className="row-points">(Out of {total})</span></td>
+                <td className="row-title"><img onClick={handleIconClick} className="info-icon" alt="Information Icon" src={icon}></img>{title} <span className="row-points">(Out of {total})</span></td>
                 <td onClick={handleClick} id="biden">{biden.score}</td>
                 <td onClick={handleClick} id="warren">{warren.score}</td>
                 <td onClick={handleClick} id="sanders">{sanders.score}</td>
