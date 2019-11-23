@@ -26,12 +26,12 @@ function Table(props) {
         props.onClickIcon(e.target.parentElement.parentElement.id, props.id);
     }
 
-    const handleRowClick = (e) => {
-        e.preventDefault();
-        console.log(e.target.parentElement.id)
-        // pass in row index and table index
-        props.onClickIcon(e.target.parentElement.id, props.id);
-    }
+    // const handleRowClick = (e) => {
+    //     e.preventDefault();
+
+    //     // pass in row index and table index
+    //     props.onClickIcon(e.target.parentElement.id, props.id);
+    // }
 
     // If there's a category title, it is the GND Vision section
     const isGNDVisionTable = (props.table.categorytitle) ? true : false;

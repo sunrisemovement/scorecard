@@ -46,6 +46,7 @@
 
 .sc-table td.row-title:hover{
   background: #F4F4F4;
+  cursor: auto; /* Remove this once row on-click is working properly */
 }
 
 .expand-icon {
