@@ -9,12 +9,11 @@ function SunriseFooter(props) {
             DONATE
             </div>
             <div className="sunrise-footer-links">
-                <div id="sunrise-footer-item">HOME</div>
-                <div id="sunrise-footer-item">ABOUT</div>
-                <div id="sunrise-footer-item">GREEN NEW DEAL</div>
-                <div id="sunrise-footer-item">TAKE ACTION</div>
-                <div id="sunrise-footer-item">NEWS</div>
-                <div id="sunrise-footer-item">SHOP</div>
+                <div id="sunrise-footer-item">JOBS</div>
+                <div id="sunrise-footer-item">PRIVACY POLICY</div>
+                <div id="sunrise-footer-item">LEGAL</div>
+                <div id="sunrise-footer-item">CONTACT</div>
+                <div id="sunrise-footer-item">MEDIA KIT</div>
             </div>
             <div className="sunrise-copyright">
             © 2019 Sunrise. 

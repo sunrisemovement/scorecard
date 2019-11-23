@@ -6,12 +6,12 @@
     min-width: 100%;
     background: #33342e;
     align-items: center;
-    padding: 1em 5em;
+    padding: 1em 7em;
     justify-content: space-between;
 }
 
 #sunrise-text-logo{
-    height: 27.34px;
+    height: 29px;
 }
 
 #hamburger-menu {
@@ -28,7 +28,7 @@
 }
 
 #sunrise-nav-item{
-    padding: 0 .7em;
+    padding: 0 .6em;
     color: #ffde16;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
