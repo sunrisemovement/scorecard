@@ -9,7 +9,7 @@ function SunriseNav(props) {
                  <img id="sunrise-text-logo" alt="Main Sunrise Logo" src="https://images.squarespace-cdn.com/content/59cc24c8e3df286f13ce044b/1527101088181-FI0RQ0BRZV4CNKOVV257/Sunrise-Horizontal-Primary.png?content-type=image%2Fpng"></img>
             </div>
             <div className="sunrise-nav-links">
-              <div id="sunrise-nav-item">HOME</div>
+              <a href="sunrisemovement.org"><div id="sunrise-nav-item">HOME</div></a>
               <div id="sunrise-nav-item">ABOUT</div>
               <div id="sunrise-nav-item">GREEN NEW DEAL</div>
               <div id="sunrise-nav-item">TAKE ACTION</div>

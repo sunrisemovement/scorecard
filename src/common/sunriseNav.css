@@ -25,6 +25,7 @@
     flex-flow: row wrap;
     align-items: flex-end;
     letter-spacing: .15em;
+    text-decoration: none;
 }
 
 #sunrise-nav-item{
