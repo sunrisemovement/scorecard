@@ -3,6 +3,8 @@ import './App.css';
 import ScorecardApp from './ScorecardApp.js';
 import InfoModal from './infoModal.js'
 import SunriseNav from './common/sunriseNav.js'
+import SunriseFooter from './common/sunriseFooter.js'
+
 // Import dummy data to fill scorecard
 import scorecardData from './data.js';
 
@@ -99,6 +101,7 @@ class App extends React.Component {
                    row={this.state.row}
                    table={this.state.table}
                    onClickModalNav={this.onClickModalNav}/>
+        <SunriseFooter />
       </div>
     );
   }

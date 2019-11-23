@@ -1,0 +1,45 @@
+.sunrise-footer {
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 450px;
+    min-width: 100%;
+    background: #33342e;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 64px;
+}
+
+.donate-button {
+    background-color: #ffde16;
+    padding: 21px 34px;
+    font-family: Source Sans Pro;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .15em;
+    cursor: pointer;
+}
+
+.donate-button:hover {
+    opacity: .8;
+}
+
+.sunrise-footer-links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+#sunrise-footer-item {
+    font-family: Source Sans Pro;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: .15em;
+    padding: 1em;
+    color: #ffde16;
+}
+
+.sunrise-copyright {
+    font-family: Source Sans Pro;
+    color: white;
+}
