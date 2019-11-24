@@ -1,7 +1,12 @@
 .navbar {
-    margin: 0 34px;
+    background-color: white;
+    min-width: 100%;
+    padding: 0 34px;
+    border-bottom: 3px solid #F4F4F4;
     display: flex;
     flex-direction: row;
+    position: sticky;
+    top: 0;
 }
 
 .nav-item {

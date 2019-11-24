@@ -1,9 +1,6 @@
 .header-container {
-    position: sticky;
-    top: 0;
     background: white;
     min-width: 100%;
-    border-bottom: 3px solid #F4F4F4;
 }
 
 #sunrise-img {
@@ -52,7 +49,7 @@
     }
 
     .header-container {
-        position: static;
+        border-bottom: 3px solid #F4F4F4;
     }
 
     .sunrise-logo {
@@ -71,10 +68,6 @@
     .caption {
         font-size: 14px;
         float: left;
-    }
-
-    .header-container {
-        position: static;
     }
   
   }

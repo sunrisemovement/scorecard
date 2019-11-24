@@ -1,6 +1,5 @@
 import React from 'react';
 import './header.css';
-import Nav from './nav.js'
 import sunrise from '../assets/sunrise.png';
 
 
@@ -17,7 +16,6 @@ function Header(props) {
              <img id="sunrise-img" src={sunrise} alt="Sunrise logo"></img>
             </div>
          </header>
-         <Nav onClickNav={props.onClickNav} />
         </div>
     );
 }
