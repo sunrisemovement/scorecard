@@ -57,3 +57,9 @@ To embed, add the following to your project:
 <script src="https://priceless-williams-fb7e44.netlify.com/2.js"></script>
 <link rel="stylesheet" type="text/css" href="https://priceless-williams-fb7e44.netlify.com/main.css" />
 ```
+
+## Adding Scorecard Data
+The data committed to this repository is mock data and does not reflect real scores evaluated by Sunrise. To add real data, contributing members should:
+- Request the scorecard spreadsheet from The Sunrise team and download it as a CSV
+- Move a copy of the CSV to the root directory of this repoand name it 'data.js'
+- Run `npm run parse-data`
