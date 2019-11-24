@@ -10,7 +10,7 @@ function MobileNav(props) {
 
     return ( 
          <div className="mobile-nav-container">
-            <div id="myNav" class="overlay">
+            <div id="myNav" className="overlay">
 
             <span onClick={closeNav} className="sc-nav-close">&times;</span> 
 
