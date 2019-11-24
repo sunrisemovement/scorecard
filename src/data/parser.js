@@ -1,25 +1,21 @@
-const csv = require('csv-parser')
+const csv = require('neat-csv')
 const fs = require('fs')
 
-async function parse(fileName) {
+async function parse(csvData) {
   const tables = [];
+  const parsed = await csv(csvData);
 
-  fs.createReadStream(fileName)
-    .pipe(csv())
-    .on('data', (data) => {
-      const maybeTableTitle = data['Section'];
-      if(maybeTableTitle !== '') {
-        tables.push(parseTableOrSubtable(data));
-      } else {
-      }
-    }).on('end', () => {
-      const finalData = {
-        tables: tables
-      };
-      console.log(finalData)
-    });
+  parsed.forEach((row) => {
+    const maybeTableTitle = row['Section'];
+    if(maybeTableTitle !== '') {
+      tables.push(parseTableOrSubtable(row));
+    } else {
+    }
+  })
 
-  return tables;
+  return {
+    tables: tables
+  };
 }
 
 function parseTableOrSubtable(data) {

@@ -1,10 +1,14 @@
 const parser = require('./parser.js');
+const fs = require('fs');
 
-it('parses a CSV into the correct format', () => {
+it('parses a CSV into the correct format', async () => {
   // TODO: this doesn't pass right now because
   // createFsStream is async, so it returns this test
   // returns null
-  expect(parser('src/data/parser-test.csv')).toEqual(
+  
+  const csvText = fs.readFileSync('src/data/fakeData.csv').toString();
+  const parsed = await parser(csvText);
+  expect(parsed).toEqual(
     { tables: [
       { title: 'How They Talk About It',
           subtitle: '',
@@ -26,6 +30,6 @@ it('parses a CSV into the correct format', () => {
           subtitle: 'Jobs and Economic Security',
           description: 'Description of Jobs and Economic Security',
           rows: [] }
-    ]};
+    ]}
   );
 });

@@ -1,3 +1,6 @@
 const parser = require('../src/data/parser.js');
+var fs = require('fs');
 
-parser('data.csv');
+var textByLine = fs.readFileSync('Data.csv').toString()
+
+parser(textByLine);
