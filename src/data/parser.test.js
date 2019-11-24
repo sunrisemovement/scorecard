@@ -15,10 +15,12 @@ it('parses a CSV into the correct format', async () => {
             description: 'A national call-to-arms description',
             total: '4',
             fred: {
-              score: '3'
+              score: '3',
+              analysis: 'Vice President Fred’s plan'
             },
             zana: {
-              score: '4'
+              score: '4',
+              analysis: 'Senator Zana’ plan analysis'
             }
           },
           {
@@ -26,10 +28,12 @@ it('parses a CSV into the correct format', async () => {
             description: 'Candidates’ plans description',
             total: '4',
             fred: {
-              score: '4'
+              score: '4',
+              analysis: 'Vice President Fred’s plan 2'
             },
             zana: {
-              score: '4'
+              score: '4',
+              analysis: 'Sen. Zana’ plan commits'
             }
           }
         ] 
@@ -52,10 +56,12 @@ it('parses a CSV into the correct format', async () => {
             description: 'Includes a 10-year description',
             total: '4',
             fred: {
-              score: '1'
+              score: '1',
+              analysis: ''
             },
             zana: {
-              score: '4'
+              score: '4',
+              analysis: ''
             }
           },
           {
@@ -63,10 +69,12 @@ it('parses a CSV into the correct format', async () => {
             description: 'Includes interim targets description',
             total: '4',
             fred: {
-              score: '1'
+              score: '1',
+              analysis: ''
             },
             zana: {
-              score: '4'
+              score: '4',
+              analysis: ''
             }
           }
         ] 
@@ -80,10 +88,12 @@ it('parses a CSV into the correct format', async () => {
             description: 'Includes plans for training description',
             total: '2',
             fred: {
-              score: '1'
+              score: '1',
+              analysis: ''
             },
             zana: {
-              score: '2'
+              score: '2',
+              analysis: ''
             }
           }
         ] 

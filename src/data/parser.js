@@ -67,7 +67,8 @@ function parseCategoryCandidateData(data) {
   return candidateNames.reduce((obj, name) => {
     return Object.assign(obj, {
       [name.toLowerCase()]: {
-        score: data[name + ' Score']
+        score: data[name + ' Score'],
+        analysis: data[name + ' Analysis'],
       }
     });
   }, {});
