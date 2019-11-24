@@ -5,12 +5,18 @@
 }
 
 .main-scorecard-container{
-  padding: 2em 5em;
+  padding: 4em 5em;
 }
 
 #sc-root * {
   box-sizing: border-box;
   font-family: 'Source Sans Pro', sans-serif;
+}
+
+@media only screen and (min-width: 1500px) {
+  .main-scorecard-container {
+    padding: 4em 15em;
+  }
 }
 
 @media only screen and (max-width: 1190px) {

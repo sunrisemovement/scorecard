@@ -35,7 +35,7 @@
     font-weight: bold;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1070px) {
     .sunrise-navbar {
         padding: 1em 2em;
     }
