@@ -53,12 +53,36 @@ function parseTableOrSubtable(data) {
 }
 
 function parseCategory(data) {
-  return {
+  const perCandidateData = parseCategoryCandidateData(data);
+  return Object.assign({
     title: data['Category'],
     description: data['Category Description'],
     total: data['Possible Score']
-  }
+  }, perCandidateData);
 }
+
+function parseCategoryCandidateData(data) {
+  const candidateNames = getCandidateNames(data);
+
+  return candidateNames.reduce((obj, name) => {
+    return Object.assign(obj, {
+      [name.toLowerCase()]: {
+        score: data[name + ' Score']
+      }
+    });
+  }, {});
+}
+
+function getCandidateNames(data) {
+  const keys = Object.keys(data);
+  const scoreColumnRegex = /\s*Analysis\s*/;
+  return keys.filter((key) => {
+    return scoreColumnRegex.test(key);
+  }).map((key) => {
+    return key.split(scoreColumnRegex)[0];
+  });
+}
+
 
 // This doesn't run through babel, es5!
 module.exports = parse;

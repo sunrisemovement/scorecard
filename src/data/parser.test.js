@@ -13,12 +13,24 @@ it('parses a CSV into the correct format', async () => {
           {
             title: 'A national, comprehensive mobilization',
             description: 'A national call-to-arms description',
-            total: '4'
+            total: '4',
+            fred: {
+              score: '3'
+            },
+            zana: {
+              score: '4'
+            }
           },
           {
             title: 'Plans include policies focused on creating jobs',
             description: 'Candidates’ plans description',
-            total: '4'
+            total: '4',
+            fred: {
+              score: '4'
+            },
+            zana: {
+              score: '4'
+            }
           }
         ] 
       },
@@ -38,12 +50,24 @@ it('parses a CSV into the correct format', async () => {
           {
             title: 'Mobilizing Resources',
             description: 'Includes a 10-year description',
-            total: '4'
+            total: '4',
+            fred: {
+              score: '1'
+            },
+            zana: {
+              score: '4'
+            }
           },
           {
             title: 'Emissions Timeline',
             description: 'Includes interim targets description',
-            total: '4'
+            total: '4',
+            fred: {
+              score: '1'
+            },
+            zana: {
+              score: '4'
+            }
           }
         ] 
       },
@@ -54,7 +78,13 @@ it('parses a CSV into the correct format', async () => {
           {
             title: 'Job Training',
             description: 'Includes plans for training description',
-            total: '2'
+            total: '2',
+            fred: {
+              score: '1'
+            },
+            zana: {
+              score: '2'
+            }
           }
         ] 
       }
