@@ -1,7 +1,7 @@
 .sc-modal {
     display: none;
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 4000; /* Sit on top */
     padding-top: 11vh; /* Location of the box */
     left: 0;
     top: 0;
@@ -16,7 +16,8 @@
     background-color: #fefefe;
     margin: auto;
     width: 78%;
-    min-height: 65%;
+    max-width: 1250px;
+    min-height: 25%;
   }
 
   .sc-modal-content {

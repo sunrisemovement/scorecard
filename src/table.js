@@ -19,12 +19,19 @@ function Table(props) {
         props.onClickIcon(e.target.parentElement.parentElement.id, props.id);
     }
 
-    const handleRowClick = (e) => {
+    const handleChevronClick = (e) => {
         e.preventDefault();
                 
         // pass in row index and table index
         props.onClickIcon(e.target.parentElement.parentElement.id, props.id);
     }
+
+    // const handleRowClick = (e) => {
+    //     e.preventDefault();
+
+    //     // pass in row index and table index
+    //     props.onClickIcon(e.target.parentElement.id, props.id);
+    // }
 
     // If there's a category title, it is the GND Vision section
     const isGNDVisionTable = (props.table.categorytitle) ? true : false;
@@ -44,7 +51,7 @@ function Table(props) {
                 <td onClick={handleClick} id="biden">{biden.score}</td>
                 <td onClick={handleClick} id="warren">{warren.score}</td>
                 <td onClick={handleClick} id="sanders">{sanders.score}</td>
-                <td id="icon-cell"> &nbsp;<img className="expand-icon" onClick={handleRowClick} alt="Information Icon" src={expand}></img></td>
+                <td id="icon-cell"> &nbsp;<img id="expand-icon" className="expand-icon" onClick={handleChevronClick} alt="Information Icon" src={expand}></img></td>
             </tr>
         )
     });
@@ -54,7 +61,7 @@ function Table(props) {
         <div id={props.table.id} name={props.table.id}>
 
         { isGNDVisionTable
-            ? <div><h2 id='title' className="table-title">{props.table.categorytitle}</h2>
+            ? <div><div id='title' className="table-title">{props.table.categorytitle}</div>
                     <span className="table-points"> (out of {props.table.categorypoints})</span></div>
             : <span></span>
           }
@@ -67,7 +74,7 @@ function Table(props) {
             </div>
             : 
             <div>
-                <h2 id='title' className="table-title">{props.table.title}</h2>
+                <div id='title' className="table-title">{props.table.title}</div>
                 <span className="table-points"> (out of {props.table.points})</span>
                 <div className="table-description">{props.table.description}</div>
             </div>

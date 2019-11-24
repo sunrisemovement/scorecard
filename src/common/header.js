@@ -14,7 +14,7 @@ function Header(props) {
                 <div className="caption">Click on a candidate's score for more details on their plan.</div>
             </div>
             <div className="sunrise-logo">
-             <img src={sunrise} alt="Sunrise logo"></img>
+             <img id="sunrise-img" src={sunrise} alt="Sunrise logo"></img>
             </div>
          </header>
          <Nav onClickNav={props.onClickNav} />
