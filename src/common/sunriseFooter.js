@@ -17,6 +17,13 @@ function SunriseFooter(props) {
                 <div id="sunrise-footer-item"><a href="https://www.sunrisemovement.org/contact">CONTACT</a></div>
                 <div id="sunrise-footer-item"><a href="https://www.sunrisemovement.org/media-kit">MEDIA KIT</a></div>
             </div>
+            <div className="sunrise-socials">
+                <a href="https://www.facebook.com/sunrisemvmt/"><img id="sunrise-social-icon" alt="Facebook social button" src="https://i.imgur.com/9pc864w.png"></img></a>
+                <a href="https://medium.com/sunrisemvmt"><img id="sunrise-social-icon" alt="Medium social button" src="https://i.imgur.com/gzdWCLm.png"></img></a>
+                <a href="mailto:team@sunrisemovement.org"><img id="sunrise-social-icon" alt="Email button" src="https://i.imgur.com/0l3ADJw.png"></img></a>
+                <a href="https://www.youtube.com/channel/UCEorX5YWm_jAKknP7TY5l6Q"><img id="sunrise-social-icon" alt="Youtube social button" src="https://i.imgur.com/qKCdzQH.png"></img></a>
+                <a href="https://instagram.com/sunrisemvmt"><img id="sunrise-social-icon" alt="Instagram social button" src="https://i.imgur.com/JcbojQ4.png"></img></a>
+            </div>
             <div className="sunrise-copyright">
             © 2019 Sunrise. 
             </div>

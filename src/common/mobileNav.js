@@ -14,7 +14,7 @@ function MobileNav(props) {
 
             <span onClick={closeNav} className="sc-nav-close">&times;</span> 
 
-            <div class="sunrise-overlay-content">
+            <div className="sunrise-overlay-content">
                 <div id="sunrise-overlay-item"><a href="https://sunrisemovement.org">HOME</a></div>
                 <div id="sunrise-overlay-item"><a href="https://www.sunrisemovement.org/about">ABOUT</a></div>
                 <div id="sunrise-overlay-item"><a href="https://www.sunrisemovement.org/green-new-deal">GREEN NEW DEAL</a></div>

@@ -17,6 +17,7 @@
     padding-top: .2em;
     font-size: 40px;
     font-weight: bold;
+    cursor: pointer;
   }
   
   .sunrise-overlay-content {
@@ -24,7 +25,12 @@
     text-align: left;
   }
 
-  #sunrise-overlay-item > a, a:link, a:visited, a:focus, a:hover, a:active  
+  #sunrise-overlay-item > a, 
+  #sunrise-overlay-item > a:link, 
+  #sunrise-overlay-item > a:visited, 
+  #sunrise-overlay-item > a:focus, 
+  #sunrise-overlay-item > a:hover, 
+  #sunrise-overlay-item > a:active  
   {
     text-decoration: none;
     color: #ffde16;
