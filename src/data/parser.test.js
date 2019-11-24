@@ -12,11 +12,13 @@ it('parses a CSV into the correct format', async () => {
         rows: [
           {
             title: 'A national, comprehensive mobilization',
-            description: 'A national call-to-arms description'
+            description: 'A national call-to-arms description',
+            total: '4'
           },
           {
             title: 'Plans include policies focused on creating jobs',
-            description: 'Candidates’ plans description'
+            description: 'Candidates’ plans description',
+            total: '4'
           }
         ] 
       },
@@ -35,11 +37,13 @@ it('parses a CSV into the correct format', async () => {
         rows: [
           {
             title: 'Mobilizing Resources',
-            description: 'Includes a 10-year description'
+            description: 'Includes a 10-year description',
+            total: '4'
           },
           {
             title: 'Emissions Timeline',
-            description: 'Includes interim targets description'
+            description: 'Includes interim targets description',
+            total: '4'
           }
         ] 
       },
@@ -49,7 +53,8 @@ it('parses a CSV into the correct format', async () => {
         rows: [
           {
             title: 'Job Training',
-            description: 'Includes plans for training description'
+            description: 'Includes plans for training description',
+            total: '2'
           }
         ] 
       }

@@ -13,7 +13,7 @@ async function parse(csvData) {
     } else if (maybeCategoryName !== '' && maybeCategoryName != 'Subtotal') {
       // Ignore empty rows and Subtotal rows
       let currentTable = tables[tables.length - 1];
-      currentTable.rows.push(parseCategory(row))
+      currentTable.rows.push(parseCategory(row));
     }
   })
 
@@ -56,6 +56,7 @@ function parseCategory(data) {
   return {
     title: data['Category'],
     description: data['Category Description'],
+    total: data['Possible Score']
   }
 }
 
