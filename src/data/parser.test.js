@@ -57,6 +57,10 @@ it('parses a CSV into the correct format', async () => {
         id: 'table-3',
         subtitle: '',
         description: 'Description of Green New Deal Vision',
+        subtotals: {
+          fred: '0',
+          zana: '0'
+        },
         rows: [] },
       { title: '',
         id: 'table-4',

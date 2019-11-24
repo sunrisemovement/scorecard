@@ -51,14 +51,16 @@ function parseTableOrSubtable(data) {
       title: "",
       subtitle: subtableTitle,
       description: description,
-      rows: []
+      rows: [],
+      subtotals: getSubtotals(data),
     };
   } else {
     return {
       title: tableTitle,
       subtitle: "",
       description: description,
-      rows: []
+      rows: [],
+      subtotals: getSubtotals(data),
     };
   }
 }
@@ -99,8 +101,10 @@ function getSubtotals(data) {
   const candidateNames = getCandidateNames(data);
 
   return candidateNames.reduce((obj, name) => {
+    const score = data[name + ' Score'] === '' ? '0' : data[name + ' Score'];
+
     return Object.assign(obj, {
-      [name.toLowerCase()]: data[name + ' Score']
+      [name.toLowerCase()]: score
     });
   }, {});
 }
