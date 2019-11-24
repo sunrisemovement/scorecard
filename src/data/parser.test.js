@@ -7,8 +7,12 @@ it('parses a CSV into the correct format', async () => {
   expect(parsed).toEqual(
     { tables: [
       { title: 'How They Talk About It',
-          subtitle: '',
-          description: 'Description of how they talk about it',
+        subtitle: '',
+        description: 'Description of how they talk about it',
+        subtotals: {
+          fred: '7',
+          zana: '8'
+        },
         rows: [
           {
             title: 'A national, comprehensive mobilization',
@@ -41,15 +45,23 @@ it('parses a CSV into the correct format', async () => {
       { title: 'How Much They Talk About It',
         subtitle: '',
         description: 'Description of how they talk about it',
+        subtotals: {
+          fred: '8',
+          zana: '23'
+        },
         rows: [] 
       },
-      { title: 'Green New Deal Vision',
+      { title: 'Green New Deal Vision', // TODO: this category is different in data.js
         subtitle: '',
         description: 'Description of Green New Deal Vision',
         rows: [] },
       { title: '',
         subtitle: 'Emissions Reduction Ambition',
         description: 'Description of Emissions Reduction Ambition',
+        subtotals: {
+          fred: '2',
+          zana: '8'
+        },
         rows: [
           {
             title: 'Mobilizing Resources',
@@ -82,6 +94,10 @@ it('parses a CSV into the correct format', async () => {
       { title: '',
         subtitle: 'Jobs and Economic Security',
         description: 'Description of Jobs and Economic Security',
+        subtotals: {
+          fred: '1',
+          zana: '2'
+        },
         rows: [
           {
             title: 'Job Training',
