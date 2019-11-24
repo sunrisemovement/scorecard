@@ -60,6 +60,8 @@ To embed, add the following to your project:
 
 ## Adding Scorecard Data
 The data committed to this repository is mock data and does not reflect real scores evaluated by Sunrise. To add real data, contributing members should:
-- Request the scorecard spreadsheet from The Sunrise team and download it as a CSV
-- Move a copy of the CSV to the root directory of this repoand name it 'data.js'
+- Request the scorecard spreadsheet from The Sunrise team and download it as a CSV - it should be in the same format as "src/data/fakeData.csv" for this to work
+- Move a copy of the CSV to the root directory of this repo and name it 'Data.csv'
 - Run `npm run parse-data`
+- This will output data to a file named ParsedData.json
+- You can then paste that data into the Data.js file.

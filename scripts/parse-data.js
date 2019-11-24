@@ -6,8 +6,8 @@ async function parsed() {
   const textByLine = fs.readFileSync('Data.csv').toString()
   const parsed = await parser(textByLine);
   const json = JSON.stringify(parsed, undefined, 2);
-  fs.writeFile('ParsedData.js', json, 'utf8', () => {
-    console.log("Wrote to ParsedData.js");
+  fs.writeFile('ParsedData.json', json, 'utf8', () => {
+    console.log("Wrote to ParsedData.json");
     console.log(json);
   });
 }
