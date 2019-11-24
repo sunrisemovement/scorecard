@@ -88,11 +88,10 @@ function Table(props) {
                         <th>Warren</th>
                         <th>Sanders</th>
                     </tr>
+                    
                     {renderTableData()}
-                    {isHowMuchTable
-                    ? 
-                    <span></span>
-                    :
+                    
+                    {!isHowMuchTable &&
                     <tr className="subtotals">
                         <td width="65%" className="subtotal-title">Subtotal <span className="row-points">(out of {props.table.points})</span></td>
                         <td id="biden" >{props.table.subtotals.biden}</td>
