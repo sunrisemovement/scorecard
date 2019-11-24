@@ -91,17 +91,17 @@ class App extends React.Component {
     return (
       <div className="App scorecard-app">
         <SunriseNav />
-        <div className="main-scorecard-container">
-          <ScorecardApp onClickCell={this.onClickCell} 
-                        onClickNav={this.onClickNav}
-                        scorecardData={scorecardData}
-                        onClickIcon={this.onClickIcon}
-                        />
-          <InfoModal scorecardData={scorecardData} 
-                    candidate={this.state.candidate}
-                    row={this.state.row}
-                    table={this.state.table}
-                    onClickModalNav={this.onClickModalNav}/>
+          <div className="main-scorecard-container">
+            <ScorecardApp onClickCell={this.onClickCell} 
+                          onClickNav={this.onClickNav}
+                          scorecardData={scorecardData}
+                          onClickIcon={this.onClickIcon}
+                          />
+            <InfoModal scorecardData={scorecardData} 
+                      candidate={this.state.candidate}
+                      row={this.state.row}
+                      table={this.state.table}
+                      onClickModalNav={this.onClickModalNav}/>
          </div>
         <SunriseFooter />
       </div>

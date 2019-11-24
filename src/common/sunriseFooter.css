@@ -9,6 +9,11 @@
     padding: 50px 64px;
 }
 
+#sunrise-footer-item > a, a:visited, a:active {
+    text-decoration: none;
+    color: #ffde16;
+}
+
 .donate-button {
     background-color: #ffde16;
     padding: 21px 34px;
@@ -19,7 +24,7 @@
     cursor: pointer;
 }
 
-.donate-button:hover {
+.donate-button:hover, #sunrise-footer-item:hover {
     opacity: .8;
 }
 

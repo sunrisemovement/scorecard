@@ -10,6 +10,11 @@
     justify-content: space-between;
 }
 
+#sunrise-nav-item > a, a:visited, a:active {
+    text-decoration: none;
+    color: #ffde16;
+}
+
 #sunrise-text-logo{
     height: 29px;
 }
@@ -28,7 +33,7 @@
     text-decoration: none;
 }
 
-#sunrise-nav-item{
+#sunrise-nav-item {
     padding: 0 .6em;
     color: #ffde16;
     font-family: 'Source Sans Pro', sans-serif;
