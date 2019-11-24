@@ -22,6 +22,12 @@ async function parse(csvData) {
     }
   })
 
+  tables.map((table, index) => {
+    return Object.assign(table, { 
+      id: 'table-' + (index + 1) 
+    });
+  });
+
   return {
     tables: tables
   };
