@@ -17,8 +17,8 @@
 
 .main-header{
     max-width: 100%;
-    padding-top: .72em;
-    padding-bottom: .72em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     margin: 0 30px;
     display: flex;
     flex-direction: row;
