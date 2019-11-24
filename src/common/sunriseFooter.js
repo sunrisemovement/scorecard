@@ -5,8 +5,10 @@ function SunriseFooter(props) {
 
     return ( 
          <div className="sunrise-footer">
-            <div className="donate-button">
-            DONATE
+            <div id="donate-button">
+                <a className="donate-button" href="https://secure.actblue.com/donate/climate-strike-campaign?refcode=website-footer-button">
+                 DONATE
+                </a>
             </div>
             <div className="sunrise-footer-links">
                 <div id="sunrise-footer-item"><a href="https://jobs.lever.co/sunrisemovement">JOBS</a></div>

@@ -9,9 +9,14 @@
     padding: 50px 64px;
 }
 
-#sunrise-footer-item > a, a:visited, a:active {
+#sunrise-footer-item > a, a:link, a:visited, a:focus, a:active  {
     text-decoration: none;
     color: #ffde16;
+}
+
+#donate-button > a, a:link, a:visited, a:focus, a:active {
+    text-decoration: none;
+    color: #33342e;
 }
 
 .donate-button {
