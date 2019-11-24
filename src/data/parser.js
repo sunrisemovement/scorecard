@@ -7,9 +7,13 @@ async function parse(csvData) {
 
   parsed.forEach((row) => {
     const maybeTableTitle = row['Section'];
+    const maybeCategoryName = row['Category'];
     if(maybeTableTitle !== '') {
       tables.push(parseTableOrSubtable(row));
-    } else {
+    } else if (maybeCategoryName !== '' && maybeCategoryName != 'Subtotal') {
+      // Ignore empty rows and Subtotal rows
+      let currentTable = tables[tables.length - 1];
+      currentTable.rows.push(parseCategory(row))
     }
   })
 
@@ -45,6 +49,13 @@ function parseTableOrSubtable(data) {
       description: description,
       rows: []
     };
+  }
+}
+
+function parseCategory(data) {
+  return {
+    title: data['Category'],
+    description: data['Category Description'],
   }
 }
 
