@@ -3,11 +3,10 @@ import './App.css';
 import ScorecardApp from './ScorecardApp.js';
 import InfoModal from './infoModal.js'
 import SunriseNav from './common/sunriseNav.js'
+import MobileNav from './common/mobileNav.js'
 import SunriseFooter from './common/sunriseFooter.js'
-
 // Import dummy data to fill scorecard
 import scorecardData from './data.js';
-
 
 class App extends React.Component {
 
@@ -91,6 +90,7 @@ class App extends React.Component {
     return (
       <div className="App scorecard-app">
         <SunriseNav />
+        <MobileNav />
           <div className="main-scorecard-container">
             <ScorecardApp onClickCell={this.onClickCell} 
                           onClickNav={this.onClickNav}

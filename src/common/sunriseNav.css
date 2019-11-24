@@ -12,7 +12,11 @@
 
 #sunrise-nav-item > a, a:visited, a:active {
     text-decoration: none;
+    font-size: 16px;
+    padding: 0 .6em;
     color: #ffde16;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
 }
 
 #sunrise-text-logo{
@@ -31,13 +35,6 @@
     align-items: flex-end;
     letter-spacing: .15em;
     text-decoration: none;
-}
-
-#sunrise-nav-item {
-    padding: 0 .6em;
-    color: #ffde16;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: bold;
 }
 
 @media screen and (max-width: 1070px) {

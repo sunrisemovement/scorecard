@@ -1,0 +1,40 @@
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 100;
+    left: 0;
+    top: 0;
+    background-color: #33342e;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.2s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+
+  .sc-nav-close {
+    color: white;
+    float: right;
+    padding-right: .5em;
+    padding-top: .2em;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .sunrise-overlay-content {
+    padding: 36px;
+    text-align: left;
+  }
+
+  #sunrise-overlay-item > a, a:link, a:visited, a:focus, a:hover, a:active  
+  {
+    text-decoration: none;
+    color: #ffde16;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: .15em;
+    line-height: 1.75em;
+    padding: .3em 0;
+    display: block;
+    white-space: nowrap;
+    }
+
