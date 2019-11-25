@@ -10,6 +10,7 @@ it('parses a CSV into the correct format', async () => {
         id: 'table-1',
         subtitle: '',
         description: 'Description of how they talk about it',
+        points: '8',
         subtotals: {
           fred: '7',
           zana: '8'
@@ -47,6 +48,7 @@ it('parses a CSV into the correct format', async () => {
         id: 'table-2',
         subtitle: '',
         description: 'Description of how they talk about it',
+        points: '25',
         subtotals: {
           fred: '8',
           zana: '23'
@@ -59,6 +61,7 @@ it('parses a CSV into the correct format', async () => {
         id: 'table-3',
         subtitle: 'Emissions Reduction Ambition',
         description: 'Description of Emissions Reduction Ambition',
+        points: '8',
         subtotals: {
           fred: '2',
           zana: '8'
@@ -96,6 +99,7 @@ it('parses a CSV into the correct format', async () => {
         subtitle: 'Jobs and Economic Security',
         description: 'Description of Jobs and Economic Security',
         id: 'table-4',
+        points: '2',
         subtotals: {
           fred: '1',
           zana: '2'

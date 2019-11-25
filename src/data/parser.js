@@ -15,10 +15,10 @@ async function parse(csvData) {
         tables.push(parseTableOrSubtable(row));
       }
     } else if (maybeCategoryName === 'Subtotal') {
-      let subtotals = getSubtotals(row);
-      // TODO: prefer not to mutate this object
-      let currentTable = tables[tables.length - 1];
-      currentTable['subtotals'] = subtotals;
+      const subtotals = getSubtotals(row);
+      const currentTable = tables.pop();
+      const updatedTable = Object.assign(currentTable, subtotals);
+      tables.push(updatedTable);
     } else if (maybeCategoryName !== '') {
       // Ignore empty rows and Subtotal rows
       let currentTable = tables[tables.length - 1];
@@ -115,13 +115,18 @@ function getCandidateNames(data) {
 function getSubtotals(data) {
   const candidateNames = getCandidateNames(data);
 
-  return candidateNames.reduce((obj, name) => {
+  const candidateSubtotals = candidateNames.reduce((obj, name) => {
     const score = data[name + ' Score'] === '' ? '0' : data[name + ' Score'];
 
     return Object.assign(obj, {
       [name.toLowerCase()]: score
     });
   }, {});
+
+  return {
+    subtotals: candidateSubtotals,
+    points: data['Possible Score']
+  };
 }
 
 // This doesn't run through babel, es5!
