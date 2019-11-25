@@ -53,17 +53,10 @@ it('parses a CSV into the correct format', async () => {
         },
         rows: [] 
       },
-      { title: 'Green New Deal Vision', // TODO: this category is different in data.js
-        id: 'table-3',
-        subtitle: '',
-        description: 'Description of Green New Deal Vision',
-        subtotals: {
-          fred: '0',
-          zana: '0'
-        },
-        rows: [] },
       { title: '',
-        id: 'table-4',
+        categoryTitle: 'Green New Deal Vision',
+        categoryPoints: '100',
+        id: 'table-3',
         subtitle: 'Emissions Reduction Ambition',
         description: 'Description of Emissions Reduction Ambition',
         subtotals: {
@@ -102,7 +95,7 @@ it('parses a CSV into the correct format', async () => {
       { title: '',
         subtitle: 'Jobs and Economic Security',
         description: 'Description of Jobs and Economic Security',
-        id: 'table-5',
+        id: 'table-4',
         subtotals: {
           fred: '1',
           zana: '2'

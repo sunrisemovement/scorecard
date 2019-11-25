@@ -8,8 +8,12 @@ async function parse(csvData) {
   parsed.forEach((row) => {
     const maybeTableTitle = row['Section'];
     const maybeCategoryName = row['Category'];
-    if(maybeTableTitle !== '') {
-      tables.push(parseTableOrSubtable(row));
+    if (maybeTableTitle !== '') {
+      if (maybeTableTitle === 'Green New Deal Vision') {
+        // TODO: remove this weird special case later
+      } else {
+        tables.push(parseTableOrSubtable(row));
+      }
     } else if (maybeCategoryName === 'Subtotal') {
       let subtotals = getSubtotals(row);
       // TODO: prefer not to mutate this object
@@ -41,28 +45,39 @@ function parseTableOrSubtable(data) {
   const tableTitle = data['Section']
   const description = data['Description']
 
-  if(subtableRegex.test(tableTitle)) {
+  let tableAttributes;
+  if (subtableRegex.test(tableTitle)) {
     // Remove parenthesized score, e.g. (20)
     const scoreRegex = /\s+\(\d+\)\s*/
     const subtableTitle = tableTitle.
       split(subtableRegex)[1].
       split(scoreRegex)[0];
-    return {
+
+    tableAttributes = {
       title: "",
       subtitle: subtableTitle,
-      description: description,
-      rows: [],
-      subtotals: getSubtotals(data),
     };
+
+    // TODO: remove this special case later - the GND
+    // section is a one-off
+    if(subtableTitle === 'Emissions Reduction Ambition') {
+      tableAttributes = Object.assign(tableAttributes, {
+        categoryTitle: 'Green New Deal Vision',
+        categoryPoints: '100',
+      });
+    }
   } else {
-    return {
+    tableAttributes = {
       title: tableTitle,
       subtitle: "",
-      description: description,
-      rows: [],
-      subtotals: getSubtotals(data),
     };
   }
+
+  return Object.assign(tableAttributes, {
+    rows: [],
+    subtotals: getSubtotals(data),
+    description: description
+  });
 }
 
 function parseCategory(data) {
