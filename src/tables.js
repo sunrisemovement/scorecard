@@ -5,8 +5,10 @@ import './tables.css';
 
 function Tables (props) {
   
+  // We need to render the GND tables in their own section
+  // for the scrollSpy to work properly
   var tables = props.scorecardData.tables.slice(0,3);
-  var gndTables = props.scorecardData.tables.slice(3)
+  var gndTables = props.scorecardData.tables.slice(3);
 
 return (
     <div className="tables-container">
