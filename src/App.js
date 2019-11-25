@@ -60,11 +60,20 @@ class App extends React.Component {
   openModal(lastClicked) {
     var modal = document.getElementById("info-modal");
     var span = document.getElementsByClassName("sc-modal-close")[0];
+    var currentScroll = window.scrollY
+
     modal.style.display = "block";
     modal.scrollTop = 0;
 
+    // When the modal is shown, we want a fixed body
+    document.body.style.position = 'fixed';
+    document.body.style.top = -(currentScroll)
+
     span.onclick = (event) => {
       modal.style.display = "none";
+      document.body.style.position = '';
+      document.body.style.top = '';
+      
       this.setState({
         candidate: null,
         row: 0,
@@ -76,6 +85,9 @@ class App extends React.Component {
     window.onclick = (event) => {
       if (event.target === modal) {
         modal.style.display = "none";
+        document.body.style.position = '';
+        document.body.style.top = '';
+
         this.setState({
           candidate: null,
           row: 0,
