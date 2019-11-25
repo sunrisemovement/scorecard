@@ -10,6 +10,10 @@
   width: 100%;
 }
 
+.subtotal-title {
+  font-weight: bold;
+}
+
 .row-points{
   color: #74756E;
   font-weight: normal;
