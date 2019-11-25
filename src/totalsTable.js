@@ -40,7 +40,7 @@ function TotalsTable(props) {
                     <td id="sanders">80</td>
                 </tr>
                 <tr id="totals-row">
-                    <td width="65%">Total <span className="row-points total-points">(out of 200)</span></td>
+                    <td width="65%">Total <span className="total-points">(out of 200)</span></td>
                     <td id="biden">100</td>
                     <td id="warren">150</td>
                     <td id="sanders">170</td>
