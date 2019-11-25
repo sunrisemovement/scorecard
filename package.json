@@ -5,6 +5,7 @@
   "author": "Sunrise",
   "private": true,
   "dependencies": {
+    "neat-csv": "^5.1.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.2.0",
@@ -23,7 +24,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build:deploy": "scripts/deploy.sh"
+    "build:deploy": "scripts/deploy.sh",
+    "parse-data": "node scripts/parse-data.js"
   },
   "eslintConfig": {
     "extends": "react-app"
