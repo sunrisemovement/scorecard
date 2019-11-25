@@ -1,6 +1,6 @@
 // Dummy data to fill scorecard until official release.
 
-const scorecardData ={ 
+const scorecardData = {
    "tables":[ 
       { 
          "title":"How they talk about it",
