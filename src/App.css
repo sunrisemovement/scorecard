@@ -1,11 +1,28 @@
 .scorecard-app {
   /* text-align: center; */
   min-width: 100%;
+  background-color: #FBFAEE;
+}
+
+.main-scorecard-container{
+  padding: 4em 5em;
 }
 
 #sc-root * {
   box-sizing: border-box;
   font-family: 'Source Sans Pro', sans-serif;
+}
+
+@media only screen and (min-width: 1500px) {
+  .main-scorecard-container {
+    padding: 4em 15em;
+  }
+}
+
+@media only screen and (max-width: 1190px) {
+  .main-scorecard-container {
+    padding :0;
+  }
 }
 
 

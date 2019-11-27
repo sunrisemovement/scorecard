@@ -2,9 +2,11 @@ import React from 'react';
 import './App.css';
 import ScorecardApp from './ScorecardApp.js';
 import InfoModal from './infoModal.js'
+import SunriseNav from './common/sunriseNav.js'
+import MobileNav from './common/mobileNav.js'
+import SunriseFooter from './common/sunriseFooter.js'
 // Import dummy data to fill scorecard
 import scorecardData from './data.js';
-
 
 class App extends React.Component {
 
@@ -17,6 +19,9 @@ class App extends React.Component {
       lastClicked: null
     };
   }
+
+  // Toggle to remove Sunrise header/footer/nav for embed mode
+  embedMode = false;
 
   onClickCell = (row, table, candidate) => {
     let lastClicked = {candidate: candidate, row: row };
@@ -44,7 +49,7 @@ class App extends React.Component {
   onClickNav = (id) => {
     var tableId = "#table-" + id
     var table = document.querySelector(tableId);
-    window.scrollTo(0, (table.offsetTop - 260))
+    window.scrollTo(0, (table.offsetTop - 60))
     }
 
   onClickModalNav = (e) => {
@@ -58,11 +63,23 @@ class App extends React.Component {
   openModal(lastClicked) {
     var modal = document.getElementById("info-modal");
     var span = document.getElementsByClassName("sc-modal-close")[0];
+    var currentScroll = window.scrollY;
+
     modal.style.display = "block";
     modal.scrollTop = 0;
 
+    // When the modal is shown, we want a fixed body
+    document.body.style.position = 'fixed';
+    document.body.style.top = ("-" + currentScroll + "px")
+
     span.onclick = (event) => {
       modal.style.display = "none";
+
+      var scrollY = document.body.style.top;
+      document.body.style.position = '';
+      document.body.style.top = '';
+      window.scrollTo(0, parseInt(scrollY || '0') * -1);
+      
       this.setState({
         candidate: null,
         row: 0,
@@ -70,10 +87,16 @@ class App extends React.Component {
         lastClicked: lastClicked
       });
     };
-    
+
     window.onclick = (event) => {
       if (event.target === modal) {
         modal.style.display = "none";
+
+        var scrollY = document.body.style.top;
+        document.body.style.position = '';
+        document.body.style.top = '';
+        window.scrollTo(0, parseInt(scrollY || '0') * -1);
+
         this.setState({
           candidate: null,
           row: 0,
@@ -87,16 +110,21 @@ class App extends React.Component {
   render () {
     return (
       <div className="App scorecard-app">
-        <ScorecardApp onClickCell={this.onClickCell} 
-                      onClickNav={this.onClickNav}
-                      scorecardData={scorecardData}
-                      onClickIcon={this.onClickIcon}
-                      />
-        <InfoModal scorecardData={scorecardData} 
-                   candidate={this.state.candidate}
-                   row={this.state.row}
-                   table={this.state.table}
-                   onClickModalNav={this.onClickModalNav}/>
+        {!this.embedMode && <SunriseNav /> }
+        {!this.embedMode && <MobileNav /> }
+          <div className="main-scorecard-container">
+            <ScorecardApp onClickCell={this.onClickCell} 
+                          onClickNav={this.onClickNav}
+                          scorecardData={scorecardData}
+                          onClickIcon={this.onClickIcon}
+                          />
+            <InfoModal scorecardData={scorecardData} 
+                      candidate={this.state.candidate}
+                      row={this.state.row}
+                      table={this.state.table}
+                      onClickModalNav={this.onClickModalNav}/>
+         </div>
+         {!this.embedMode && <SunriseFooter /> }
       </div>
     );
   }

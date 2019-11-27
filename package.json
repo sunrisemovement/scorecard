@@ -6,8 +6,6 @@
   "private": true,
   "dependencies": {
     "neat-csv": "^5.1.0",
-    "preact": "^10.0.5",
-    "preact-compat": "^3.19.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.2.0",

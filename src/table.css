@@ -10,6 +10,16 @@
   width: 100%;
 }
 
+.subtotal-title {
+  font-weight: bold;
+}
+
+.row-points{
+  color: #74756E;
+  font-weight: normal;
+  font-size: .8em;
+ }
+
 .sc-table th, td {
     padding: 15px;
     text-align: left;
@@ -172,7 +182,7 @@
 
   .sc-table td {
     text-align: left;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 18px;
   }
 
@@ -192,6 +202,8 @@
 
   .row-points{
     display: block;
+    font-size: 12px;
+    line-height: 18px;
    }
 
 

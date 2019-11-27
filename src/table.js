@@ -47,7 +47,7 @@ function Table(props) {
         const {title, total, biden, warren, sanders } = row;
         return (
             <tr id={index} key={index}>
-                <td className="row-title"><img onClick={handleIconClick} className="info-icon" alt="Information Icon" src={icon}></img>{title} <span className="row-points">(Out of {total})</span></td>
+                <td className="row-title"><img onClick={handleIconClick} className="info-icon" alt="Information Icon" src={icon}></img>{title} <span className="row-points">(out of {total})</span></td>
                 <td onClick={handleClick} id="biden">{biden.score}</td>
                 <td onClick={handleClick} id="warren">{warren.score}</td>
                 <td onClick={handleClick} id="sanders">{sanders.score}</td>
@@ -88,11 +88,10 @@ function Table(props) {
                         <th>Warren</th>
                         <th>Sanders</th>
                     </tr>
+                    
                     {renderTableData()}
-                    {isHowMuchTable
-                    ? 
-                    <span></span>
-                    :
+                    
+                    {!isHowMuchTable &&
                     <tr className="subtotals">
                         <td width="65%" className="subtotal-title">Subtotal <span className="row-points">(out of {props.table.points})</span></td>
                         <td id="biden" >{props.table.subtotals.biden}</td>
