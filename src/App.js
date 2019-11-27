@@ -20,6 +20,9 @@ class App extends React.Component {
     };
   }
 
+  // Toggle to remove Sunrise header/footer/nav for embed mode
+  embedMode = false;
+
   onClickCell = (row, table, candidate) => {
     let lastClicked = {candidate: candidate, row: row };
 
@@ -71,7 +74,7 @@ class App extends React.Component {
 
     span.onclick = (event) => {
       modal.style.display = "none";
-      
+
       var scrollY = document.body.style.top;
       document.body.style.position = '';
       document.body.style.top = '';
@@ -107,8 +110,8 @@ class App extends React.Component {
   render () {
     return (
       <div className="App scorecard-app">
-        <SunriseNav />
-        <MobileNav />
+        {!this.embedMode && <SunriseNav /> }
+        {!this.embedMode && <MobileNav /> }
           <div className="main-scorecard-container">
             <ScorecardApp onClickCell={this.onClickCell} 
                           onClickNav={this.onClickNav}
@@ -121,7 +124,7 @@ class App extends React.Component {
                       table={this.state.table}
                       onClickModalNav={this.onClickModalNav}/>
          </div>
-        <SunriseFooter />
+         {!this.embedMode && <SunriseFooter /> }
       </div>
     );
   }
