@@ -23,8 +23,8 @@
           "subtitle": { "type": "string" },
           "points": { "type": "string" },
           "description": { "type": "string" },
-          "categoryTitle": { "type": "string" },
-          "categoryPoints": { "type": "string" },
+          "categorytitle": { "type": "string" },
+          "categorypoints": { "type": "string" },
           "subtotals": { 
             "type": "object",
             "required": [

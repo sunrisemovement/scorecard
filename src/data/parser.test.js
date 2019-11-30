@@ -1,7 +1,7 @@
 const parser = require('./parser.js');
 const fs = require('fs');
 const Ajv = require('ajv');
-const schema = require('./schema.json')
+const schema = require('./schema.json');
 
 it('parses a CSV into the correct data', async () => {
   const csvText = fs.readFileSync('src/data/fakeData.csv').toString();
@@ -83,8 +83,8 @@ const expectedData = {
     {
       "title": "",
       "subtitle": "Emissions Reduction Ambition",
-      "categoryTitle": "Green New Deal Vision",
-      "categoryPoints": "100",
+      "categorytitle": "Green New Deal Vision",
+      "categorypoints": "100",
       "rows": [
         {
           "title": "Mobilizing Resources",
