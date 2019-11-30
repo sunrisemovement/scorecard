@@ -62,8 +62,8 @@ function parseTableOrSubtable(data) {
     // section is a one-off
     if(subtableTitle === 'Emissions Reduction Ambition') {
       tableAttributes = Object.assign(tableAttributes, {
-        categoryTitle: 'Green New Deal Vision',
-        categoryPoints: '100',
+        categorytitle: 'Green New Deal Vision',
+        categorypoints: '100',
       });
     }
   } else {

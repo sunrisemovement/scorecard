@@ -1,0 +1,83 @@
+{
+  "type": "object",
+  "required": ["tables"],
+  "additionalProperties": false,
+  "properties": {
+    "tables": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "title",
+          "id",
+          "subtitle",
+          "points",
+          "description",
+          "subtotals",
+          "rows"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "title": { "type": "string" },
+          "id": { "type": "string" },
+          "subtitle": { "type": "string" },
+          "points": { "type": "string" },
+          "description": { "type": "string" },
+          "categorytitle": { "type": "string" },
+          "categorypoints": { "type": "string" },
+          "subtotals": { 
+            "type": "object",
+            "required": [
+              "biden",
+              "warren",
+              "sanders"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "biden": { "type": "string" },
+              "warren": { "type": "string" },
+              "sanders": { "type": "string" }
+            }
+          },
+          "rows": { 
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "title",
+                "description",
+                "total",
+                "biden",
+                "warren",
+                "sanders"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "title": { "type": "string" },
+                "description": { "type": "string" },
+                "total": { "type": "string" },
+                "biden": { "ref": "#/definitions/rowAnalysis" },
+                "warren": { "ref": "#/definitions/rowAnalysis" },
+                "sanders": { "ref": "#/definitions/rowAnalysis" }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "rowAnalysis": {
+      "type": "object",
+      "require": [
+        "score",
+        "analysis"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "score": { "type": "string" },
+        "analysis": { "type": "string" }
+      }
+    }
+  }
+}
