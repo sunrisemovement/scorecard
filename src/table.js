@@ -36,9 +36,6 @@ function Table(props) {
     // If there's a category title, it is the GND Vision section
     const isGNDVisionTable = (props.table.categorytitle) ? true : false;
 
-    // Check for 'How Much' table id so we can render it appropriately
-    const isHowMuchTable = (props.id === 1) ? true : false;
-
     // Checks for subtitles so we can render subtitle and points correctly
     const subtitleIsPresent = (props.table.subtitle !== "")
 
@@ -91,14 +88,12 @@ function Table(props) {
                     
                     {renderTableData()}
                     
-                    {!isHowMuchTable &&
                     <tr className="subtotals">
                         <td width="65%" className="subtotal-title">Subtotal <span className="row-points">(out of {props.table.points})</span></td>
                         <td id="biden" >{props.table.subtotals.biden}</td>
                         <td id="warren" >{props.table.subtotals.warren}</td>
                         <td id="sanders" >{props.table.subtotals.sanders}</td>
                     </tr>
-                }
                 </tbody>
             </table>
         </div>
