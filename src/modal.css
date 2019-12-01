@@ -96,6 +96,7 @@
     min-width: 100vw;
     overflow: scroll;
     padding: .8em;
+    padding-top: 0px;
   }
 
   .modal-row-description {
@@ -107,7 +108,7 @@
   }
 
   .modal-row-title {
-    padding-top: 1em;
+    padding-top: 70px;
     font-size: 24px;
     line-height: 28px;
   }
