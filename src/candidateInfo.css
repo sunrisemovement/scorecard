@@ -20,7 +20,11 @@
     justify-content: space-between;
 }
 
-.sc-modal-close {
+.sc-modal-close-mobile {
+    display: none;
+}
+
+.sc-modal-close, .sc-modal-close-mobile {
     color: #74756E;
     float: right;
     /* padding-left: 1em; */
@@ -152,6 +156,11 @@
     }
 
     .sc-modal-close {
+        display: none;
+    }
+
+    .sc-modal-close-mobile {
+        display: inline-block;
         position: fixed;
         top: 0;
         background: #33342E;
@@ -167,6 +176,7 @@
       }
 
       .back-icon {
+        cursor: pointer;
         display: inline-block;
         padding-right: 24px;
         height: 17.5px;

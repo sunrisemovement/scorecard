@@ -20,6 +20,8 @@ function CandidateInfo(props) {
                     <div id="3" data-name="sanders" onClick={handleClick} className={"modal-nav-item " + (props.candidateName === "sanders" ? 'nav-selected' : '')}>Sanders {props.row.sanders.score}</div>
                     <div className="sc-modal-close">
                         <span className="x-icon">&times;</span>
+                    </div>
+                    <div className="sc-modal-close-mobile">
                         <img className="back-icon" alt="Back button" src={expand}></img>
                     </div>
                 </div>
