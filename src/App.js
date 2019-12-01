@@ -62,8 +62,6 @@ class App extends React.Component {
 
   openModal(lastClicked) {
     var modal = document.getElementById("info-modal");
-    var xIcon = document.getElementsByClassName("sc-modal-close")[0];
-    var backIcon = document.getElementsByClassName("back-icon")[0]
     var closeIcons = [document.getElementsByClassName("sc-modal-close")[0], document.getElementsByClassName("back-icon")[0]]
     var currentScroll = window.scrollY;
 
@@ -90,9 +88,11 @@ class App extends React.Component {
   closeModal(modal, lastClicked) {
     modal.style.display = "none";
     var scrollY = document.body.style.top;
+
     document.body.style.position = '';
     document.body.style.top = '';
     window.scrollTo(0, parseInt(scrollY || '0') * -1);
+
     this.setState({
       candidate: null,
       row: 0,
