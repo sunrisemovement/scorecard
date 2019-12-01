@@ -61,6 +61,7 @@
 
 .expand-icon {
   display: none;
+  cursor: pointer;
 }
 
 #expand-icon {
