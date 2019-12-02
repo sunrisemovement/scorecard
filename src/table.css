@@ -138,19 +138,19 @@
 /* Spacing specific to desktop */
 @media screen and (min-width: 520px) {
   .sc-table {
-    margin-top: 50px;
+    margin-top: 10px;
   }
 
   .table-title {
-    margin-top: 100px;
+    margin-top: 89px;
   }
 
   #table-1 .table-title {
-    margin-top: 50px;
+    margin-top: 30px;
   }
 
   .table-subtitle {
-    margin-top: 60px;
+    margin-top: 44px;
     margin-bottom: 0;
   }
  }
