@@ -9,7 +9,7 @@ function Header(props) {
          <div className="header-container">
          <header className="main-header">
             <div className="title-container">
-                <h1 className="header-title">The Sunrise <br></br>Presidential Scorecard</h1> 
+                <h1 className="header-title">SUNRISE 2020 PRESIDENTIAL CANDIDATE SCORECARD</h1> 
                 <div className="caption">Click on a candidate's score for more details on their plan.</div>
             </div>
             <div className="sunrise-logo">
