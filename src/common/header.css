@@ -7,6 +7,10 @@
     min-width: 62px;
 }
 
+.sunrise-logo {
+    padding-left: 2.3em;
+}
+
 .caption {
     font-size: 18px;
     color: #33342E;
@@ -55,6 +59,7 @@
     .sunrise-logo {
         order: -1;
         padding-right: 2em;
+        padding-left: 0;
     }
     
   }

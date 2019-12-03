@@ -60,10 +60,9 @@ function Table(props) {
     return (
         <div id={props.table.id} name={props.table.id}>
 
-        { isGNDVisionTable
-            ? <div><div id='title' className="table-title">{props.table.categorytitle}</div>
+        { isGNDVisionTable && 
+            <div><div id='title' className="table-title">{props.table.categorytitle}</div>
                     <span className="table-points"> (out of {props.table.categorypoints})</span></div>
-            : <span></span>
           }
 
           { subtitleIsPresent

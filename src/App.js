@@ -49,7 +49,7 @@ class App extends React.Component {
   onClickNav = (id) => {
     var tableId = "#table-" + id
     var table = document.querySelector(tableId);
-    window.scrollTo(0, (table.offsetTop - 60))
+    table.scrollIntoView({behavior: "smooth"});
     }
 
   onClickModalNav = (e) => {
@@ -62,7 +62,7 @@ class App extends React.Component {
 
   openModal(lastClicked) {
     var modal = document.getElementById("info-modal");
-    var span = document.getElementsByClassName("sc-modal-close")[0];
+    var closeIcons = [document.getElementsByClassName("sc-modal-close")[0], document.getElementsByClassName("back-icon")[0]]
     var currentScroll = window.scrollY;
 
     modal.style.display = "block";
@@ -72,39 +72,33 @@ class App extends React.Component {
     document.body.style.position = 'fixed';
     document.body.style.top = ("-" + currentScroll + "px")
 
-    span.onclick = (event) => {
-      modal.style.display = "none";
-
-      var scrollY = document.body.style.top;
-      document.body.style.position = '';
-      document.body.style.top = '';
-      window.scrollTo(0, parseInt(scrollY || '0') * -1);
-      
-      this.setState({
-        candidate: null,
-        row: 0,
-        table: 0,
-        lastClicked: lastClicked
-      });
-    };
+    closeIcons.forEach( icon => {
+      icon.onclick = (event) => {
+        this.closeModal(modal, lastClicked)
+      }
+    })
 
     window.onclick = (event) => {
       if (event.target === modal) {
-        modal.style.display = "none";
-
-        var scrollY = document.body.style.top;
-        document.body.style.position = '';
-        document.body.style.top = '';
-        window.scrollTo(0, parseInt(scrollY || '0') * -1);
-
-        this.setState({
-          candidate: null,
-          row: 0,
-          table: 0,
-          lastClicked: lastClicked
-        });
+        this.closeModal(modal, lastClicked);
       }
     };
+  }
+
+  closeModal(modal, lastClicked) {
+    modal.style.display = "none";
+    var scrollY = document.body.style.top;
+
+    document.body.style.position = '';
+    document.body.style.top = '';
+    window.scrollTo(0, parseInt(scrollY || '0') * -1);
+
+    this.setState({
+      candidate: null,
+      row: 0,
+      table: 0,
+      lastClicked: lastClicked
+    });
   }
 
   render () {
