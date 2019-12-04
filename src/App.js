@@ -13,7 +13,7 @@ class App extends React.Component {
 
   constructor(props) {
     super(props);
-    
+    console.log(this.ua)
     this.state = {
       candidate: null,
       table: 0,
@@ -28,7 +28,7 @@ class App extends React.Component {
   // Check if the current browser is IE
 
   ua = navigator.userAgent;
-  isIE = this.ua.indexOf("MSIE ") > -1 || this.ua.indexOf("Trident/") > -1;
+  isIE = this.ua.indexOf("MSIE") > -1 || this.ua.indexOf("Trident/") > -1;
 
   onClickCell = (row, table, candidate) => {
     let lastClicked = {candidate: candidate, row: row };
