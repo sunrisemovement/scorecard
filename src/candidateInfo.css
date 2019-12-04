@@ -86,7 +86,7 @@
     font-size: 18px;
     line-height: 27px;
     color: #33342E;
-    overflow-y: scroll;
+    overflow-y: auto;
     background-color: white;
 }
 
