@@ -26,7 +26,9 @@ class App extends React.Component {
   embedMode = false;
 
   // Check if the current browser is IE
-  isIE = /MSIE|Trident/.test(window.navigator.userAgent);
+
+  ua = navigator.userAgent;
+  isIE = this.ua.indexOf("MSIE ") > -1 || this.ua.indexOf("Trident/") > -1;
 
   onClickCell = (row, table, candidate) => {
     let lastClicked = {candidate: candidate, row: row };
