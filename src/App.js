@@ -5,6 +5,7 @@ import InfoModal from './infoModal.js'
 import SunriseNav from './common/sunriseNav.js'
 import MobileNav from './common/mobileNav.js'
 import SunriseFooter from './common/sunriseFooter.js'
+import IeBanner from './common/ieBanner.js'
 // Import dummy data to fill scorecard
 import scorecardData from './data.js';
 
@@ -12,6 +13,7 @@ class App extends React.Component {
 
   constructor(props) {
     super(props);
+    
     this.state = {
       candidate: null,
       table: 0,
@@ -22,6 +24,10 @@ class App extends React.Component {
 
   // Toggle to remove Sunrise header/footer/nav for embed mode
   embedMode = false;
+
+  // Check if the current browser is IE
+  ua = window.navigator.userAgent;
+  isIE = /MSIE|Trident/.test(this.ua);
 
   onClickCell = (row, table, candidate) => {
     let lastClicked = {candidate: candidate, row: row };
@@ -104,6 +110,7 @@ class App extends React.Component {
   render () {
     return (
       <div className="App scorecard-app">
+        {this.isIe && <IeBanner />}
         {!this.embedMode && <SunriseNav /> }
         {!this.embedMode && <MobileNav /> }
           <div className="main-scorecard-container">

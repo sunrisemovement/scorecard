@@ -1,0 +1,10 @@
+.ie-banner {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: .4em;
+    text-align: center;
+    text-transform: uppercase;
+    color: 33342e;
+    background: #ffde16;
+}
