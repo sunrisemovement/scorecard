@@ -13,7 +13,7 @@ class App extends React.Component {
 
   constructor(props) {
     super(props);
-    console.log(this.ua)
+    
     this.state = {
       candidate: null,
       table: 0,
@@ -26,9 +26,15 @@ class App extends React.Component {
   embedMode = false;
 
   // Check if the current browser is IE
+  checkIe = () => {
+    let ua = navigator.userAgent;
+    var isIe = ua.indexOf("MSIE") > -1 || ua.indexOf("Trident/") > -1;
 
-  ua = navigator.userAgent;
-  isIE = this.ua.indexOf("MSIE") > -1 || this.ua.indexOf("Trident/") > -1;
+    if (isIe) {
+      return <IeBanner />
+    }
+  }
+
 
   onClickCell = (row, table, candidate) => {
     let lastClicked = {candidate: candidate, row: row };
@@ -111,7 +117,7 @@ class App extends React.Component {
   render () {
     return (
       <div className="App scorecard-app">
-        {this.isIe && <IeBanner />}
+        {this.checkIe()}
         {!this.embedMode && <SunriseNav /> }
         {!this.embedMode && <MobileNav /> }
           <div className="main-scorecard-container">
