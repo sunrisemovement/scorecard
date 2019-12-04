@@ -9,6 +9,9 @@ import IeBanner from './common/ieBanner.js'
 // Import dummy data to fill scorecard
 import scorecardData from './data.js';
 
+// We don't commit real data to this repo
+const data = window.data ? window.data : scorecardData;
+
 class App extends React.Component {
 
   constructor(props) {
@@ -123,10 +126,10 @@ class App extends React.Component {
           <div className="main-scorecard-container">
             <ScorecardApp onClickCell={this.onClickCell} 
                           onClickNav={this.onClickNav}
-                          scorecardData={scorecardData}
+                          scorecardData={data}
                           onClickIcon={this.onClickIcon}
                           />
-            <InfoModal scorecardData={scorecardData} 
+            <InfoModal scorecardData={data}
                       candidate={this.state.candidate}
                       row={this.state.row}
                       table={this.state.table}
