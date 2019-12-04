@@ -191,9 +191,9 @@ const scorecardData = {
          "id":"table-2",
          "points":"35",
          "subtotals":{ 
-            "biden":"8",
-            "warren":"15",
-            "sanders":"23"
+            "biden":"20",
+            "warren":"30",
+            "sanders":"30"
          },
          "description":"This section scores each candidate based on how frequently they use their platform to talk about the climate crisis and climate action. Candidates will be scored and ranked based on data from their Twitter accounts. This section is included as a representation of how politicians should use their voices to reach as much of the public as possible due to the urgency of climate crisis’ effects and how little time there is to avoid catastrophe.",
          "subtitle":"",

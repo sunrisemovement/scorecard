@@ -38,7 +38,7 @@ return (
         }
       </div>
 
-      <TotalsTable scorecardData={props.scorecardData}/>
+      <TotalsTable tables={props.scorecardData.tables}/>
 
     </div>
 )
