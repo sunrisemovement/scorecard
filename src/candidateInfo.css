@@ -50,6 +50,7 @@
     padding: .75em;
     line-height: 27px;
     background-color: #F4F4F4;
+    border-right: 2px solid #E0E0E0;
     font-weight: bold;
     font-size: 18px;
     line-height: 24px;
@@ -162,6 +163,10 @@
     .modal-nav-item:hover{
         background: white;
     }
+
+    .modal-nav-item:nth-child(3) {
+        border-right: 0;
+      }
 
     .sc-modal-close {
         display: none;
