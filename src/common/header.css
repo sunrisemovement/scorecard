@@ -5,15 +5,20 @@
 
 #sunrise-img {
     min-width: 62px;
+    margin-top: 16.08px;
 }
 
 .sunrise-logo {
-    padding-left: 2.3em;
+    padding-left: 3em;
 }
 
 .caption {
     font-size: 18px;
     color: #33342E;
+    width: 80%;
+    padding-bottom: 30px;
+    padding-top: 22px;
+    margin: 0 30px;
 }
 
 .main-header{
@@ -48,12 +53,12 @@
         margin: 0 30px;
     }
 
-    .header-title{
-        margin-top: .25em;
-    }
-
     .header-container {
         border-bottom: 3px solid #F4F4F4;
+    }
+
+    .caption {
+        width: 90%;
     }
 
     .sunrise-logo {
@@ -70,9 +75,16 @@
         line-height: 28px;
     }
 
+    .main-header {
+        margin: 0 20px;
+    }
+
     .caption {
         font-size: 14px;
-        float: left;
+        padding-bottom: 17px;
+        padding-top: 12px;
+        margin: 0 15px;
+        width: auto;
     }
   
   }
