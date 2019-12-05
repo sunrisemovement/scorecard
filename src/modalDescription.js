@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactMarkdown from 'react-markdown'
 import './modal.css';
 
 function ModalDescription(props) {
@@ -21,10 +22,10 @@ function ModalDescription(props) {
                 }
             </span>
             <span className="modal-row-description">
-                {isHowMuchTable 
-                    ? howMuchDescription
-                    : props.row.description
-                }
+              <ReactMarkdown
+                source={isHowMuchTable ? howMuchDescription : props.row.description }
+                escapeHtml={false}
+              />
             </span>
         </div>
     );

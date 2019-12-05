@@ -16,7 +16,7 @@ const scorecardData = {
          "rows":[ 
             { 
                "title":"A national, comprehensive mobilization",
-               "description":"A national call-to-arms, once-in-a-generation, comprehensive mobilization of all sectors—not just a “climate bill,” a single policy, or a set of policies, but a governing vision and agenda. Recognizes that the Green New Deal is not necessarily a single, omnibus piece of legislation but will, in its entirety, provide a comprehensive, integrated, and systemic response to the crises of climate, inequality, and democracy at hand.",
+               "description":"A national **call-to-arms**, once-in-a-generation, _comprehensive mobilization_ of all sectors—not just a “climate bill,” a single policy, or a set of policies, but a governing vision and agenda. Recognizes that the Green New Deal is not necessarily a single, omnibus piece of legislation but will, in its entirety, provide a comprehensive, integrated, and systemic response to the crises of climate, inequality, and democracy at hand.",
                "total":"4",
                "biden":{ 
                   "score":"3",
