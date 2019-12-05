@@ -43,7 +43,13 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ## Deployment
 
-This widget is deployed with [netlify](https://www.netlify.com/). It automatically deploys upon merging to master. You can preview the widget here: https://priceless-williams-fb7e44.netlify.com/
+This widget is deployed with [netlify](https://www.netlify.com/). You can preview the widget here: https://priceless-williams-fb7e44.netlify.com/
+
+### Deployment process
+- Merge branch to staging - this will automatically deploy to the "staging environment"
+- When staging is merged to master, this will deploy to the "production environment"
+
+### Embedding
 
 Netlify also makes the our static assets available a la carte, so that we can embed them in other Sunrise sites. Netlify is configured to run `npm run build:deploy` as a build script, which makes our assets available for use here:
 - [JavaScript](https://priceless-williams-fb7e44.netlify.com/main.js)
