@@ -12,7 +12,7 @@ function CandidateAnalysis(props) {
             </div>
             <div id="analysis-title">Analysis</div>
                 <div className="analysis-text">
-                    {props.candidateObject.analysis}
+                  <ReactMarkdown source={props.candidateObject.analysis} escapeHtml={false} />
             </div>
 
             {props.candidateObject.source &&

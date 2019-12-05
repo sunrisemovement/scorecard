@@ -20,7 +20,7 @@ const scorecardData = {
                "total":"4",
                "biden":{ 
                   "score":"3",
-                  "analysis":"Candidate score analysis will go here",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
                  "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
                },
                "warren":{ 
