@@ -64,4 +64,5 @@ The data committed to this repository is mock data and does not reflect real sco
 - Move a copy of the CSV to the root directory of this repo and name it 'Data.csv'
 - Run `npm run parse-data`
 - This will output data to a file named ParsedData.json
-- You can then paste that data into the Data.js file.
+- You can then paste that data into the Data.js file to test locally
+- To add to production without committing to the repo, add it to the Netlify project in the "Real Data" snippet
