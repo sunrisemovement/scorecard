@@ -39,6 +39,14 @@
     overflow: auto;
   }
 
+  .modal-description  a,
+  .modal-description  a:link, 
+  .modal-description  a:visited, 
+  .modal-description  a:focus, 
+  .modal-description  a:active {
+    color: #fff;
+  }
+
 .modal-table-title {
     font-weight: bold;
     font-size: 18px;

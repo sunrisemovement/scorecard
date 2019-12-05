@@ -95,6 +95,14 @@
     padding-bottom: 2em;
 }
 
+.analysis-text  a,
+.analysis-text  a:link, 
+.analysis-text  a:visited, 
+.analysis-text  a:focus, 
+.analysis-text  a:active {
+  color: #33342E;
+}
+
 #analysis-title {
     font-weight: bold;
     padding-bottom: .5em;

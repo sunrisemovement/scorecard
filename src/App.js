@@ -69,7 +69,10 @@ class App extends React.Component {
     }
 
   onClickModalNav = (e) => {
-    let newCandidate = e.target.dataset.name
+    let newCandidate = e.target.dataset.name;
+
+    var myDiv = document.getElementsByClassName('analysis-container')[0]
+    myDiv.scrollTop = 0;
 
     this.setState({
       candidate: newCandidate
