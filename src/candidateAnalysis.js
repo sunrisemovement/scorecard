@@ -1,5 +1,6 @@
 import React from 'react';
 import './candidateInfo.css';
+import ReactMarkdown from 'react-markdown'
 
 function CandidateAnalysis(props) {
 
@@ -11,16 +12,16 @@ function CandidateAnalysis(props) {
             </div>
             <div id="analysis-title">Analysis</div>
                 <div className="analysis-text">
-                    {props.candidateObject.analysis}
+                  <ReactMarkdown source={props.candidateObject.analysis} escapeHtml={false} />
             </div>
 
             {props.candidateObject.source &&
             (<div>
                 <div id="analyses-title">Source</div>
                     <div className="analysis-text">
-                        {props.candidateObject.source}
+                      <ReactMarkdown source={props.candidateObject.source} escapeHtml={false} />
                     </div>
-                </div>)    
+                </div>)
             }
         </div>
     );
