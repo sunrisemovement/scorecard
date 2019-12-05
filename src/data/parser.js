@@ -97,6 +97,7 @@ function parseCategoryCandidateData(data) {
       [name.toLowerCase()]: {
         score: data[name + ' Score'],
         analysis: data[name + ' Analysis'],
+        source: data[name + ' Source'],
       }
     });
   }, {});

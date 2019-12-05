@@ -25,11 +25,13 @@ const scorecardData = {
                },
                "warren":{ 
                   "score":"4",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"4",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -38,15 +40,18 @@ const scorecardData = {
                "total":"4",
                "biden":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"4",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"4",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -55,15 +60,18 @@ const scorecardData = {
                "total":"4",
                "biden":{ 
                   "score":"4",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"4",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"4",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -72,15 +80,18 @@ const scorecardData = {
                "total":"1",
                "biden":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -89,15 +100,18 @@ const scorecardData = {
                "total":"1",
                "biden":{ 
                   "score":"0",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -106,15 +120,18 @@ const scorecardData = {
                "total":"4",
                "biden":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"4",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"4",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -123,15 +140,18 @@ const scorecardData = {
                "total":"1",
                "biden":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -140,15 +160,18 @@ const scorecardData = {
                "total":"4",
                "biden":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"4",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"4",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -157,15 +180,18 @@ const scorecardData = {
                "total":"9",
                "biden":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"6",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"6",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -174,15 +200,18 @@ const scorecardData = {
                "total":"3",
                "biden":{ 
                   "score":"0",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"3",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"3",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             }
          ]
@@ -204,15 +233,18 @@ const scorecardData = {
             "total":"35",
             "biden":{ 
                "score":"20",
-               "analysis":"Candidate score analysis will go here"
+               "analysis":"Candidate score analysis will go here",
+               "source": "sources will go here"
             },
             "warren":{ 
                "score":"30",
-               "analysis":"Candidate score analysis will go here"
+               "analysis":"Candidate score analysis will go here",
+               "source": "sources will go here"
             },
             "sanders":{ 
                "score":"30",
-               "analysis":"Candidate score analysis will go here"
+               "analysis":"Candidate score analysis will go here",
+              "source": "sources will go here"
             }
          }
 
@@ -236,15 +268,18 @@ const scorecardData = {
                "total":"7",
                "biden":{ 
                   "score":"7",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"7",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"7",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -253,15 +288,18 @@ const scorecardData = {
                "total":"7",
                "biden":{ 
                   "score":"0",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"7",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"5",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -270,15 +308,18 @@ const scorecardData = {
                "total":"7",
                "biden":{ 
                   "score":"0",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"5",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"7",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -287,15 +328,18 @@ const scorecardData = {
                "total":"7",
                "biden":{ 
                   "score":"0",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"7",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"7",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -304,15 +348,18 @@ const scorecardData = {
                "total":"7",
                "biden":{ 
                   "score":"0",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"7",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"7",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             }
          ]
@@ -337,15 +384,18 @@ const scorecardData = {
                "total":"4",
                "biden":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"3",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"4",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -354,15 +404,18 @@ const scorecardData = {
                "total":"4",
                "biden":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"4",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"4",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -371,15 +424,18 @@ const scorecardData = {
                "total":"9",
                "biden":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"6",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"9",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -388,15 +444,18 @@ const scorecardData = {
                "total":"3",
                "biden":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"3",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"3",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             }
          ]
@@ -419,15 +478,18 @@ const scorecardData = {
                "total":"2",
                "biden":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -436,15 +498,18 @@ const scorecardData = {
                "total":"3",
                "biden":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"3",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"3",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -453,15 +518,18 @@ const scorecardData = {
                "total":"2",
                "biden":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -470,15 +538,18 @@ const scorecardData = {
                "total":"3",
                "biden":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"3",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -487,15 +558,18 @@ const scorecardData = {
                "total":"2",
                "biden":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -504,15 +578,18 @@ const scorecardData = {
                "total":"2",
                "biden":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -521,15 +598,18 @@ const scorecardData = {
                "total":"2",
                "biden":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -538,15 +618,18 @@ const scorecardData = {
                "total":"2",
                "biden":{ 
                   "score":"0",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -555,15 +638,18 @@ const scorecardData = {
                "total":"2",
                "biden":{ 
                   "score":"0",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             }
          ]
@@ -586,15 +672,18 @@ const scorecardData = {
                "total":"2",
                "biden":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -603,15 +692,18 @@ const scorecardData = {
                "total":"2",
                "biden":{ 
                   "score":"0",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -620,15 +712,18 @@ const scorecardData = {
                "total":"2",
                "biden":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -637,15 +732,18 @@ const scorecardData = {
                "total":"3",
                "biden":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"3",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"3",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -654,15 +752,18 @@ const scorecardData = {
                "total":"2",
                "biden":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -671,15 +772,18 @@ const scorecardData = {
                "total":"2",
                "biden":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -688,15 +792,18 @@ const scorecardData = {
                "total":"2",
                "biden":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -705,15 +812,18 @@ const scorecardData = {
                "total":"2",
                "biden":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -722,15 +832,18 @@ const scorecardData = {
                "total":"3",
                "biden":{ 
                   "score":"0",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"3",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"3",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -739,15 +852,18 @@ const scorecardData = {
                "total":"3",
                "biden":{ 
                   "score":"0",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"3",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"3",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -756,15 +872,18 @@ const scorecardData = {
                "total":"2",
                "biden":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             }
          ]
@@ -787,15 +906,18 @@ const scorecardData = {
                "total":"3",
                "biden":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"3",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -804,15 +926,18 @@ const scorecardData = {
                "total":"3",
                "biden":{ 
                   "score":"0",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"3",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -821,15 +946,18 @@ const scorecardData = {
                "total":"2",
                "biden":{ 
                   "score":"0",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"0",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"0",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -838,15 +966,18 @@ const scorecardData = {
                "total":"2",
                "biden":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -855,15 +986,18 @@ const scorecardData = {
                "total":"3",
                "biden":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"3",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -872,15 +1006,18 @@ const scorecardData = {
                "total":"2",
                "biden":{ 
                   "score":"0",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                 "source": "sources will go here"
                }
             }
          ]
@@ -903,15 +1040,18 @@ const scorecardData = {
                "total":"2",
                "biden":{ 
                   "score":"0",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -920,15 +1060,18 @@ const scorecardData = {
                "total":"3",
                "biden":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"3",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"3",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -937,15 +1080,18 @@ const scorecardData = {
                "total":"3",
                "biden":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"3",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -954,15 +1100,18 @@ const scorecardData = {
                "total":"2",
                "biden":{ 
                   "score":"0",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -971,15 +1120,18 @@ const scorecardData = {
                "total":"3",
                "biden":{ 
                   "score":"0",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"3",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"3",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -988,15 +1140,18 @@ const scorecardData = {
                "total":"3",
                "biden":{ 
                   "score":"0",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"3",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"3",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -1005,15 +1160,18 @@ const scorecardData = {
                "total":"2",
                "biden":{ 
                   "score":"0",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"1",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             },
             { 
@@ -1022,15 +1180,18 @@ const scorecardData = {
                "total":"2",
                "biden":{ 
                   "score":"0",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "warren":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                },
                "sanders":{ 
                   "score":"2",
-                  "analysis":"Candidate score analysis will go here"
+                  "analysis":"Candidate score analysis will go here",
+                  "source": "sources will go here"
                }
             }
          ]
