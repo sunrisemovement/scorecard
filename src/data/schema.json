@@ -56,9 +56,9 @@
                 "title": { "type": "string" },
                 "description": { "type": "string" },
                 "total": { "type": "string" },
-                "biden": { "ref": "#/definitions/rowAnalysis" },
-                "warren": { "ref": "#/definitions/rowAnalysis" },
-                "sanders": { "ref": "#/definitions/rowAnalysis" }
+                "biden": { "$ref": "#/definitions/rowAnalysis" },
+                "warren": { "$ref": "#/definitions/rowAnalysis" },
+                "sanders": { "$ref": "#/definitions/rowAnalysis" }
               }
             }
           }
@@ -69,14 +69,16 @@
   "definitions": {
     "rowAnalysis": {
       "type": "object",
-      "require": [
+      "required": [
         "score",
-        "analysis"
+        "analysis",
+        "source"
       ],
       "additionalProperties": false,
       "properties": {
         "score": { "type": "string" },
-        "analysis": { "type": "string" }
+        "analysis": { "type": "string" },
+        "source": { "type": "string" }
       }
     }
   }

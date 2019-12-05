@@ -1,18 +1,18 @@
-Section,Description,Category,Category Description,Possible Score,Biden Analysis,Biden Score,,Warren Analysis,Warren Score,,Sanders Analysis,Sanders Score
-How They Talk About It,Description of how they talk about it,,,,,,,,,,,
-,,"A national, comprehensive mobilization",A national call-to-arms description,4,Vice President Fred’s plan,3,,Senator Zana’ plan analysis,4,,Cardamom’ plan commits,4
-,,Plans include policies focused on creating jobs,Candidates’ plans description,4,Vice President Fred’s plan 2,4,,Sen. Zana’ plan commits,4,,Cardamom!,4
-,,Subtotal,,8,,7,,,8,,,8
-,,,,,,,,,,,,
-How Much They Talk About It,Description of how they talk about it,,,,,,,,,,,
-,,Subtotal,,25,,8,,,23,,,23
-,,,,,,,,,,,,
-Green New Deal Vision,Description of Green New Deal Vision,,,,,,,,,,,
-1. Emissions Reduction Ambition (20),Description of Emissions Reduction Ambition,,,,,,,,,,,
-,,Mobilizing Resources,Includes a 10-year description,4,,1,,,4,,,4
-,,Emissions Timeline,Includes interim targets description,4,,1,,,4,,,4
-,,Subtotal,,8,,2,,,8,,,8
-,,,,,,,,,,,,
-2. Jobs and Economic Security (20),Description of Jobs and Economic Security,,,,,,,,,,,
-,,Job Training,Includes plans for training description,2,,1,,,2,,,2
-,,Subtotal,,2,,1,,,2,,,2
+Section,Description,Category,Category Description,Possible Score,Biden Analysis,Biden Score,Biden Source,,Warren Analysis,Warren Score,Warren Source,,Sanders Analysis,Sanders Score,Sanders Source
+How They Talk About It,Description of how they talk about it,,,,,,,,,,,,,,
+,,"A national, comprehensive mobilization",A national call-to-arms description,4,Vice President Fred’s plan,3,biden source,,Senator Zana’ plan analysis,4,warren source,,Cardamom’ plan commits,4,sanders source
+,,Plans include policies focused on creating jobs,Candidates’ plans description,4,Vice President Fred’s plan 2,4,,,Sen. Zana’ plan commits,4,,,Cardamom!,4,
+,,Subtotal,,8,,7,,,,8,,,,8,
+,,,,,,,,,,,,,,,
+How Much They Talk About It,Description of how they talk about it,,,,,,,,,,,,,,
+,,Subtotal,,25,,8,,,,23,,,,23,
+,,,,,,,,,,,,,,,
+Green New Deal Vision,Description of Green New Deal Vision,,,,,,,,,,,,,,
+1. Emissions Reduction Ambition (20),Description of Emissions Reduction Ambition,,,,,,,,,,,,,,
+,,Mobilizing Resources,Includes a 10-year description,4,,1,,,,4,,,,4,
+,,Emissions Timeline,Includes interim targets description,4,,1,,,,4,,,,4,
+,,Subtotal,,8,,2,,,,8,,,,8,
+,,,,,,,,,,,,,,,
+2. Jobs and Economic Security (20),Description of Jobs and Economic Security,,,,,,,,,,,,,,
+,,Job Training,Includes plans for training description,2,,1,,,,2,,,,2,
+,,Subtotal,,2,,1,,,,2,,,,2,

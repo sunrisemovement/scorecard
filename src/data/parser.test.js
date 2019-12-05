@@ -29,15 +29,18 @@ const expectedData = {
           "total": "4",
           "biden": {
             "score": "3",
-            "analysis": "Vice President Fred’s plan"
+            "analysis": "Vice President Fred’s plan",
+            "source": "biden source"
           },
           "warren": {
             "score": "4",
-            "analysis": "Senator Zana’ plan analysis"
+            "analysis": "Senator Zana’ plan analysis",
+            "source": "warren source"
           },
           "sanders": {
             "score": "4",
-            "analysis": "Cardamom’ plan commits"
+            "analysis": "Cardamom’ plan commits",
+            "source": "sanders source"
           }
         },
         {
@@ -46,15 +49,18 @@ const expectedData = {
           "total": "4",
           "biden": {
             "score": "4",
-            "analysis": "Vice President Fred’s plan 2"
+            "analysis": "Vice President Fred’s plan 2",
+            "source": ""
           },
           "warren": {
             "score": "4",
-            "analysis": "Sen. Zana’ plan commits"
+            "analysis": "Sen. Zana’ plan commits",
+            "source": ""
           },
           "sanders": {
             "score": "4",
-            "analysis": "Cardamom!"
+            "analysis": "Cardamom!",
+            "source": ""
           }
         }
       ],
@@ -92,15 +98,18 @@ const expectedData = {
           "total": "4",
           "biden": {
             "score": "1",
-            "analysis": ""
+            "analysis": "",
+            "source": ""
           },
           "warren": {
             "score": "4",
-            "analysis": ""
+            "analysis": "",
+            "source": ""
           },
           "sanders": {
             "score": "4",
-            "analysis": ""
+            "analysis": "",
+            "source": ""
           }
         },
         {
@@ -109,15 +118,18 @@ const expectedData = {
           "total": "4",
           "biden": {
             "score": "1",
-            "analysis": ""
+            "analysis": "",
+            "source": ""
           },
           "warren": {
             "score": "4",
-            "analysis": ""
+            "analysis": "",
+            "source": ""
           },
           "sanders": {
             "score": "4",
-            "analysis": ""
+            "analysis": "",
+            "source": ""
           }
         }
       ],
@@ -140,15 +152,18 @@ const expectedData = {
           "total": "2",
           "biden": {
             "score": "1",
-            "analysis": ""
+            "analysis": "",
+            "source": ""
           },
           "warren": {
             "score": "2",
-            "analysis": ""
+            "analysis": "",
+            "source": ""
           },
           "sanders": {
             "score": "2",
-            "analysis": ""
+            "analysis": "",
+            "source": ""
           }
         }
       ],
