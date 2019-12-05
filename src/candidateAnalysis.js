@@ -13,6 +13,15 @@ function CandidateAnalysis(props) {
                 <div className="analysis-text">
                     {props.candidateObject.analysis}
             </div>
+
+            {props.candidateObject.source &&
+            (<div>
+                <div id="analyses-title">Source</div>
+                    <div className="analysis-text">
+                        {props.candidateObject.source}
+                    </div>
+                </div>)    
+            }
         </div>
     );
 }

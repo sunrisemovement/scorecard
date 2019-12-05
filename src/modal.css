@@ -36,7 +36,7 @@
     min-height: 37em;
     max-height: 37em;
     padding: 1.5em;
-    overflow: scroll;
+    overflow: auto;
   }
 
 .modal-table-title {
@@ -82,7 +82,7 @@
   .modal-description{
     min-height: 200px;
     min-width: 100%;
-    overflow-x: scroll;
+    overflow-x: auto;
   }
 }
 
@@ -94,7 +94,7 @@
   .modal-description{
     min-height: 30vh;
     min-width: 100vw;
-    overflow: scroll;
+    overflow: auto;
     padding: 25px;
     padding-top: 0px;
   }
