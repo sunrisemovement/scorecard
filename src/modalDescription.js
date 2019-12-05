@@ -21,7 +21,7 @@ function ModalDescription(props) {
                     : props.row.title 
                 }
             </span>
-            <span className="modal-row-description" id="row-description-container">
+            <span className="modal-row-description">
               <ReactMarkdown
                 source={isHowMuchTable ? howMuchDescription : props.row.description }
                 escapeHtml={false}
