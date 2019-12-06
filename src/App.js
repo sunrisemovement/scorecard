@@ -51,7 +51,7 @@ class App extends React.Component {
     this.openModal(lastClicked);
   }
 
-  onClickIcon = (row, table) => {
+  onClickRow = (row, table) => {
     let lastClicked = {candidate: null, row: row };
 
     this.setState({
@@ -69,7 +69,10 @@ class App extends React.Component {
     }
 
   onClickModalNav = (e) => {
-    let newCandidate = e.target.dataset.name
+    let newCandidate = e.target.dataset.name;
+
+    var analysisContainer = document.getElementsByClassName('analysis-container')[0]
+    analysisContainer.scrollTop = 0;
 
     this.setState({
       candidate: newCandidate
@@ -127,7 +130,7 @@ class App extends React.Component {
             <ScorecardApp onClickCell={this.onClickCell} 
                           onClickNav={this.onClickNav}
                           scorecardData={data}
-                          onClickIcon={this.onClickIcon}
+                          onClickRow={this.onClickRow}
                           />
             <InfoModal scorecardData={data}
                       candidate={this.state.candidate}

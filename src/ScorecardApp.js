@@ -10,7 +10,7 @@ const ScorecardApp = (props) => (
             <Nav onClickNav={props.onClickNav} />
             <Tables onClickCell={props.onClickCell} 
                     scorecardData={props.scorecardData}
-                    onClickIcon={props.onClickIcon}
+                    onClickRow={props.onClickRow}
                     />
         </div>
     );

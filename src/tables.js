@@ -19,7 +19,7 @@ return (
             key = {i}
             id = {i}
             onClickCell={props.onClickCell}
-            onClickIcon={props.onClickIcon}
+            onClickRow={props.onClickRow}
             />
         })
       }
@@ -32,7 +32,7 @@ return (
               key = {i + 3}
               id = {i + 3}
               onClickCell={props.onClickCell}
-              onClickIcon={props.onClickIcon}
+              onClickRow={props.onClickRow}
               />
           })
         }

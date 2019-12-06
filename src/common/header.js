@@ -16,7 +16,7 @@ function Header(props) {
             </div>
          </header>
          <div className="caption">
-            Click on a candidate’s score for more details on their plan. This page will be updated with other Democratic candidates’ scores in the coming months. We urge every candidate to fully adopt the policies and messaging framework set out in this scorecard. Please speak out and let every candidate know you want them to adopt all of these policies and messages.
+         Click on a candidate’s score for more details on their plan. This page will be updated with other Democratic candidates’ scores in the coming months. Please speak out and let every candidate know you want them to adopt all of these policies. It is vital for every candidate to fully adopt the policies and messaging framework set out in this scorecard.
         </div>
         </div>
     );
