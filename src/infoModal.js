@@ -12,11 +12,9 @@ function InfoModal(props) {
             <div className="sc-modal-box">
                 <div className="sc-modal-content">
                 <ModalDescription table={table} row={row}/>
-                <CandidateInfo table={table} 
-                               row={row} 
+                <CandidateInfo row={row} 
                                candidateName={props.candidate}
                                candidateObject={row[props.candidate]}
-                               scorecardData={props.scorecardData}
                                onClickModalNav={props.onClickModalNav}/>
                 </div>
             </div>
