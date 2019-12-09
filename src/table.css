@@ -73,6 +73,7 @@
   height: 100%;
 }
 
+tr:hover > #icon-cell,
 #icon-cell:hover {
   background: white;
 }
