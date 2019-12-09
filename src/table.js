@@ -43,7 +43,7 @@ function Table(props) {
                 <td onClick={handleClick} id="biden">{biden.score}</td>
                 <td onClick={handleClick} id="warren">{warren.score}</td>
                 <td onClick={handleClick} id="sanders">{sanders.score}</td>
-                <td id="icon-cell"> &nbsp;<img id="expand-icon" className="expand-icon" onClick={handleChevronClick} alt="Information Icon" src={expand}></img></td>
+                <td id="icon-cell"><img id="expand-icon" className="expand-icon" onClick={handleChevronClick} alt="Information Icon" src={icon}></img></td>
             </tr>
         )
     });
