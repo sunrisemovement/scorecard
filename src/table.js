@@ -1,7 +1,6 @@
 import React from 'react';
 import './table.css';
-import icon from './assets/i.png';
-import expand from './assets/expand.svg';
+import icon from './assets/expand.svg';
 
 function Table(props) {
 
@@ -43,7 +42,7 @@ function Table(props) {
                 <td onClick={handleClick} id="biden">{biden.score}</td>
                 <td onClick={handleClick} id="warren">{warren.score}</td>
                 <td onClick={handleClick} id="sanders">{sanders.score}</td>
-                <td id="icon-cell"><img id="expand-icon" className="expand-icon" onClick={handleChevronClick} alt="Information Icon" src={expand}></img></td>
+                <td id="icon-cell"><img id="expand-icon" className="expand-icon" onClick={handleChevronClick} alt="Information Icon" src={icon}></img></td>
             </tr>
         )
     });
