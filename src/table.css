@@ -65,12 +65,16 @@
 }
 
 #expand-icon {
-  max-width: 28px;
+  max-width: 29px;
 }
 
 #icon-cell {
   display: none;
   height: 100%;
+}
+
+#icon-cell:hover {
+  background: white;
 }
 
 #biden, #warren, #sanders {
@@ -178,6 +182,12 @@
   .expand-icon {
     display: inline;
     margin-left: 8px;
+  }
+
+  #expand-icon:hover {
+    background: #E0E0E0;
+    mix-blend-mode: darken;
+    border-radius: 100px;
   }
 
   #icon-cell {
