@@ -1,7 +1,6 @@
 import React from 'react';
 import './table.css';
 import icon from './assets/i.png';
-import expand from './assets/expand.png';
 
 function Table(props) {
 
