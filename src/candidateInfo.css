@@ -143,7 +143,7 @@
   @media screen and (max-width: 550px) {
   
     .modal-candidate-info{
-      min-width: 100vw;
+      width: 100vw;
       height: 75vh;
       overflow-y: hidden;
     }

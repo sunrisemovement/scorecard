@@ -1,7 +1,6 @@
 import React from 'react';
 import './table.css';
-import icon from './assets/i.png';
-import expand from './assets/expand.png';
+import icon from './assets/expand.svg';
 
 function Table(props) {
 
@@ -28,13 +27,6 @@ function Table(props) {
         props.onClickRow(e.target.parentElement.parentElement.id, props.id);
     }
 
-    // const handleRowClick = (e) => {
-    //     e.preventDefault();
-
-    //     // pass in row index and table index
-    //     props.onClickIcon(e.target.parentElement.id, props.id);
-    // }
-
     // If there's a category title, it is the GND Vision section
     const isGNDVisionTable = (props.table.categorytitle) ? true : false;
 
@@ -50,7 +42,7 @@ function Table(props) {
                 <td onClick={handleClick} id="biden">{biden.score}</td>
                 <td onClick={handleClick} id="warren">{warren.score}</td>
                 <td onClick={handleClick} id="sanders">{sanders.score}</td>
-                <td id="icon-cell"> &nbsp;<img id="expand-icon" className="expand-icon" onClick={handleChevronClick} alt="Information Icon" src={expand}></img></td>
+                <td id="icon-cell"><img id="expand-icon" className="expand-icon" onClick={handleChevronClick} alt="Information Icon" src={icon}></img></td>
             </tr>
         )
     });

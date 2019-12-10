@@ -101,7 +101,7 @@
 
   .modal-description{
     min-height: 30vh;
-    min-width: 100vw;
+    width: 100vw;
     overflow: auto;
     padding: 25px;
     padding-top: 0px;
