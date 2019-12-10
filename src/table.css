@@ -257,7 +257,12 @@ tr:hover > #icon-cell,
 
 @media screen and (max-width: 380px) {
 
+  .sc-table th {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
   .expand-icon {
-    margin-left: 4px;
+    margin-left: 7px;
   }
 }
