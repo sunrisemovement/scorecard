@@ -77,7 +77,6 @@ tr:hover > #icon-cell {
   background: white;
 }
 
-
 #biden, #warren, #sanders {
   text-align: center;
   font-weight: bold;
@@ -183,7 +182,6 @@ tr:hover > #icon-cell {
   .expand-icon {
     display: inline;
     margin-left: 8px;
-    z-index: 2;
   }
 
   #expand-icon:hover {
