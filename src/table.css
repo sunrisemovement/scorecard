@@ -253,3 +253,11 @@ tr:hover > #icon-cell,
     display: none;
   }
 }
+
+
+@media screen and (max-width: 380px) {
+
+  .expand-icon {
+    margin-left: 4px;
+  }
+}
