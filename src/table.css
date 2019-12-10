@@ -73,10 +73,10 @@
   height: 100%;
 }
 
-tr:hover > #icon-cell,
-#icon-cell:hover {
+tr:hover > #icon-cell {
   background: white;
 }
+
 
 #biden, #warren, #sanders {
   text-align: center;
@@ -183,6 +183,7 @@ tr:hover > #icon-cell,
   .expand-icon {
     display: inline;
     margin-left: 8px;
+    z-index: 2;
   }
 
   #expand-icon:hover {
