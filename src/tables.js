@@ -20,6 +20,7 @@ return (
             id = {i}
             onClickCell={props.onClickCell}
             onClickRow={props.onClickRow}
+            filter={props.filter}
             />
         })
       }
@@ -33,12 +34,14 @@ return (
               id = {i + 3}
               onClickCell={props.onClickCell}
               onClickRow={props.onClickRow}
+              filter={props.filter}
               />
           })
         }
       </div>
 
-      <TotalsTable tables={props.scorecardData.tables}/>
+      <TotalsTable tables={props.scorecardData.tables}
+                   filter={props.filter}/>
 
     </div>
 )
