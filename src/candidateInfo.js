@@ -15,9 +15,9 @@ function CandidateInfo(props) {
         <div className="modal-candidate-info">
             <div className="modal-nav-container">
                 <div className="sc-modal-nav">
-                    <div id="1" data-name="biden" onClick={handleClick} className={"modal-nav-item " + (props.candidateName === "biden" ? 'nav-selected' : '')}>Biden {props.row.biden.score}</div>
-                    <div id="2" data-name="warren" onClick={handleClick} className={"modal-nav-item " + (props.candidateName === "warren" ? 'nav-selected' : '')}>Warren {props.row.warren.score}</div>
-                    <div id="3" data-name="sanders" onClick={handleClick} className={"modal-nav-item " + (props.candidateName === "sanders" ? 'nav-selected' : '')}>Sanders {props.row.sanders.score}</div>
+                    <div id="1" data-name={props.filter[0]} onClick={handleClick} className={"modal-nav-item " + (props.candidateName === props.filter[0] ? 'nav-selected' : '')}>{props.filter[0]} {props.row.biden.score}</div>
+                    <div id="2" data-name={props.filter[1]} onClick={handleClick} className={"modal-nav-item " + (props.candidateName === props.filter[1] ? 'nav-selected' : '')}>{props.filter[1]} {props.row.warren.score}</div>
+                    <div id="3" data-name={props.filter[2]} onClick={handleClick} className={"modal-nav-item " + (props.candidateName === props.filter[2] ? 'nav-selected' : '')}>{props.filter[2]} {props.row.sanders.score}</div>
                     <div className="sc-modal-close">
                         <span className="x-icon">&times;</span>
                     </div>

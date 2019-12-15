@@ -33,15 +33,19 @@ function Table(props) {
     // Checks for subtitles so we can render subtitle and points correctly
     const subtitleIsPresent = (props.table.subtitle !== "")
 
+    const candidateA = props.filter[0];
+    const candidateB = props.filter[1];
+    const candidateC = props.filter[2];
+
     const renderTableData = () => {
     return props.table.rows.map((row, index) => {
-        const {title, total, biden, warren, sanders } = row;
+        const {title, total } = row;
         return (
             <tr id={index} key={index} onClick={handleRowClick}>
                 <td className="row-title"><img className="info-icon" alt="Information Icon" src={icon}></img>{title} <span className="row-points">(out of {total})</span></td>
-                <td onClick={handleClick} id="biden">{biden.score}</td>
-                <td onClick={handleClick} id="warren">{warren.score}</td>
-                <td onClick={handleClick} id="sanders">{sanders.score}</td>
+                <td onClick={handleClick} id={candidateA}>{row[candidateA].score}</td>
+                <td onClick={handleClick} id={candidateB}>{row[candidateB].score}</td>
+                <td onClick={handleClick} id={candidateC}>{row[candidateC].score}</td>
                 <td id="icon-cell"><img id="expand-icon" className="expand-icon" onClick={handleChevronClick} alt="Information Icon" src={icon}></img></td>
             </tr>
         )
@@ -74,18 +78,18 @@ function Table(props) {
                 <tbody>
                     <tr id="header">
                         <th width="65%"></th>
-                        <th>Biden</th>
-                        <th>Warren</th>
-                        <th>Sanders</th>
+                        <th>{candidateA}</th>
+                        <th>{candidateB}</th>
+                        <th>{candidateC}</th>
                     </tr>
                     
                     {renderTableData()}
                     
                     <tr className="subtotals">
                         <td width="65%" className="subtotal-title">Subtotal <span className="row-points">(out of {props.table.points})</span></td>
-                        <td id="biden" >{props.table.subtotals.biden}</td>
-                        <td id="warren" >{props.table.subtotals.warren}</td>
-                        <td id="sanders" >{props.table.subtotals.sanders}</td>
+                        <td id={candidateA} >{props.table.subtotals.biden}</td>
+                        <td id={candidateB} >{props.table.subtotals.warren}</td>
+                        <td id={candidateC} >{props.table.subtotals.sanders}</td>
                     </tr>
                 </tbody>
             </table>
