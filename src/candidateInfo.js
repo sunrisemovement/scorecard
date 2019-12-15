@@ -11,13 +11,18 @@ function CandidateInfo(props) {
         props.onClickModalNav(e);
     }
 
+    // Currently selected candidates
+    const candidateA = props.filter[0];
+    const candidateB = props.filter[1];
+    const candidateC = props.filter[2];
+
     return ( 
         <div className="modal-candidate-info">
             <div className="modal-nav-container">
                 <div className="sc-modal-nav">
-                    <div id="1" data-name={props.filter[0]} onClick={handleClick} className={"modal-nav-item " + (props.candidateName === props.filter[0] ? 'nav-selected' : '')}>{props.filter[0]} {props.row.biden.score}</div>
-                    <div id="2" data-name={props.filter[1]} onClick={handleClick} className={"modal-nav-item " + (props.candidateName === props.filter[1] ? 'nav-selected' : '')}>{props.filter[1]} {props.row.warren.score}</div>
-                    <div id="3" data-name={props.filter[2]} onClick={handleClick} className={"modal-nav-item " + (props.candidateName === props.filter[2] ? 'nav-selected' : '')}>{props.filter[2]} {props.row.sanders.score}</div>
+                    <div id="1" data-name={candidateA} onClick={handleClick} className={"modal-nav-item " + (props.candidateName === candidateA ? 'nav-selected' : '')}>{candidateA} {props.row.biden.score}</div>
+                    <div id="2" data-name={candidateB} onClick={handleClick} className={"modal-nav-item " + (props.candidateName === candidateB ? 'nav-selected' : '')}>{candidateB} {props.row.warren.score}</div>
+                    <div id="3" data-name={candidateC} onClick={handleClick} className={"modal-nav-item " + (props.candidateName === candidateC ? 'nav-selected' : '')}>{candidateC} {props.row.sanders.score}</div>
                     <div className="sc-modal-close">
                         <span className="x-icon">&times;</span>
                     </div>
