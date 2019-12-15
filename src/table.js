@@ -33,6 +33,7 @@ function Table(props) {
     // Checks for subtitles so we can render subtitle and points correctly
     const subtitleIsPresent = (props.table.subtitle !== "")
 
+    // Currently selected candidates
     const candidateA = props.filter[0];
     const candidateB = props.filter[1];
     const candidateC = props.filter[2];
