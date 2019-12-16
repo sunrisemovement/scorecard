@@ -88,9 +88,9 @@ function Table(props) {
                     
                     <tr className="subtotals">
                         <td width="65%" className="subtotal-title">Subtotal <span className="row-points">(out of {props.table.points})</span></td>
-                        <td id={candidateA} >{props.table.subtotals.biden}</td>
-                        <td id={candidateB} >{props.table.subtotals.warren}</td>
-                        <td id={candidateC} >{props.table.subtotals.sanders}</td>
+                        <td id={candidateA} >{props.table.subtotals[candidateA]}</td>
+                        <td id={candidateB} >{props.table.subtotals[candidateB]}</td>
+                        <td id={candidateC} >{props.table.subtotals[candidateC]}</td>
                     </tr>
                 </tbody>
             </table>
