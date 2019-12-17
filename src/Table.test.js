@@ -37,6 +37,7 @@ it('the table renders the subtotals when there are no rows', () => {
     key = {1}
     onClickCell = {() => {}}
     onClickIcon = {() => {}}
+    filter={['biden', 'warren', 'sanders']}
   />, container);
 
   const tableName = container.querySelector('.table-title');
