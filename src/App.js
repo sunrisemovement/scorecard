@@ -18,6 +18,7 @@ class App extends React.Component {
     super(props);
     
     this.state = {
+      filter: ['biden', 'warren', 'sanders'],
       candidate: null,
       table: 0,
       row: 0,
@@ -131,12 +132,15 @@ class App extends React.Component {
                           onClickNav={this.onClickNav}
                           scorecardData={data}
                           onClickRow={this.onClickRow}
+                          filter={this.state.filter}
                           />
             <InfoModal scorecardData={data}
                       candidate={this.state.candidate}
                       row={this.state.row}
                       table={this.state.table}
-                      onClickModalNav={this.onClickModalNav}/>
+                      onClickModalNav={this.onClickModalNav}
+                      filter={this.state.filter}
+                      />
          </div>
          {!this.embedMode && <SunriseFooter /> }
       </div>

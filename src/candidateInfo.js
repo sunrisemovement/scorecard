@@ -11,13 +11,18 @@ function CandidateInfo(props) {
         props.onClickModalNav(e);
     }
 
+    // Currently selected candidates
+    const candidateA = props.filter[0];
+    const candidateB = props.filter[1];
+    const candidateC = props.filter[2];
+
     return ( 
         <div className="modal-candidate-info">
             <div className="modal-nav-container">
                 <div className="sc-modal-nav">
-                    <div id="1" data-name="biden" onClick={handleClick} className={"modal-nav-item " + (props.candidateName === "biden" ? 'nav-selected' : '')}>Biden {props.row.biden.score}</div>
-                    <div id="2" data-name="warren" onClick={handleClick} className={"modal-nav-item " + (props.candidateName === "warren" ? 'nav-selected' : '')}>Warren {props.row.warren.score}</div>
-                    <div id="3" data-name="sanders" onClick={handleClick} className={"modal-nav-item " + (props.candidateName === "sanders" ? 'nav-selected' : '')}>Sanders {props.row.sanders.score}</div>
+                    <div id="1" data-name={candidateA} onClick={handleClick} className={"modal-nav-item " + (props.candidateName === candidateA ? 'nav-selected' : '')}>{candidateA} {props.row[candidateA].score}</div>
+                    <div id="2" data-name={candidateB} onClick={handleClick} className={"modal-nav-item " + (props.candidateName === candidateB ? 'nav-selected' : '')}>{candidateB} {props.row[candidateB].score}</div>
+                    <div id="3" data-name={candidateC} onClick={handleClick} className={"modal-nav-item " + (props.candidateName === candidateC ? 'nav-selected' : '')}>{candidateC} {props.row[candidateC].score}</div>
                     <div className="sc-modal-close">
                         <span className="x-icon">&times;</span>
                     </div>

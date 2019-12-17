@@ -11,6 +11,7 @@ const ScorecardApp = (props) => (
             <Tables onClickCell={props.onClickCell} 
                     scorecardData={props.scorecardData}
                     onClickRow={props.onClickRow}
+                    filter={props.filter}
                     />
         </div>
     );

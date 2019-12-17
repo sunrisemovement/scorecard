@@ -4,6 +4,11 @@ import './totalsTable.css';
 
 function TotalsTable(props) {
 
+     // Currently selected candidates
+     const candidateA = props.filter[0];
+     const candidateB = props.filter[1];
+     const candidateC = props.filter[2];
+
     const calculateTotals = (candidate) => {
         var candidateTotals = []
 
@@ -30,9 +35,9 @@ function TotalsTable(props) {
         return subtotal.toString();
     }
 
-    var biden = calculateTotals("biden")
-    var warren = calculateTotals("warren")
-    var sanders = calculateTotals("sanders")
+    var canA = calculateTotals(candidateA)
+    var canB = calculateTotals(candidateB)
+    var canC = calculateTotals(candidateC)
 
     return (
         <div className="totals-table" id="table-9">
@@ -41,39 +46,39 @@ function TotalsTable(props) {
                 <tbody>
                 <tr id="header">
                     <th></th>
-                    <th>Biden</th>
-                    <th>Warren</th>
-                    <th>Sanders</th>
+                    <th>{candidateA}</th>
+                    <th>{candidateB}</th>
+                    <th>{candidateC}</th>
                 </tr>
                 <tr className="">
                     <td>How they talk about it <span className="row-points">(out of 35)</span></td>
-                    <td id="biden">{biden[0]}</td>
-                    <td id="warren">{warren[0]}</td>
-                    <td id="sanders">{sanders[0]}</td>
+                    <td id={candidateA}>{canA[0]}</td>
+                    <td id={candidateB}>{canB[0]}</td>
+                    <td id={candidateC}>{canC[0]}</td>
                 </tr>
                 <tr className="">
                     <td>How much they talk about it <span className="row-points">(out of 30)</span></td>
-                    <td id="biden">{biden[1]}</td>
-                    <td id="warren">{warren[1]}</td>
-                    <td id="sanders">{sanders[1]}</td>
+                    <td id={candidateA}>{canA[1]}</td>
+                    <td id={candidateB}>{canB[1]}</td>
+                    <td id={candidateC}>{canC[1]}</td>
                 </tr>
                 <tr className="">
                     <td>Plan to win <span className="row-points">(out of 35)</span></td>
-                    <td id="biden">{biden[2]}</td>
-                    <td id="warren">{warren[2]}</td>
-                    <td id="sanders">{sanders[2]}</td>
+                    <td id={candidateA}>{canA[2]}</td>
+                    <td id={candidateB}>{canB[2]}</td>
+                    <td id={candidateC}>{canC[2]}</td>
                 </tr>
                 <tr className="">
                     <td>Green New Deal vision <span className="row-points">(out of 100)</span></td>
-                    <td id="biden">{gndTotal(biden)}</td>
-                    <td id="warren">{gndTotal(warren)}</td>
-                    <td id="sanders">{gndTotal(sanders)}</td>
+                    <td id={candidateA}>{gndTotal(canA)}</td>
+                    <td id={candidateB}>{gndTotal(canB)}</td>
+                    <td id={candidateC}>{gndTotal(canC)}</td>
                 </tr>
                 <tr id="totals-row">
                     <td width="65%">Total <span className="total-points">(out of 200)</span></td>
-                    <td id="biden">{subtotal(biden)}</td>
-                    <td id="warren">{subtotal(warren)}</td>
-                    <td id="sanders">{subtotal(sanders)}</td>
+                    <td id={candidateA}>{subtotal(canA)}</td>
+                    <td id={candidateB}>{subtotal(canB)}</td>
+                    <td id={candidateC}>{subtotal(canC)}</td>
                 </tr>
                 </tbody>
             </table>
