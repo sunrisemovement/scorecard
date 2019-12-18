@@ -4,6 +4,12 @@ import icon from '../assets/dropdown.png';
 
 
 function Filter(props) {
+
+    // Currently selected candidates
+    const candidateA = props.filter[0];
+    const candidateB = props.filter[1];
+    const candidateC = props.filter[2];
+
     // const handleClick = (e) => {
     //     e.preventDefault();
    
@@ -12,13 +18,13 @@ function Filter(props) {
     return ( 
             <div className="filter">
                 <div className="candidate-dropdown">
-                    {props.filter[0]} <img className="dropdown-icon" alt="Dropdown icon"src={icon}></img>
+                    {candidateA} <img className="dropdown-icon" alt="Dropdown icon"src={icon}></img>
                 </div>
                 <div className="candidate-dropdown">
-                    {props.filter[1]} <img className="dropdown-icon" alt="Dropdown icon"src={icon}></img>
+                    {candidateB} <img className="dropdown-icon" alt="Dropdown icon"src={icon}></img>
                 </div>
                 <div className="candidate-dropdown">
-                    {props.filter[2]} <img className="dropdown-icon" alt="Dropdown icon"src={icon}></img>
+                    {candidateC} <img className="dropdown-icon" alt="Dropdown icon"src={icon}></img>
                 </div>
             </div>
     );
