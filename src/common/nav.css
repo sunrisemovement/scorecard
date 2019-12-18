@@ -12,35 +12,6 @@
     flex-direction: row;
 }
 
-.filter {
-    display: flex;
-    flex-flow: row nowrap;
-    height: 50px;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 3px 0;
-}
-
-.candidate-dropdown {
-    text-align: center;
-    padding: 5px 0;
-    width: 120px;
-    background: #f4f4f4;
-    margin: 0 9px;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 16.5px;
-    text-transform: capitalize;
-}
-
-.candidate-dropdown:nth-child(3) {
-    margin-right: 4px;
-}
-
-.candidate-dropdown:hover {
-    background: #e0e0e0;
-}
-
 .dropdown-icon {
     height: 14px;
     padding-top: 2px;
