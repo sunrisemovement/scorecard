@@ -18,19 +18,23 @@
     height: 50px;
     align-items: center;
     justify-content: flex-end;
-    padding: 5px 0;
+    padding: 3px 0;
 }
 
 .candidate-dropdown {
     text-align: center;
     padding: 5px 0;
-    width: 130px;
+    width: 120px;
     background: #f4f4f4;
     margin: 0 9px;
     cursor: pointer;
     font-weight: 600;
-    font-size: 17.5px;
+    font-size: 16.5px;
     text-transform: capitalize;
+}
+
+.candidate-dropdown:nth-child(3) {
+    margin-right: 4px;
 }
 
 .candidate-dropdown:hover {
@@ -39,12 +43,12 @@
 
 .dropdown-icon {
     height: 14px;
-    padding-top: 1px;
+    padding-top: 2px;
     margin-left: 5px;
 }
 
 .nav-item {
-    padding: 1em;
+    padding: 14px 1em;
     font-weight: bold;
     font-size: 18px;
     line-height: 27px;
