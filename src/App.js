@@ -127,16 +127,12 @@ class App extends React.Component {
   }
 
   handleFilterChange = (newSelection, oldSelection, i) => {
-    if (newSelection) {
-      console.log(newSelection);
-
       var newFilter = this.state.filter;
       newFilter[i] = newSelection
 
       this.setState({
         filter: newFilter
      })
-    }
    }
 
   render () {

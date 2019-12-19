@@ -22,7 +22,6 @@ function Checkboxes(props) {
     }
 
     const handleDone = () => {
-       
         var currentCheckboxes = document.getElementsByClassName('checkboxes')[props.ind];
         var oldCandidateBoxes = document.getElementsByClassName('box-' + filterName);
         var newCandidateBoxes = document.getElementsByClassName('box-' + newSelection);
@@ -37,7 +36,7 @@ function Checkboxes(props) {
         // }
         
         
-        if (newSelection !== filterName) {
+        if (newSelection && newSelection !== filterName) {
             // If a new candidate was selected, uncheck old candidate in all overlays,
             // check new candidate in all overlays
 
@@ -49,16 +48,18 @@ function Checkboxes(props) {
             newCandidateBoxes[1].checked = true;
             newCandidateBoxes[2].checked = true;
 
+            // If there's a valid new selection, update state
+            props.handleFilterChange(newSelection, props.filterName, props.ind)
 
-        } else {
+        } else 
+        {
             // If not, reselect the original candidate and restore 'active' class
             oldCandidateBoxes[props.ind].checked = true;
-
             oldCandidateBoxes[props.ind].parentElement.classList.add("active-checked");
         }
-        
 
-        props.handleFilterChange(newSelection, props.filterName, props.ind)
+        // Reset this variable for next time
+        newSelection = "";
     }
 
     return ( 
