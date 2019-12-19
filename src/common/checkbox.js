@@ -8,17 +8,20 @@ function Checkbox(props) {
         var clickedName = props.name[1].toLowerCase();
 
         var currentDropdown = document.getElementById("ch-"+ props.filterInd);
-        var previousSelction = currentDropdown.getElementsByClassName('active-checked')[0];
+        var previousSelection = currentDropdown.getElementsByClassName('active-checked')[0];
 
         // First uncheck whomever was previously selected
-        if (previousSelction) {
-            previousSelction.classList.remove("active-checked")
-            previousSelction.querySelector('input').checked = false;
+        if (previousSelection) {
+            previousSelection.classList.remove("active-checked")
+            previousSelection.querySelector('input').checked = false;
         }
         // Then toggle the class of whoever was clicked
         e.currentTarget.checked ? 
         e.currentTarget.parentElement.classList.add("active-checked") :
         e.currentTarget.parentElement.classList.remove("active-checked")
+
+        // Only send a new name up if they are now checked
+        // clickedName = e.currentTarget.checked ? props.name[1].toLowerCase() : '';
 
         props.handleCheckboxChange(clickedName);
     }
@@ -38,6 +41,7 @@ function Checkbox(props) {
             {fullName}
                 <input 
                     type="checkbox"
+                    className={'box-' + props.name[1].toLowerCase()}
                     onChange={(handleBoxClick)} 
                     disabled={isDisabled(props.name[1])} 
                     defaultChecked={isDefaultChecked(props.name[1])}>
