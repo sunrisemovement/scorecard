@@ -1,7 +1,7 @@
 {
-  "name": "scorecard-widget",
+  "name": "presidential-scorecard",
   "version": "0.1.0",
-  "description": "A scorecard widget for presidential candidates",
+  "description": "Sunrise 2020 Presidential Candidate Scorecard",
   "author": "Sunrise",
   "private": true,
   "dependencies": {

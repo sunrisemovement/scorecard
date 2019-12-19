@@ -7,12 +7,12 @@ function Checkboxes(props) {
     // Our data doesn't currently reference the candidates
     // by their full names. We can use this constant to generate
     // necessary checkbox filters for now.
-    const candidateNames = [['Joe', 'Biden'],
+    const candidateNames = [ ['Joe', 'Biden'],
                             ['Cory', 'Booker'],
                             ['Pete', 'Buttigieg'],
                             ['Bernie', 'Sanders'],
                             ['Elizabeth', 'Warren'],
-                            ['Andrew', 'Yang']]
+                            ['Andrew', 'Yang'] ]
 
     const filterName = props.filter[props.ind]
 
