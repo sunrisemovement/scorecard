@@ -6,7 +6,7 @@ function Checkbox(props) {
     const handleBoxClick = (e) => {
         e.stopPropagation();
 
-        console.log(e.currentTarget)
+        console.log(props.name[1].toLowerCase())
     }
 
     const fullName = props.name[0] + " " + props.name[1]
