@@ -150,3 +150,20 @@
     background-color: #464646;
     outline: 0;
   }
+
+  @media screen and (max-width: 940px) {
+
+    .candidate-dropdown {
+        font-size: 16px;
+        /* line-height: 22px; */
+    }
+    
+  }
+
+  @media screen and (max-width: 850px) {
+
+    .candidate-dropdown {
+        font-size: 15px;
+    }
+    
+  }

@@ -40,7 +40,8 @@
 
     .nav-item {
         font-size: 16px;
-        /* line-height: 22px; */
+        padding: 12px 1em;
+        line-height: 25px;
     }
     
   }
@@ -48,9 +49,9 @@
   @media screen and (max-width: 850px) {
     .nav-item {
         font-size: 14.7px;
-        /* line-height: 19px; */
-    }
+        padding: 10px 1em;
   }
+}
 
 @media screen and (max-width: 790px) {
 
