@@ -4,22 +4,22 @@
     height: 50px;
     align-items: center;
     justify-content: flex-end;
-    padding: 3px 0;
+    padding: 3px 34px;
     color: #33342e;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none;
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
 }
 
 .candidate-dropdown {
     text-align: center;
-    padding: 5px 0;
+    padding: 6px 0;
     width: 120px;
     background: #f4f4f4;
-    margin: 0 9px;
+    margin: 0 6px;
     cursor: pointer;
     font-weight: 600;
     font-size: 17px;
@@ -39,12 +39,12 @@
     color: #33342e;
     position: absolute;
     margin-top: 25px;
-    margin-left: -35px;
+    margin-left: -45px;
     /* min-width: 180px; */
     background: white;
     border: 3px solid #f4f4f4;
-    box-shadow: 1px 1px 5px #f4f4f4;;
-    border-radius: 13px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
     padding: 1.2em 2em;
     cursor: auto;
     font-weight: normal;
@@ -59,7 +59,9 @@
 
 .input-container {
     display: block;
-    padding: .1em 0;
+    cursor: pointer;
+    font-size: 16px;
+    padding: .2em 0;
     position: relative;
     padding-left: 35px;
     margin-bottom: 12px;
@@ -73,7 +75,6 @@
   .input-container input {
     position: absolute;
     opacity: 0;
-    cursor: pointer;
     height: 0;
     width: 0;
   }
@@ -82,12 +83,12 @@
   .checkmark {
     position: absolute;
     cursor: pointer;
-    top: 0;
-    left: 0;
-    border-radius: 5px;
-    height: 25px;
-    width: 25px;
-    border: 2px solid #eee;
+    top: 4px;
+    left: 2px;
+    border-radius: 4px;
+    height: 21px;
+    width: 21px;
+    border: 1px solid #464646;
   }
 
   .disabled {
@@ -96,7 +97,7 @@
   
 
   .input-container:hover input ~ .checkmark {
-    background-color: rgb(236, 236, 236);
+    background-color: #f5f5f5;
   }
   
   .input-container input:checked ~ .checkmark {
@@ -104,7 +105,9 @@
   }
 
   .input-container input:disabled ~ .checkmark{
-    background-color: rgb(214, 214, 214);
+    background-color: #E0E0E0;
+    border: 1px solid #E0E0E0;
+
   }
   
   /* Create the checkmark/indicator (hidden when not checked) */
@@ -118,13 +121,17 @@
   .input-container input:checked ~ .checkmark:after {
     display: block;
   }
+
+  .active-checked {
+    font-weight: bold;
+  }
   
   /* Style the checkmark/indicator */
   .input-container .checkmark:after {
-    left: 7px;
-    top: 3px;
+    left: 6px;
+    top: 2.5px;
     width: 5px;
-    height: 9px;
+    height: 8px;
     border: solid white;
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
@@ -138,11 +145,12 @@
     background-color: #33342e;
     border: none;
     color: white;
-    padding: 10px 32px;
+    padding: 8px 32px;
     width: 100%;
     text-decoration: none;
     display: inline-block;
-    font-size: 17px;
+    font-size: 18px;
+    line-height: 27px;
     font-weight: bold;
   }
 

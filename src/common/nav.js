@@ -2,6 +2,7 @@ import React from 'react';
 import './nav.css';
 import Scrollspy from 'react-scrollspy'
 import Filter from './filter.js'
+import throttle from 'lodash/throttle';
 
 
 function Nav(props) {
@@ -11,6 +12,21 @@ function Nav(props) {
             props.onClickNav(e.target.id)
         }
     }
+    
+    var wideWidth = window.matchMedia("(min-width: 790px)");
+
+    const checkHeader = throttle(() => { 
+        var nav = document.getElementsByClassName("nav-scrollspy")[0];
+
+        if (wideWidth.matches && (window.scrollY > 473)) {
+            nav.classList.add("dark-nav");
+            console.log(nav, window.scrollY)
+        } else {
+            nav.classList.remove("dark-nav");
+        }
+    }, 200);
+
+    window.addEventListener('scroll', checkHeader);
 
     return ( 
         <div className="navbar">

@@ -1,7 +1,7 @@
 .navbar {
     background-color: white;
     min-width: 100%;
-    padding: 0 34px;
+    /* padding: 0 34px; */
     border-bottom: 3px solid #F4F4F4;
     position: sticky;
     top: 0;
@@ -10,6 +10,12 @@
 .nav-scrollspy {
     display: flex;
     flex-direction: row;
+    padding: 0 34px;
+    transition: background-color 0.33s ease;
+}
+
+.dark-nav {
+    background-color: #464646;
 }
 
 .dropdown-icon {
@@ -34,6 +40,14 @@
 .nav-item:hover, .is-current{
     color: #33342E;
     border-bottom: 4px solid #FFDE16;
+}
+
+.dark-nav * {
+    color:white;
+}
+
+.dark-nav .nav-item:hover {
+    color: white;
 }
 
 @media screen and (max-width: 940px) {

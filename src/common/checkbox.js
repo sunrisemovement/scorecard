@@ -20,7 +20,7 @@ function Checkbox(props) {
     }
 
     return ( 
-        <label className={"input-container " + (isDisabled(props.name[1]) ? 'disabled' : '')}>{fullName}
+        <label className={"input-container " + (isDisabled(props.name[1]) ? 'disabled ' : '') + ((!isDisabled(props.name[1]) && isChecked(props.name[1])) ? 'active-checked ' : '')}>{fullName}
                 <input type="checkbox" onChange={(handleBoxClick)} disabled={isDisabled(props.name[1])} defaultChecked={isChecked(props.name[1])}></input>
                 <span className="checkmark"></span>
             </label>
