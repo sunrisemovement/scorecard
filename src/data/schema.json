@@ -36,6 +36,7 @@
             "properties": {
               "biden": { "type": "string" },
               "warren": { "type": "string" },
+              "buttigieg": { "type": "string" },
               "sanders": { "type": "string" }
             }
           },
@@ -57,6 +58,7 @@
                 "description": { "type": "string" },
                 "total": { "type": "string" },
                 "biden": { "$ref": "#/definitions/rowAnalysis" },
+                "buttigieg": { "$ref": "#/definitions/rowAnalysis" },
                 "warren": { "$ref": "#/definitions/rowAnalysis" },
                 "sanders": { "$ref": "#/definitions/rowAnalysis" }
               }
