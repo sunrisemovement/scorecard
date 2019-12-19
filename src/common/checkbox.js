@@ -28,3 +28,5 @@ function Checkbox(props) {
 }
 
 export default Checkbox;
+
+// id={"check-" + (props.name[1].toLowerCase())}

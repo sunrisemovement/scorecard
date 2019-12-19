@@ -4,6 +4,9 @@ import Checkbox from './checkbox.js';
 
 function Checkboxes(props) {
 
+    // Our data doesn't currently reference the candidates
+    // by their full names. We can use this constant to generate
+    // necessary checkbox filters for now.
     const candidateNames = [['Joe', 'Biden'],
                             ['Cory', 'Booker'],
                             ['Pete', 'Buttigieg'],

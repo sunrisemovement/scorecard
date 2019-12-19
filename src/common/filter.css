@@ -88,7 +88,7 @@
   
 
   .input-container:hover input ~ .checkmark {
-    background-color: rgb(228, 228, 228);
+    background-color: rgb(236, 236, 236);
   }
   
   /* When the checkbox is checked, add a blue background */
@@ -97,7 +97,7 @@
   }
 
   .input-container input:disabled ~ .checkmark{
-    background-color: rgb(192, 192, 192);
+    background-color: rgb(214, 214, 214);
   }
   
   /* Create the checkmark/indicator (hidden when not checked) */
