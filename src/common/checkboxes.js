@@ -11,6 +11,7 @@ function Checkboxes(props) {
                             ['Cory', 'Booker'],
                             ['Pete', 'Buttigieg'],
                             ['Bernie', 'Sanders'],
+                            ['Tom', 'Steyer'],
                             ['Elizabeth', 'Warren'],
                             ['Andrew', 'Yang'] ]
 

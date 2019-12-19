@@ -75,10 +75,10 @@ function TotalsTable(props) {
                     <td id={candidateC}>{gndTotal(canC)}</td>
                 </tr>
                 <tr id="totals-row">
-                    <td width="65%">Total <span className="total-points">(out of 200)</span></td>
-                    <td id={candidateA}>{subtotal(canA)}</td>
-                    <td id={candidateB}>{subtotal(canB)}</td>
-                    <td id={candidateC}>{subtotal(canC)}</td>
+                    <td width="55%">Total <span className="total-points">(out of 200)</span></td>
+                    <td width="11%" id={candidateA}>{subtotal(canA)}</td>
+                    <td width="11%" id={candidateB}>{subtotal(canB)}</td>
+                    <td width="11%" id={candidateC}>{subtotal(canC)}</td>
                 </tr>
                 </tbody>
             </table>

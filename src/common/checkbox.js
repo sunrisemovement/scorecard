@@ -15,13 +15,11 @@ function Checkbox(props) {
             previousSelection.classList.remove("active-checked")
             previousSelection.querySelector('input').checked = false;
         }
+        
         // Then toggle the class of whoever was clicked
         e.currentTarget.checked ? 
         e.currentTarget.parentElement.classList.add("active-checked") :
         e.currentTarget.parentElement.classList.remove("active-checked")
-
-        // Only send a new name up if they are now checked
-        // clickedName = e.currentTarget.checked ? props.name[1].toLowerCase() : '';
 
         props.handleCheckboxChange(clickedName);
     }
