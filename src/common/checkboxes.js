@@ -29,6 +29,9 @@ function Checkboxes(props) {
                     />
                 })
             }
+
+            <button className='done-button'>Done</button>
+            
          </div>
     );
 }

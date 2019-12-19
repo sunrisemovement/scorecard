@@ -5,6 +5,13 @@
     align-items: center;
     justify-content: flex-end;
     padding: 3px 0;
+    color: #33342e;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
 }
 
 .candidate-dropdown {
@@ -29,6 +36,7 @@
 
 .checkboxes {
     text-align: left;
+    color: #33342e;
     position: absolute;
     margin-top: 25px;
     margin-left: -35px;
@@ -48,7 +56,7 @@
 #ch-2 {
     margin-left: -100px;
 }
-/* The container */
+
 .input-container {
     display: block;
     padding: .1em 0;
@@ -73,12 +81,12 @@
   /* Create a custom checkbox */
   .checkmark {
     position: absolute;
+    cursor: pointer;
     top: 0;
     left: 0;
     border-radius: 5px;
     height: 25px;
     width: 25px;
-    /* background-color: #eee; */
     border: 2px solid #eee;
   }
 
@@ -91,7 +99,6 @@
     background-color: rgb(236, 236, 236);
   }
   
-  /* When the checkbox is checked, add a blue background */
   .input-container input:checked ~ .checkmark {
     background-color: #33342E;
   }
@@ -123,4 +130,23 @@
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+  }
+
+  .done-button {
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #33342e;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    width: 100%;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  .done-button:hover, .done-button:focus {
+    background-color: #464646;
+    outline: 0;
   }
