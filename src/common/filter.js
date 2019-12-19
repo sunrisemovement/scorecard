@@ -16,14 +16,17 @@ function Filter(props) {
     const handleClick = (e) => {
         e.preventDefault();
         var checkboxes = document.getElementsByClassName('checkboxes');
-        var currentCheckboxes = e.currentTarget.querySelector('.checkboxes')
+        var selectedCheckboxes = e.currentTarget.querySelector('.checkboxes')
 
-        var isHidden = (currentCheckboxes.style.display === 'none');
+        var isHidden = (selectedCheckboxes.style.display === 'none');
+
+        // Make sure other dropdowns are hidden first
         checkboxes[0].style.display = "none";
         checkboxes[1].style.display = "none";
         checkboxes[2].style.display = "none";
-        
-        isHidden ? (currentCheckboxes.style.display = "block") : (currentCheckboxes.style.display = "none") 
+
+        // Show selected checkboxes if they were hidden, hide them if not
+        isHidden ? (selectedCheckboxes.style.display = "block") : (selectedCheckboxes.style.display = "none") 
    
     }
 

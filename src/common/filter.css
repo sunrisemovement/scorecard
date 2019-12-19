@@ -28,7 +28,6 @@
 }
 
 .checkboxes {
-    display: none;
     text-align: left;
     position: absolute;
     margin-top: 25px;
@@ -40,13 +39,14 @@
     border-radius: 13px;
     padding: 1.2em 2em;
     cursor: auto;
+    font-weight: normal;
     /* transition: all .2s ease;
     -webkit-transition: all .2s ease;
     -moz-transition: all .2s ease; */
 }
 
-#ch-0 {
-    display: block;
+.hide {
+  display: none;
 }
 
 #ch-2 {
