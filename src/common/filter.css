@@ -4,7 +4,7 @@
     height: 50px;
     align-items: center;
     justify-content: flex-end;
-    padding: 3px 34px;
+    padding: 4px 34px;
     color: #33342e;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -93,6 +93,7 @@
 
   .disabled {
     color: rgb(189, 189, 189);
+    cursor: auto;
   }
   
 
@@ -107,7 +108,7 @@
   .input-container input:disabled ~ .checkmark{
     background-color: #E0E0E0;
     border: 1px solid #E0E0E0;
-
+    cursor: auto;
   }
   
   /* Create the checkmark/indicator (hidden when not checked) */

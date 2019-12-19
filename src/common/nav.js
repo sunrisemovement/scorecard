@@ -38,8 +38,10 @@ function Nav(props) {
                 <div id="9" onClick={handleClick} className="nav-item" >Totals</div>
             </Scrollspy>
 
-            <Filter filter={props.filter} />
-
+            <Filter 
+                filter={props.filter}
+                handleFilterChange={props.handleFilterChange} />
+                
         </div>
     );
 }

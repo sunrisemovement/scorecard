@@ -32,17 +32,29 @@ function Filter(props) {
 
                 <div className="candidate-dropdown" onClick={handleClick}>
                     {candidateA} <img className="dropdown-icon" alt="Dropdown icon"src={icon}></img>
-                    <Checkboxes filter={props.filter} key={1} ind={0}/>
+                    <Checkboxes 
+                        filter={props.filter} 
+                        key={1} 
+                        ind={0} 
+                        handleFilterChange = {props.handleFilterChange} />
                  </div>
 
                 <div className="candidate-dropdown" onClick={handleClick}>
                     {candidateB} <img className="dropdown-icon" alt="Dropdown icon"src={icon}></img>
-                    <Checkboxes filter={props.filter} key={2} ind={1}/>
+                    <Checkboxes 
+                        filter={props.filter} 
+                        key={2} 
+                        ind={1} 
+                        handleFilterChange = {props.handleFilterChange} />
                 </div>
 
                 <div className="candidate-dropdown" onClick={handleClick}>
                     {candidateC} <img className="dropdown-icon" alt="Dropdown icon"src={icon}></img>
-                    <Checkboxes filter={props.filter} key={3} ind={2}/>
+                    <Checkboxes 
+                        filter={props.filter} 
+                        key={3} 
+                        ind={2} 
+                        handleFilterChange = {props.handleFilterChange} />
                 </div>
 
             </div>

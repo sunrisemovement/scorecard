@@ -15,22 +15,35 @@ function Checkboxes(props) {
                             ['Andrew', 'Yang'] ]
 
     const filterName = props.filter[props.ind]
+    var newSelection;
+
+    const handleCheckboxChange = (cand) => {
+        newSelection = cand;
+    }
+
+    const handleDone = () => {
+        var checkboxes = document.getElementsByClassName('checkboxes')[props.ind];
+        checkboxes.style.display = "none";
+        
+        props.handleFilterChange(newSelection, props.ind)
+    }
 
     return ( 
         <div className="checkboxes" style={ {display: 'none'}} id={'ch-'+props.ind} onClick={(e) => e.stopPropagation()}>
             {
                 candidateNames.map(function (name, i) {
                     return <Checkbox 
-                    name = {name}
-                    filter = {props.filter}
-                    filterName = {filterName}
-                    key = {i}
-                    id = {i}
-                    />
+                                name = {name}
+                                filter = {props.filter}
+                                filterName = {filterName}
+                                filterInd = {props.ind}
+                                key = {i}
+                                id = {i} 
+                                handleCheckboxChange = {handleCheckboxChange} />
                 })
             }
 
-            <button className='done-button'>Done</button>
+            <button className='done-button' onClick={handleDone}>Done</button>
             
          </div>
     );

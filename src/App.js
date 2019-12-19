@@ -83,7 +83,7 @@ class App extends React.Component {
     this.setState({
       candidate: newCandidate
     })
-    }
+   }
 
   openModal(lastClicked) {
     var modal = document.getElementById("info-modal");
@@ -126,6 +126,19 @@ class App extends React.Component {
     });
   }
 
+  handleFilterChange = (newSelection, i) => {
+    if (newSelection) {
+      console.log(newSelection);
+
+      var newFilter = this.state.filter;
+      newFilter[i] = newSelection
+
+      this.setState({
+        filter: newFilter
+     })
+    }
+   }
+
   render () {
     return (
       <div className="App scorecard-app">
@@ -138,6 +151,7 @@ class App extends React.Component {
                           scorecardData={data}
                           onClickRow={this.onClickRow}
                           filter={this.state.filter}
+                          handleFilterChange={this.handleFilterChange}
                           />
             <InfoModal scorecardData={data}
                       candidate={this.state.candidate}

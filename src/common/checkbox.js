@@ -5,13 +5,27 @@ function Checkbox(props) {
 
     const handleBoxClick = (e) => {
         e.stopPropagation();
+        var clickedName = props.name[1].toLowerCase();
 
-        console.log(props.name[1].toLowerCase())
+        var currentDropdown = document.getElementById("ch-"+ props.filterInd);
+        var previousSelction = currentDropdown.getElementsByClassName('active-checked')[0];
+
+        // First uncheck whomever was previously selected
+        if (previousSelction) {
+            previousSelction.classList.remove("active-checked")
+            previousSelction.querySelector('input').checked = false;
+        }
+        // Then toggle the class of whoever was clicked
+        e.currentTarget.checked ? 
+        e.currentTarget.parentElement.classList.add("active-checked") :
+        e.currentTarget.parentElement.classList.remove("active-checked")
+
+        props.handleCheckboxChange(clickedName);
     }
 
     const fullName = props.name[0] + " " + props.name[1]
 
-    const isChecked = (candidate) => {
+    const isDefaultChecked = (candidate) => {
         return (props.filter.indexOf(candidate.toLowerCase()) > -1);
     }
 
@@ -20,10 +34,16 @@ function Checkbox(props) {
     }
 
     return ( 
-        <label className={"input-container " + (isDisabled(props.name[1]) ? 'disabled ' : '') + ((!isDisabled(props.name[1]) && isChecked(props.name[1])) ? 'active-checked ' : '')}>{fullName}
-                <input type="checkbox" onChange={(handleBoxClick)} disabled={isDisabled(props.name[1])} defaultChecked={isChecked(props.name[1])}></input>
-                <span className="checkmark"></span>
-            </label>
+        <label className={"input-container " + (isDisabled(props.name[1]) ? 'disabled ' : '') + ((!isDisabled(props.name[1]) && isDefaultChecked(props.name[1])) ? 'active-checked ' : '')}>
+            {fullName}
+                <input 
+                    type="checkbox"
+                    onChange={(handleBoxClick)} 
+                    disabled={isDisabled(props.name[1])} 
+                    defaultChecked={isDefaultChecked(props.name[1])}>
+                </input>
+            <span className="checkmark"></span>
+        </label>
     );
 }
 

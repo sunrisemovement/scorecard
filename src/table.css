@@ -77,7 +77,8 @@ tr:hover > #icon-cell {
   background: white;
 }
 
-#biden, #warren, #sanders {
+#biden, #warren, #sanders,
+#buttigieg, #booker, #yang {
   text-align: center;
   font-weight: bold;
   font-size: 24px;
@@ -225,7 +226,8 @@ tr:hover > #icon-cell {
     padding-top: 20px;
   }
 
-  #biden, #warren, #sanders {
+  #biden, #warren, #sanders,
+  #buttigieg, #booker, #yang {
     padding: 8px;
   }
 
