@@ -11,7 +11,9 @@
     display: flex;
     flex-direction: row;
     padding: 0 34px;
-    transition: background-color 0.33s ease;
+    transition: background-color 0.22s ease;
+    -webkit-transition: background-color 0.22s ease;
+    -moz-transition: background-color 0.22s ease;
 }
 
 .dark-nav {
@@ -31,6 +33,9 @@
     line-height: 27px;
     color: #74756E;
     cursor: pointer;
+    transition: color 0.22s ease;
+    -webkit-transition: color 0.22s ease;
+    -moz-transition: color 0.22s ease;
 }
 
 .nav-item.first{
@@ -60,7 +65,7 @@
     
   }
 
-  @media screen and (max-width: 850px) {
+@media screen and (max-width: 850px) {
     .nav-item {
         font-size: 14.7px;
         padding: 10px 1em;

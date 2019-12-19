@@ -20,11 +20,10 @@ function Nav(props) {
 
         if (wideWidth.matches && (window.scrollY > 473)) {
             nav.classList.add("dark-nav");
-            console.log(nav, window.scrollY)
         } else {
             nav.classList.remove("dark-nav");
         }
-    }, 200);
+    }, 250);
 
     window.addEventListener('scroll', checkHeader);
 

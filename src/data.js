@@ -9,6 +9,7 @@ const scorecardData = {
          "points":"35",
          "subtotals":{ 
             "biden":"18",
+            "buttigieg":"12",
             "warren":"32",
             "sanders":"32"
          },
@@ -19,6 +20,11 @@ const scorecardData = {
                "description":"A national **call-to-arms**, once-in-a-generation, _comprehensive mobilization_ of all sectors—not just a “climate bill,” a single policy, or a set of policies, but a governing vision and agenda. Recognizes that the Green New Deal is not necessarily a single, omnibus piece of legislation but will, in its entirety, provide a comprehensive, integrated, and systemic response to the crises of climate, inequality, and democracy at hand.",
                "total":"4",
                "biden":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
+               },
+               "buttigieg":{ 
                   "score":"3",
                   "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
                  "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
@@ -43,6 +49,11 @@ const scorecardData = {
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
                },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
+               },
                "warren":{ 
                   "score":"4",
                   "analysis":"Candidate score analysis will go here",
@@ -62,6 +73,11 @@ const scorecardData = {
                   "score":"4",
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
+               },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
                },
                "warren":{ 
                   "score":"4",
@@ -83,6 +99,11 @@ const scorecardData = {
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
                },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
+               },
                "warren":{ 
                   "score":"1",
                   "analysis":"Candidate score analysis will go here",
@@ -102,6 +123,11 @@ const scorecardData = {
                   "score":"0",
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
+               },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
                },
                "warren":{ 
                   "score":"1",
@@ -123,6 +149,11 @@ const scorecardData = {
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
                },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
+               },
                "warren":{ 
                   "score":"4",
                   "analysis":"Candidate score analysis will go here",
@@ -142,6 +173,11 @@ const scorecardData = {
                   "score":"1",
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
+               },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
                },
                "warren":{ 
                   "score":"1",
@@ -163,6 +199,11 @@ const scorecardData = {
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
                },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
+               },
                "warren":{ 
                   "score":"4",
                   "analysis":"Candidate score analysis will go here",
@@ -182,6 +223,11 @@ const scorecardData = {
                   "score":"2",
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
+               },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
                },
                "warren":{ 
                   "score":"6",
@@ -203,6 +249,11 @@ const scorecardData = {
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
                },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
+               },
                "warren":{ 
                   "score":"3",
                   "analysis":"Candidate score analysis will go here",
@@ -222,6 +273,7 @@ const scorecardData = {
          "points":"35",
          "subtotals":{ 
             "biden":"20",
+            "buttigieg":"12",
             "warren":"30",
             "sanders":"30"
          },
@@ -236,6 +288,11 @@ const scorecardData = {
                "analysis":"Candidate score analysis will go here",
                "source": "sources will go here"
             },
+            "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
+               },
             "warren":{ 
                "score":"30",
                "analysis":"Candidate score analysis will go here",
@@ -256,6 +313,7 @@ const scorecardData = {
          "points":"35",
          "subtotals":{ 
             "biden":"7",
+            "buttigieg":"12",
             "warren":"33",
             "sanders":"33"
          },
@@ -270,6 +328,11 @@ const scorecardData = {
                   "score":"7",
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
+               },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
                },
                "warren":{ 
                   "score":"7",
@@ -291,6 +354,11 @@ const scorecardData = {
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
                },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
+               },
                "warren":{ 
                   "score":"7",
                   "analysis":"Candidate score analysis will go here",
@@ -310,6 +378,11 @@ const scorecardData = {
                   "score":"0",
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
+               },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
                },
                "warren":{ 
                   "score":"5",
@@ -331,6 +404,11 @@ const scorecardData = {
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
                },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
+               },
                "warren":{ 
                   "score":"7",
                   "analysis":"Candidate score analysis will go here",
@@ -350,6 +428,11 @@ const scorecardData = {
                   "score":"0",
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
+               },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
                },
                "warren":{ 
                   "score":"7",
@@ -372,6 +455,7 @@ const scorecardData = {
          "points":"20",
          "subtotals":{ 
             "biden":"4",
+            "buttigieg":"12",
             "warren":"16",
             "sanders":"20"
          },
@@ -386,6 +470,11 @@ const scorecardData = {
                   "score":"1",
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
+               },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
                },
                "warren":{ 
                   "score":"3",
@@ -407,6 +496,11 @@ const scorecardData = {
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
                },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
+               },
                "warren":{ 
                   "score":"4",
                   "analysis":"Candidate score analysis will go here",
@@ -426,6 +520,11 @@ const scorecardData = {
                   "score":"1",
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
+               },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
                },
                "warren":{ 
                   "score":"6",
@@ -447,6 +546,11 @@ const scorecardData = {
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
                },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
+               },
                "warren":{ 
                   "score":"3",
                   "analysis":"Candidate score analysis will go here",
@@ -467,6 +571,7 @@ const scorecardData = {
          "description":"",
          "subtotals":{ 
             "biden":"9",
+            "buttigieg":"12",
             "warren":"16",
             "sanders":"20"
          },
@@ -480,6 +585,11 @@ const scorecardData = {
                   "score":"1",
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
+               },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
                },
                "warren":{ 
                   "score":"1",
@@ -501,6 +611,11 @@ const scorecardData = {
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
                },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
+               },
                "warren":{ 
                   "score":"3",
                   "analysis":"Candidate score analysis will go here",
@@ -520,6 +635,11 @@ const scorecardData = {
                   "score":"1",
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
+               },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
                },
                "warren":{ 
                   "score":"1",
@@ -541,6 +661,11 @@ const scorecardData = {
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
                },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
+               },
                "warren":{ 
                   "score":"1",
                   "analysis":"Candidate score analysis will go here",
@@ -560,6 +685,11 @@ const scorecardData = {
                   "score":"2",
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
+               },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
                },
                "warren":{ 
                   "score":"2",
@@ -581,6 +711,11 @@ const scorecardData = {
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
                },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
+               },
                "warren":{ 
                   "score":"2",
                   "analysis":"Candidate score analysis will go here",
@@ -600,6 +735,11 @@ const scorecardData = {
                   "score":"1",
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
+               },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
                },
                "warren":{ 
                   "score":"2",
@@ -621,6 +761,11 @@ const scorecardData = {
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
                },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
+               },
                "warren":{ 
                   "score":"2",
                   "analysis":"Candidate score analysis will go here",
@@ -640,6 +785,11 @@ const scorecardData = {
                   "score":"0",
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
+               },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
                },
                "warren":{ 
                   "score":"2",
@@ -661,6 +811,7 @@ const scorecardData = {
          "description":"",
          "subtotals":{ 
             "biden":"11",
+            "buttigieg":"12",
             "warren":"19",
             "sanders":"24"
          },
@@ -674,6 +825,11 @@ const scorecardData = {
                   "score":"1",
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
+               },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
                },
                "warren":{ 
                   "score":"2",
@@ -695,6 +851,11 @@ const scorecardData = {
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
                },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
+               },
                "warren":{ 
                   "score":"1",
                   "analysis":"Candidate score analysis will go here",
@@ -714,6 +875,11 @@ const scorecardData = {
                   "score":"1",
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
+               },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
                },
                "warren":{ 
                   "score":"2",
@@ -735,6 +901,11 @@ const scorecardData = {
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
                },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
+               },
                "warren":{ 
                   "score":"3",
                   "analysis":"Candidate score analysis will go here",
@@ -754,6 +925,11 @@ const scorecardData = {
                   "score":"2",
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
+               },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
                },
                "warren":{ 
                   "score":"2",
@@ -775,6 +951,11 @@ const scorecardData = {
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
                },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
+               },
                "warren":{ 
                   "score":"2",
                   "analysis":"Candidate score analysis will go here",
@@ -794,6 +975,11 @@ const scorecardData = {
                   "score":"1",
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
+               },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
                },
                "warren":{ 
                   "score":"1",
@@ -815,6 +1001,11 @@ const scorecardData = {
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
                },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
+               },
                "warren":{ 
                   "score":"1",
                   "analysis":"Candidate score analysis will go here",
@@ -834,6 +1025,11 @@ const scorecardData = {
                   "score":"0",
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
+               },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
                },
                "warren":{ 
                   "score":"3",
@@ -855,6 +1051,11 @@ const scorecardData = {
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
                },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
+               },
                "warren":{ 
                   "score":"3",
                   "analysis":"Candidate score analysis will go here",
@@ -874,6 +1075,11 @@ const scorecardData = {
                   "score":"2",
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
+               },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
                },
                "warren":{ 
                   "score":"1",
@@ -895,6 +1101,7 @@ const scorecardData = {
          "description":"",
          "subtotals":{ 
             "biden":"4",
+            "buttigieg":"12",
             "warren":"7",
             "sanders":"13"
          },
@@ -908,6 +1115,11 @@ const scorecardData = {
                   "score":"1",
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
+               },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
                },
                "warren":{ 
                   "score":"2",
@@ -929,6 +1141,11 @@ const scorecardData = {
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
                },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
+               },
                "warren":{ 
                   "score":"1",
                   "analysis":"Candidate score analysis will go here",
@@ -948,6 +1165,11 @@ const scorecardData = {
                   "score":"0",
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
+               },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
                },
                "warren":{ 
                   "score":"0",
@@ -969,6 +1191,11 @@ const scorecardData = {
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
                },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
+               },
                "warren":{ 
                   "score":"1",
                   "analysis":"Candidate score analysis will go here",
@@ -988,6 +1215,11 @@ const scorecardData = {
                   "score":"2",
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
+               },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
                },
                "warren":{ 
                   "score":"2",
@@ -1009,6 +1241,11 @@ const scorecardData = {
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
                },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
+               },
                "warren":{ 
                   "score":"1",
                   "analysis":"Candidate score analysis will go here",
@@ -1029,6 +1266,7 @@ const scorecardData = {
          "description":"",
          "subtotals":{ 
             "biden":"2",
+            "buttigieg":"12",
             "warren":"16",
             "sanders":"19"
          },
@@ -1042,6 +1280,11 @@ const scorecardData = {
                   "score":"0",
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
+               },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
                },
                "warren":{ 
                   "score":"2",
@@ -1063,6 +1306,11 @@ const scorecardData = {
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
                },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
+               },
                "warren":{ 
                   "score":"3",
                   "analysis":"Candidate score analysis will go here",
@@ -1082,6 +1330,11 @@ const scorecardData = {
                   "score":"1",
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
+               },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
                },
                "warren":{ 
                   "score":"1",
@@ -1103,6 +1356,11 @@ const scorecardData = {
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
                },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
+               },
                "warren":{ 
                   "score":"2",
                   "analysis":"Candidate score analysis will go here",
@@ -1122,6 +1380,11 @@ const scorecardData = {
                   "score":"0",
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
+               },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
                },
                "warren":{ 
                   "score":"3",
@@ -1143,6 +1406,11 @@ const scorecardData = {
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
                },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
+               },
                "warren":{ 
                   "score":"3",
                   "analysis":"Candidate score analysis will go here",
@@ -1163,6 +1431,11 @@ const scorecardData = {
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
                },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
+               },
                "warren":{ 
                   "score":"1",
                   "analysis":"Candidate score analysis will go here",
@@ -1182,6 +1455,11 @@ const scorecardData = {
                   "score":"0",
                   "analysis":"Candidate score analysis will go here",
                   "source": "sources will go here"
+               },
+               "buttigieg":{ 
+                  "score":"3",
+                  "analysis":"Candidate score analysis will go here, _this can also contain markdown, how fun_",
+                 "source": "**sources** will go here \n and also they can \n\n - contain \n - exciting \n - markdown"
                },
                "warren":{ 
                   "score":"2",
