@@ -10,6 +10,8 @@ function Checkboxes(props) {
 
     const handleBoxClick = (e) => {
         e.preventDefault();
+        e.stopPropagation();
+        
         let isChecked = e.currentTarget.checked;
         console.log(e.currentTarget)
 
@@ -21,30 +23,30 @@ function Checkboxes(props) {
     }
 
     return ( 
-        <div className="checkboxes" id={'checkboxes-'+props.ind}>
-            <label class="container">Joe Biden
-                <input type="checkbox" onClick={handleBoxClick} checked={isChecked('biden')}></input>
-                <span class="checkmark"></span>
+        <div className="checkboxes" id={'ch-'+props.ind} onClick={(e) => e.stopPropagation()}>
+            <label className="input-container">Joe Biden
+                <input type="checkbox" onChange={handleBoxClick} checked={isChecked('biden')}></input>
+                <span className="checkmark"></span>
             </label>
-            <label class="container">Cory Booker
-                <input type="checkbox" onClick={handleBoxClick} checked={isChecked('booker')}></input>
-                <span class="checkmark"></span>
+            <label className="input-container">Cory Booker
+                <input type="checkbox" onChange={handleBoxClick} checked={isChecked('booker')}></input>
+                <span className="checkmark"></span>
             </label>
-            <label class="container">Pete Buttigieg
-                <input type="checkbox" onClick={handleBoxClick} checked={isChecked('buttigieg')}></input>
-                <span class="checkmark"></span>
+            <label className="input-container">Pete Buttigieg
+                <input type="checkbox" onChange={handleBoxClick} checked={isChecked('buttigieg')}></input>
+                <span className="checkmark"></span>
             </label>
-            <label class="container">Bernie Sanders
-                <input type="checkbox" onClick={handleBoxClick} checked={isChecked('sanders')}></input>
-                <span class="checkmark"></span>
+            <label className="input-container">Bernie Sanders
+                <input type="checkbox" onChange={handleBoxClick} checked={isChecked('sanders')}></input>
+                <span className="checkmark"></span>
             </label>
-            <label class="container">Elizabeth Warren
-                <input type="checkbox" onClick={handleBoxClick} checked={isChecked('warren')}></input>
-                <span class="checkmark"></span>
+            <label className="input-container">Elizabeth Warren
+                <input type="checkbox" onChange={handleBoxClick} checked={isChecked('warren')}></input>
+                <span className="checkmark"></span>
             </label>
-            <label class="container">Andrew Yang
-                <input type="checkbox" onClick={handleBoxClick} checked={isChecked('yang')}></input>
-                <span class="checkmark"></span>
+            <label className="input-container">Andrew Yang
+                <input type="checkbox" onChange={handleBoxClick} checked={isChecked('yang')}></input>
+                <span className="checkmark"></span>
             </label>
          </div>
     );
