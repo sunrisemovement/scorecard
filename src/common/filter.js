@@ -43,6 +43,19 @@ class Filter extends React.Component {
         checkboxes[1].style.display = "none";
         checkboxes[2].style.display = "none";
 
+        // Make copies of filters and checked array from state
+        var newFilters = [...this.state.filters]
+
+        // Reset local state to match app state since user has not clicked 'done'
+        newFilters.forEach((filter, i) => {
+            filter.checked = this.props.filter;
+            filter.active = this.props.filter[i];
+        })
+  
+        this.setState({
+            filters: newFilters
+        })
+
         // Show selected filter overlay if it's currently hidden
         isHidden ? (selectedCheckboxes.style.display = "block") : (selectedCheckboxes.style.display = "none") 
     }
