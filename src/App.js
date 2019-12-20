@@ -126,9 +126,9 @@ class App extends React.Component {
     });
   }
 
-  handleFilterChange = (newSelection, oldSelection, i) => {
-      var newFilter = this.state.filter;
-      newFilter[i] = newSelection
+  handleFilterChange = (selection, i) => {
+      var newFilter = [...this.state.filter];
+      newFilter[i] = selection;
 
       this.setState({
         filter: newFilter

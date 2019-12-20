@@ -5,47 +5,27 @@ function Checkbox(props) {
 
     const handleBoxClick = (e) => {
         e.stopPropagation();
-        var clickedName;
 
-        var currentDropdown = document.getElementById("ch-"+ props.filterInd);
-        var previousSelection = currentDropdown.getElementsByClassName('active-checked')[0];
-
-        // First uncheck whomever was previously selected
-        if (previousSelection) {
-            previousSelection.classList.remove("active-checked")
-            previousSelection.querySelector('input').checked = false;
-        }
-        
-        // Then toggle the class of whoever was clicked
-        if (e.currentTarget.checked) {
-            e.currentTarget.parentElement.classList.add("active-checked")
-            clickedName = props.name[1].toLowerCase(); 
-        } else {
-            e.currentTarget.parentElement.classList.remove("active-checked")
-        }
-
-        props.handleCheckboxChange(clickedName);
+        // Call filter method, pass in selected candidate and current overlay index
+        props.handleCheckboxChange(lastName.toLowerCase(), props.filterInd)
     }
 
-    const fullName = props.name[0] + " " + props.name[1]
-
-    const isDefaultChecked = (candidate) => {
-        return (props.filter.indexOf(candidate.toLowerCase()) > -1);
-    }
+    const lastName = props.name[1]
+    const fullName = props.name[0] + " " + lastName
 
     const isDisabled = (candidate) => {
         if (candidate.toLowerCase() !== props.filterName && (props.filter.indexOf(candidate.toLowerCase()) > -1)) return true
     }
 
     return ( 
-        <label className={"input-container " + (isDisabled(props.name[1]) ? 'disabled ' : '') + ((!isDisabled(props.name[1]) && isDefaultChecked(props.name[1])) ? 'active-checked ' : '')}>
+        <label className={"input-container " + (isDisabled(lastName) ? 'disabled ' : '') + (props.active ? 'active-checked ' : '')}>
             {fullName}
                 <input 
                     type="checkbox"
-                    className={'box-' + props.name[1].toLowerCase()}
+                    className={'box-' + lastName.toLowerCase()}
                     onChange={(handleBoxClick)} 
-                    disabled={isDisabled(props.name[1])} 
-                    defaultChecked={isDefaultChecked(props.name[1])}>
+                    disabled={isDisabled(lastName)} 
+                    checked={props.checked}>
                 </input>
             <span className="checkmark"></span>
         </label>
@@ -53,5 +33,3 @@ function Checkbox(props) {
 }
 
 export default Checkbox;
-
-// id={"check-" + (props.name[1].toLowerCase())}

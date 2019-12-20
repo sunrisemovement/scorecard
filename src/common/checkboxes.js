@@ -16,44 +16,15 @@ function Checkboxes(props) {
                             ['Andrew', 'Yang']]
 
     const filterName = props.filter[props.ind]
-    var newSelection = "";
 
-    const handleCheckboxChange = (cand) => {
-        if (cand) newSelection = cand;
-        else newSelection = '';
-    }
+    const onClickDone = () => {
 
-    const handleDone = () => {
+        // Hide checkboxes overlay
         var currentCheckboxes = document.getElementsByClassName('checkboxes')[props.ind];
-        var oldCandidateBoxes = document.getElementsByClassName('box-' + filterName);
-        var newCandidateBoxes = document.getElementsByClassName('box-' + newSelection);
         currentCheckboxes.style.display = "none";    
-        
-        if (newSelection && newSelection !== filterName) {
-            // If a new candidate was selected, uncheck old candidate in all overlays,
-            // check new candidate in all overlays
 
-            oldCandidateBoxes[0].checked = false;
-            oldCandidateBoxes[1].checked = false;
-            oldCandidateBoxes[2].checked = false;
-
-            newCandidateBoxes[0].checked = true;
-            newCandidateBoxes[1].checked = true;
-            newCandidateBoxes[2].checked = true;
-
-            // If there's a valid new selection, update state
-            props.handleFilterChange(newSelection, props.filterName, props.ind)
-
-        } 
-        else 
-        {
-            // If not, reselect the original candidate and restore 'active' class
-            oldCandidateBoxes[props.ind].checked = true;
-            oldCandidateBoxes[props.ind].parentElement.classList.add("active-checked");
-        }
-
-        // Reset this variable for next time
-        newSelection = "";
+        // Call method in parent component
+        props.handleDone(props.ind);
     }
 
     return ( 
@@ -65,13 +36,16 @@ function Checkboxes(props) {
                                 filter = {props.filter}
                                 filterName = {filterName}
                                 filterInd = {props.ind}
+                                checked = {props.checked.indexOf(name[1].toLowerCase()) > -1}
+                                checkedArr = {props.checked}
+                                active = {(props.active === name[1].toLowerCase())}
                                 key = {i}
                                 id = {i} 
-                                handleCheckboxChange = {handleCheckboxChange} />
+                                handleCheckboxChange = {props.handleCheckboxChange} />
                 })
             }
 
-            <button className='done-button' onClick={handleDone}>Done</button>
+            <button className='done-button' onClick={onClickDone}>Done</button>
             
          </div>
     );
