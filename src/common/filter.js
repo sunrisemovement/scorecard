@@ -34,6 +34,7 @@ class Filter extends React.Component {
 
      openFilter = (e) => {
         e.preventDefault();
+
         var checkboxes = document.getElementsByClassName('checkboxes');
         var selectedCheckboxes = e.currentTarget.querySelector('.checkboxes')
         var isHidden = (selectedCheckboxes.style.display === 'none');
@@ -55,6 +56,14 @@ class Filter extends React.Component {
         this.setState({
             filters: newFilters
         })
+
+        // Todo: if we want to close overlay on window click, we may have to 
+        // turn of the underlying click events (like the rows)
+        // window.onclick = (event) => {
+        //     checkboxes[0].style.display = "none";
+        //     checkboxes[1].style.display = "none";
+        //     checkboxes[2].style.display = "none";
+        // }
 
         // Show selected filter overlay if it's currently hidden
         isHidden ? (selectedCheckboxes.style.display = "block") : (selectedCheckboxes.style.display = "none") 

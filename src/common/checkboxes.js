@@ -37,7 +37,6 @@ function Checkboxes(props) {
                                 filterName = {filterName}
                                 filterInd = {props.ind}
                                 checked = {props.checked.indexOf(name[1].toLowerCase()) > -1}
-                                checkedArr = {props.checked}
                                 active = {(props.active === name[1].toLowerCase())}
                                 key = {i}
                                 id = {i} 
