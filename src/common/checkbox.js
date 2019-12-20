@@ -5,7 +5,7 @@ function Checkbox(props) {
 
     const handleBoxClick = (e) => {
         e.stopPropagation();
-        var clickedName = props.name[1].toLowerCase();
+        var clickedName;
 
         var currentDropdown = document.getElementById("ch-"+ props.filterInd);
         var previousSelection = currentDropdown.getElementsByClassName('active-checked')[0];
@@ -17,9 +17,12 @@ function Checkbox(props) {
         }
         
         // Then toggle the class of whoever was clicked
-        e.currentTarget.checked ? 
-        e.currentTarget.parentElement.classList.add("active-checked") :
-        e.currentTarget.parentElement.classList.remove("active-checked")
+        if (e.currentTarget.checked) {
+            e.currentTarget.parentElement.classList.add("active-checked")
+            clickedName = props.name[1].toLowerCase(); 
+        } else {
+            e.currentTarget.parentElement.classList.remove("active-checked")
+        }
 
         props.handleCheckboxChange(clickedName);
     }

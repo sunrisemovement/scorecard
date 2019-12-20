@@ -20,6 +20,7 @@ function Checkboxes(props) {
 
     const handleCheckboxChange = (cand) => {
         if (cand) newSelection = cand;
+        else newSelection = '';
     }
 
     const handleDone = () => {
