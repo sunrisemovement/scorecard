@@ -37,6 +37,9 @@
               "biden": { "type": "string" },
               "warren": { "type": "string" },
               "buttigieg": { "type": "string" },
+              "booker": { "type": "string" },
+              "yang": { "type": "string" },
+              "steyer": { "type": "string" },
               "sanders": { "type": "string" }
             }
           },
@@ -59,6 +62,9 @@
                 "total": { "type": "string" },
                 "biden": { "$ref": "#/definitions/rowAnalysis" },
                 "buttigieg": { "$ref": "#/definitions/rowAnalysis" },
+                "booker": { "$ref": "#/definitions/rowAnalysis" },
+                "yang": { "$ref": "#/definitions/rowAnalysis" },
+                "steyer": { "$ref": "#/definitions/rowAnalysis" },
                 "warren": { "$ref": "#/definitions/rowAnalysis" },
                 "sanders": { "$ref": "#/definitions/rowAnalysis" }
               }
