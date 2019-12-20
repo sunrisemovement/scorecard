@@ -26,10 +26,10 @@ class Filter extends React.Component {
                 checked: [this.candidateA, this.candidateB, this.candidateC],
                 active: this.props.filter[2]
             }   
-        ],
+          ],
             newSelection: ''
-     };
-      }
+        };
+    }
 
 
      openFilter = (e) => {
