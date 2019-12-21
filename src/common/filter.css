@@ -250,11 +250,12 @@
       font-size: 11px;
       width: auto;
       margin-top: 10px;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }
 
-  .candidate-dropdown:hover {
-    background: #f4f4f4;
-  }
+    .candidate-dropdown:hover {
+      background: #f4f4f4;
+    }
 
     .dropdown-icon {
       height: 6px;
