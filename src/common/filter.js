@@ -10,6 +10,9 @@ class Filter extends React.Component {
     candidateB = this.props.filter[1];
     candidateC = this.props.filter[2];
 
+    mobileSize = window.matchMedia('(max-width: 520px)');
+
+
     constructor(props) {
         super(props);
         this.state = {
@@ -66,7 +69,6 @@ class Filter extends React.Component {
         // }
 
         var backIcons = [document.getElementsByClassName("filter-back-icon")[0], document.getElementsByClassName("filter-back-icon")[1], document.getElementsByClassName("filter-back-icon")[2]];
-        var mobileSize = window.matchMedia('(max-width: 520px)');
 
         backIcons.forEach( icon => {
             icon.onclick = (event) => {
@@ -74,7 +76,7 @@ class Filter extends React.Component {
                 checkboxes[1].style.display = "none";
                 checkboxes[2].style.display = "none";
 
-                if (mobileSize.matches) {
+                if (this.mobileSize.matches) {
                     // Unlock fixed body if on mobile screen
                     var scrollY = document.body.style.top;
                     document.body.style.position = '';
@@ -85,7 +87,7 @@ class Filter extends React.Component {
         })
 
 
-        if (mobileSize.matches) {
+        if (this.mobileSize.matches) {
             // When the mobile modal is shown, we want a fixed body
             var currentScroll = window.scrollY;
             document.body.style.position = 'fixed';
@@ -137,6 +139,14 @@ class Filter extends React.Component {
         // Make copies of filters and checked array from state
         var newFilters = [...this.state.filters]
         var newCheckedArr = [...this.state.filters[i].checked];
+
+        if (this.mobileSize.matches) {
+            // Unlock fixed body if on mobile screen
+            var scrollY = document.body.style.top;
+            document.body.style.position = '';
+            document.body.style.top = '';
+            window.scrollTo(0, parseInt(scrollY || '0') * -1);
+        }
 
         if (this.state.newSelection) {
             // Call app state with new selection and index of checkbox overlay

@@ -233,8 +233,8 @@
     .candidate-dropdown {
       font-size: 14px;
       margin: 0 2px;
-      width: 90px;
-      padding: 7px 5px;
+      width: 98px;
+      padding: 7px 6px;
     }
     
   }
@@ -249,6 +249,7 @@
     .candidate-dropdown {
       font-size: 11px;
       width: auto;
+      margin-top: 10px;
     }
 
     .dropdown-icon {
@@ -339,10 +340,6 @@
 
     .done-button {
       height: 70px;
-      position: absolute;
-      bottom: 10px;
-      left: 2%;
-      width: 96%
     }
 
   }
