@@ -191,6 +191,10 @@
         width: 120px;
         margin: 0 4px;
     }
+
+    #ch-2 {
+      margin-left: -135px;
+    }
   }
 
   @media screen and (max-width: 1000px) {
@@ -236,6 +240,10 @@
       width: 98px;
       padding: 7px 6px;
     }
+
+    #ch-2 {
+      margin-left: -160px;
+  }
     
   }
 
@@ -345,6 +353,10 @@
 
     .done-button {
       height: 70px;
+      width: 95%;
+      position: absolute;
+      bottom: 10px;
+      left: 2%;
     }
 
   }
