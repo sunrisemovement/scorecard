@@ -286,6 +286,7 @@
       border: none;
       box-shadow: none;
       border-radius: 10px;
+      overflow-y: scroll;
   }
 
     .filter-back-icon {
@@ -353,11 +354,12 @@
 
     .done-button {
       height: 70px;
-      width: 95%;
+      margin-top: 25px;
+      /* width: 95%;
       position: absolute;
       bottom: 10px;
       left: 2%;
-      z-index: 2000;
+      z-index: 2000; */
     }
 
   }
