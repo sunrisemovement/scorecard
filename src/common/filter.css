@@ -4,7 +4,7 @@
     height: 50px;
     align-items: center;
     justify-content: flex-end;
-    padding: 4px 34px;
+    padding: 4px 28px;
     color: #33342e;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -17,13 +17,19 @@
 .candidate-dropdown {
     text-align: center;
     padding: 6px 0;
-    width: 120px;
+    width: 138px;
     background: #f4f4f4;
-    margin: 0 6px;
+    margin: 0 8px;
     cursor: pointer;
     font-weight: 600;
     font-size: 17px;
     text-transform: capitalize;
+}
+
+.dropdown-icon {
+  height: 14px;
+  padding-top: 2px;
+  margin-left: 5px;
 }
 
 .candidate-dropdown:hover {
@@ -96,6 +102,17 @@
     color: rgb(189, 189, 189);
     cursor: auto;
   }
+
+  .filter-modal-close-mobile, .filter-modal-description {
+      display: none;
+  }
+
+.filter-modal-close-mobile {
+    color: #74756E;
+    /* padding-left: 1em; */
+    font-size: 28px;
+    font-weight: bold;
+  }
   
 
   .input-container:hover input ~ .checkmark {
@@ -161,6 +178,28 @@
     outline: 0;
   }
 
+  @media screen and (max-width: 1390px) {
+
+    .candidate-dropdown {
+        margin: 0 5px;
+    }
+  }
+
+  @media screen and (max-width: 1170px) {
+
+    .candidate-dropdown {
+        width: 120px;
+        margin: 0 4px;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+
+    .candidate-dropdown {
+        width: 110px;
+    }
+  }
+
   @media screen and (max-width: 940px) {
 
     .candidate-dropdown {
@@ -177,3 +216,135 @@
     }
     
   }
+
+  @media screen and (max-width: 700px) {
+
+    .filter {
+      padding: 4px 15px;
+      padding-right: 25px;
+    }
+
+    .dropdown-icon {
+      height: 8px;
+      padding-top: 2px;
+      margin-left: 4.25px;
+    }
+
+    .candidate-dropdown {
+      font-size: 14px;
+      margin: 0 2px;
+      width: 90px;
+      padding: 7px 5px;
+    }
+    
+  }
+
+  @media screen and (max-width: 520px) {
+
+    .filter {
+      padding: 2px 15px;
+      padding-right: 43px;
+    }
+
+    .candidate-dropdown {
+      font-size: 11px;
+      width: auto;
+    }
+
+    .dropdown-icon {
+      height: 6px;
+      padding-top: 0;
+      margin-left: 4.25px;
+    }
+
+    .checkboxes {
+      align-content: space-between;
+      text-align: left;
+      color: #33342e;
+      position: fixed;
+      margin: 0;
+      left: 0;
+      top: 0px;
+      padding-top: 125px;
+      width: 100vw;
+      height: 100vh;
+      background: white;
+      border: none;
+      box-shadow: none;
+      border-radius: 10px;
+  }
+
+    .filter-back-icon {
+      cursor: pointer;
+      display: inline-block;
+      padding-right: 22px;
+      height: 18px;
+      transform: rotate(180deg);
+    }
+
+    .filter-modal-close-mobile {
+      display: inline-block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      background: #33342E;
+      font-size: 35px;
+      color: #FD9014;
+      width: 100%;
+      height: 54px;
+      text-align: left;
+    }
+
+    .filter-modal-description {
+      display: inline-block;
+      position: fixed;
+      top: 53px;
+      left: 0;
+      z-index: 1000;
+      background: #33342E;
+      color: white;
+      font-size: 18px;
+      width: 100%;
+      height: 50px;
+      text-align: left;
+      padding-left: 26px;
+      padding-top: 15px;
+    }
+
+    #ch-2 {
+      margin-left: 0;
+    }
+
+    .checkmark {
+      top: 0px;
+      left: -12px;
+      border-radius: 4px;
+      height: 32px;
+      width: 32px;
+    }
+
+    .input-container .checkmark:after {
+      left: 10px;
+      top: 4px;
+      width: 8px;
+      height: 14px;
+      border-width: 0 2px 2px 0;
+    }
+
+    .input-container {
+      margin-bottom: 20px;
+      margin-left: 12px;
+    }
+
+    .done-button {
+      height: 70px;
+      position: absolute;
+      bottom: 10px;
+      left: 2%;
+      width: 96%
+    }
+
+  }
+
+  

@@ -78,19 +78,19 @@ function Table(props) {
             <table className="sc-table">
                 <tbody>
                     <tr id="header">
-                        <th width="55%"></th>
-                        <th width="11%">{candidateA}</th>
-                        <th width="11%">{candidateB}</th>
-                        <th width="11%">{candidateC}</th>
+                        <th></th>
+                        <th>{candidateA}</th>
+                        <th>{candidateB}</th>
+                        <th>{candidateC}</th>
                     </tr>
                     
                     {renderTableData()}
                     
                     <tr className="subtotals">
                         <td width="55%" className="subtotal-title">Subtotal <span className="row-points">(out of {props.table.points})</span></td>
-                        <td width="11%" id={candidateA} >{props.table.subtotals[candidateA]}</td>
-                        <td width="11%" id={candidateB} >{props.table.subtotals[candidateB]}</td>
-                        <td width="11%" id={candidateC} >{props.table.subtotals[candidateC]}</td>
+                        <td id={candidateA} >{props.table.subtotals[candidateA]}</td>
+                        <td id={candidateB} >{props.table.subtotals[candidateB]}</td>
+                        <td id={candidateC} >{props.table.subtotals[candidateC]}</td>
                     </tr>
                 </tbody>
             </table>

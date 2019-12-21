@@ -94,6 +94,14 @@ tr:hover > #icon-cell {
   pointer-events: none;;
 }
 
+.subtotals > td {
+  width: 11%
+}
+
+.subtotals > .subtotal-title {
+  width: 55%;
+}
+
 .table-title {
   display: inline-block;
   margin-top: 1.2em;
@@ -216,8 +224,13 @@ tr:hover > #icon-cell {
 
   .sc-table td {
     text-align: left;
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  .row-title {
+    padding-left: 0;
+    padding-right: 10px;
   }
 
   .sc-table th {
@@ -226,10 +239,10 @@ tr:hover > #icon-cell {
     padding-top: 20px;
   }
 
-  #biden, #warren, #sanders,
+  /* #biden, #warren, #sanders,
   #buttigieg, #booker, #yang, #steyer {
     padding: 8px;
-  }
+  } */
 
   .info-icon {
     display: none;
@@ -253,14 +266,22 @@ tr:hover > #icon-cell {
   .table-points {
     display: none;
   }
+
+  .subtotals > td {
+    width: auto;
+  }
+  
+  .subtotals > .subtotal-title {
+    width: 55%;
+  }
 }
 
 
 @media screen and (max-width: 380px) {
 
   .sc-table th {
-    padding-left: 4px;
-    padding-right: 4px;
+    /* padding-left: 4px;
+    padding-right: 4px; */
   }
 
   .expand-icon {

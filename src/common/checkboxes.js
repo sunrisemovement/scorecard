@@ -1,6 +1,8 @@
 import React from 'react';
 import './filter.css';
 import Checkbox from './checkbox.js';
+import expand from '../assets/expand.png';
+
 
 function Checkboxes(props) {
 
@@ -29,6 +31,7 @@ function Checkboxes(props) {
 
     return ( 
         <div className="checkboxes" style={ {display: 'none'}} id={'ch-'+props.ind} onClick={(e) => e.stopPropagation()}>
+        <div>
             {
                 candidateNames.map(function (name, i) {
                     return <Checkbox 
@@ -43,8 +46,16 @@ function Checkboxes(props) {
                                 handleCheckboxChange = {props.handleCheckboxChange} />
                 })
             }
+        </div>
 
             <button className='done-button' onClick={onClickDone}>Done</button>
+            
+            <div className="filter-modal-close-mobile">
+                <img className="filter-back-icon" alt="Back button" src={expand}></img>
+            </div>
+            <div className="filter-modal-description">
+                Choose a candidate to compare: 
+            </div>
             
          </div>
     );

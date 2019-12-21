@@ -65,6 +65,34 @@ class Filter extends React.Component {
         //     checkboxes[2].style.display = "none";
         // }
 
+        var backIcons = [document.getElementsByClassName("filter-back-icon")[0], document.getElementsByClassName("filter-back-icon")[1], document.getElementsByClassName("filter-back-icon")[2]];
+        var mobileSize = window.matchMedia('(max-width: 520px)');
+
+        backIcons.forEach( icon => {
+            icon.onclick = (event) => {
+                checkboxes[0].style.display = "none";
+                checkboxes[1].style.display = "none";
+                checkboxes[2].style.display = "none";
+
+                if (mobileSize.matches) {
+                    // Unlock fixed body if on mobile screen
+                    var scrollY = document.body.style.top;
+                    document.body.style.position = '';
+                    document.body.style.top = '';
+                    window.scrollTo(0, parseInt(scrollY || '0') * -1);
+                }
+            };
+        })
+
+
+        if (mobileSize.matches) {
+            // When the mobile modal is shown, we want a fixed body
+            var currentScroll = window.scrollY;
+            document.body.style.position = 'fixed';
+            document.body.style.top = ("-" + currentScroll + "px")
+        }
+
+   
         // Show selected filter overlay if it's currently hidden
         isHidden ? (selectedCheckboxes.style.display = "block") : (selectedCheckboxes.style.display = "none") 
     }
