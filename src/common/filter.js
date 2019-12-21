@@ -58,7 +58,7 @@ class Filter extends React.Component {
         })
 
         // Todo: if we want to close overlay on window click, we may have to 
-        // turn of the underlying click events (like the rows)
+        // turn off the underlying click events
         // window.onclick = (event) => {
         //     checkboxes[0].style.display = "none";
         //     checkboxes[1].style.display = "none";
@@ -114,7 +114,7 @@ class Filter extends React.Component {
             // Call app state with new selection and index of checkbox overlay
              this.props.handleFilterChange(this.state.newSelection, i)
 
-            //Reset local state
+            // Reset local state
              this.setState({
                 newSelection: ''
             })

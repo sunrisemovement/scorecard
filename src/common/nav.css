@@ -74,6 +74,7 @@
 
 @media screen and (max-width: 790px) {
 
+    /* change to nav-scrollspy class to keep filters fixed */
     .navbar {
         display: none;
     }
