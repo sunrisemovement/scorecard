@@ -357,6 +357,7 @@
       position: absolute;
       bottom: 10px;
       left: 2%;
+      z-index: 2000;
     }
 
   }
