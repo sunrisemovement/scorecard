@@ -252,6 +252,10 @@
       margin-top: 10px;
     }
 
+  .candidate-dropdown:hover {
+    background: #f4f4f4;
+  }
+
     .dropdown-icon {
       height: 6px;
       padding-top: 0;
