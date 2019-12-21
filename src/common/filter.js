@@ -111,29 +111,54 @@ class Filter extends React.Component {
         // If there's a new candidate, update state
         if (selection && selection !== previous) {
 
+            if (this.state.filters[filterInd].checked.length === 3) {
             // Update copy of state by replacing old selection with new one
             newCheckedArr.splice(previousIndex, 1, selection)
             newFilters[filterInd].checked = newCheckedArr
-            newFilters[filterInd].active = selection;
+            
 
             this.setState({
                 filters: newFilters,
                 newSelection: selection
             })
+          } else {
+            newCheckedArr.push(selection);
+            newFilters[filterInd].checked = newCheckedArr;
+
+            this.setState({
+                newSelection: selection,
+                filters: newFilters
+            })
+          }
+        newFilters[filterInd].active = selection;
+        
         } 
         else 
         // If the user is unchecking the active candidate, remove that candidate from state
         {   
-            newCheckedArr.splice(previousIndex, 1)
-            newFilters[filterInd].checked = newCheckedArr
-            newFilters[filterInd].active = '';
+            if (this.state.filters[filterInd].checked.length === 3) {
+                newCheckedArr.splice(previousIndex, 1)
+                newFilters[filterInd].checked = newCheckedArr
+                newFilters[filterInd].active = '';
             
-            this.setState({
-                newSelection: '',
-                filters: newFilters
-            })
+                this.setState({
+                    newSelection: '',
+                    filters: newFilters
+                })
+            } else {
+                newCheckedArr.push(selection);
+                newFilters[filterInd].checked = newCheckedArr;
+                newFilters[filterInd].active = selection;
+    
+                this.setState({
+                    newSelection: selection,
+                    filters: newFilters
+                })
+
+
         }
     }
+}
 
     handleDone = (i) => {
         // Make copies of filters and checked array from state
