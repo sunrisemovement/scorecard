@@ -13,22 +13,22 @@ function Checkboxes(props) {
             if (lastName === 'biden') {
                 currentCandidates.push(['Joe', 'Biden'])
             }
-            if (lastName === 'buttigieg') {
+            else if (lastName === 'buttigieg') {
                 currentCandidates.push(['Pete', 'Buttigieg'])
             }
-            if (lastName === 'booker') {
+            else if (lastName === 'booker') {
                 currentCandidates.push(['Cory', 'Booker'])
             }
-            if (lastName === 'sanders') {
+            else if (lastName === 'sanders') {
                 currentCandidates.push(['Bernie', 'Sanders'])
             }
-            if (lastName === 'steyer') {
+            else if (lastName === 'steyer') {
                 currentCandidates.push(['Tom', 'Steyer'])
             }
-            if (lastName === 'warren') {
+            else if (lastName === 'warren') {
                 currentCandidates.push(['Elizabeth', 'Warren'])
             }
-            if (lastName === 'yang') {
+            else if (lastName === 'yang') {
                 currentCandidates.push(['Andrew', 'Yang'])
             }
         })
