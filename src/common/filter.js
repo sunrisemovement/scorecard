@@ -214,6 +214,7 @@ class Filter extends React.Component {
                         {this.props.filter[0]} <img className="dropdown-icon" alt="Dropdown icon"src={icon}></img>
                         <Checkboxes 
                             filter={this.props.filter}
+                            candidates = {this.props.candidates}
                             checked = {this.state.filters[0].checked}
                             active = {this.state.filters[0].active} 
                             key={1} 
@@ -226,6 +227,7 @@ class Filter extends React.Component {
                         {this.props.filter[1]} <img className="dropdown-icon" alt="Dropdown icon"src={icon}></img>
                         <Checkboxes 
                             filter={this.props.filter} 
+                            candidates = {this.props.candidates}
                             checked = {this.state.filters[1].checked}
                             active = {this.state.filters[1].active} 
                             key={2} 
@@ -238,6 +240,7 @@ class Filter extends React.Component {
                         {this.props.filter[2]} <img className="dropdown-icon" alt="Dropdown icon"src={icon}></img>
                         <Checkboxes 
                             filter={this.props.filter}
+                            candidates = {this.props.candidates}
                             checked = {this.state.filters[2].checked}
                             active = {this.state.filters[2].active} 
                             key={3} 

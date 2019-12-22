@@ -40,7 +40,8 @@ function Nav(props) {
 
             <Filter 
                 filter={props.filter}
-                handleFilterChange={props.handleFilterChange} />
+                handleFilterChange={props.handleFilterChange}
+                candidates = {props.candidates} />
                 
         </div>
     );

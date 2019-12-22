@@ -6,16 +6,36 @@ import expand from '../assets/expand.png';
 
 function Checkboxes(props) {
 
-    // Our data doesn't currently reference the candidates
-    // by their full names. We can use this constant to generate
-    // necessary checkbox filters for now.
-    const candidateNames = [['Joe', 'Biden'],
-                            ['Cory', 'Booker'],
-                            ['Pete', 'Buttigieg'],
-                            ['Bernie', 'Sanders'],
-                            ['Tom', 'Steyer'],
-                            ['Elizabeth', 'Warren'],
-                            ['Andrew', 'Yang']]
+    const currentCandidates = []
+
+    const populateFullNames = (candidates) => {
+        candidates.forEach((lastName) => {
+            if (lastName === 'biden') {
+                currentCandidates.push(['Joe', 'Biden'])
+            }
+            if (lastName === 'buttigieg') {
+                currentCandidates.push(['Pete', 'Buttigieg'])
+            }
+            if (lastName === 'booker') {
+                currentCandidates.push(['Cory', 'Booker'])
+            }
+            if (lastName === 'sanders') {
+                currentCandidates.push(['Bernie', 'Sanders'])
+            }
+            if (lastName === 'steyer') {
+                currentCandidates.push(['Tom', 'Steyer'])
+            }
+            if (lastName === 'warren') {
+                currentCandidates.push(['Elizabeth', 'Warren'])
+            }
+            if (lastName === 'yang') {
+                currentCandidates.push(['Andrew', 'Yang'])
+            }
+        })
+    }
+
+    // Populate candidates' full names sorted alphabetically to populate checkboxes
+    populateFullNames(props.candidates.sort());
 
     const filterName = props.filter[props.ind]
 
@@ -33,7 +53,7 @@ function Checkboxes(props) {
         <div className="checkboxes" style={ {display: 'none'}} id={'ch-'+props.ind} onClick={(e) => e.stopPropagation()}>
         <div>
             {
-                candidateNames.map(function (name, i) {
+                currentCandidates.map(function (name, i) {
                     return <Checkbox 
                                 name = {name}
                                 filter = {props.filter}
