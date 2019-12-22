@@ -229,9 +229,9 @@
     }
 
     .dropdown-icon {
-      height: 8px;
+      height: 12px;
       padding-top: 2px;
-      margin-left: 4.25px;
+      margin-left: 4px;
     }
 
     .candidate-dropdown {
@@ -266,9 +266,9 @@
     }
 
     .dropdown-icon {
-      height: 6px;
+      height: 7.5px;
       padding-top: 0;
-      margin-left: 4.25px;
+      margin-left: 4px;
     }
 
     .checkboxes {
