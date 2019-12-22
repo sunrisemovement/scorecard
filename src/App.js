@@ -6,11 +6,16 @@ import SunriseNav from './common/sunriseNav.js'
 import MobileNav from './common/mobileNav.js'
 import SunriseFooter from './common/sunriseFooter.js'
 import IeBanner from './common/ieBanner.js'
+import smoothscroll from 'smoothscroll-polyfill';
+
 // Import dummy data to fill scorecard
 import scorecardData from './data.js';
 
 // We don't commit real data to this repo
 const data = window.data ? window.data : scorecardData;
+
+// Initiate smoothscroll polyfill for Safari
+smoothscroll.polyfill();
 
 class App extends React.Component {
 
