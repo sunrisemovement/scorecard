@@ -19,6 +19,7 @@ function SunriseNav(props) {
               <div id="sunrise-nav-item"><a href="https://www.sunrisemovement.org/green-new-deal">GREEN NEW DEAL</a></div>
               <div className="nav-dropdown" id="sunrise-nav-item"><a href="https://www.sunrisemovement.org/current-initiatives">TAKE ACTION</a>
                 <div className="dropdown">
+                    <a className="dropdown-link" href="https://www.sunrisemovement.org/2020-launch-parties">2020 launch parties</a>
                     <a className="dropdown-link" href="https://www.sunrisemovement.org/climatestrike">climate strike</a>
                     <a className="dropdown-link" href="https://www.sunrisemovement.org/volunteer">volunteer</a>
                     <a className="dropdown-link" href="https://www.sunrisemovement.org/join">stay connected</a>
