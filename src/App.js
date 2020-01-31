@@ -35,7 +35,7 @@ class App extends React.Component {
   embedMode = false;
 
   // Toggle to enable filter for multiple candidates. Set to 'true' for phase 2 release.
-  filterEnabled = false;
+  filterEnabled = true;
 
   // Check if the current browser is IE
   checkIe = () => {
