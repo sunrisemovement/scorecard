@@ -74,9 +74,10 @@ class App extends React.Component {
   onClickNav = (id) => {
     var tableId = "#table-" + id
     var table = document.querySelector(tableId);
+    var offset = (this.filterEnabled) ? 50 : 0;
 
       window.scrollTo({
-        top: (table.offsetTop - 50),
+        top: (table.offsetTop - offset),
         left: 0,
         behavior: 'smooth'
       })
