@@ -28,10 +28,12 @@ function Nav(props) {
     // Add color change on nav scroll for phase 2
     if (props.filterEnabled) window.addEventListener('scroll', checkHeader);
 
+    var offset = props.filterEnabled ? -150 : -100;
+
     return ( 
         <div className="navbar">
 
-            <Scrollspy componentTag={ "div" } className="nav-scrollspy" offset={ -150 } items={ ['table-1', 'table-2', 'table-3', 'gnd-section', 'table-9'] } currentClassName="is-current">
+            <Scrollspy componentTag={ "div" } className="nav-scrollspy" offset={ offset } items={ ['table-1', 'table-2', 'table-3', 'gnd-section', 'table-9'] } currentClassName="is-current">
                 <div id="1" onClick={handleClick} className="nav-item first">How they talk about it</div>
                 <div id="2" onClick={handleClick} className="nav-item" >How much they talk about it</div>
                 <div id="3" onClick={handleClick} className="nav-item" >Plan to win</div>
