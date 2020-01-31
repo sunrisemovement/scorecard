@@ -9,6 +9,7 @@ const ScorecardApp = (props) => (
             <Header onClickNav={props.onClickNav} />
             <Nav 
                 onClickNav={props.onClickNav}
+                filterEnabled={props.filterEnabled}
                 filter={props.filter}
                 handleFilterChange={props.handleFilterChange}
                 candidates = {Object.keys(props.scorecardData.tables[0].subtotals)} />

@@ -25,7 +25,8 @@ function Nav(props) {
         }
     }, 250);
 
-    window.addEventListener('scroll', checkHeader);
+    // Add color change on nav scroll for phase 2
+    if (props.filterEnabled) window.addEventListener('scroll', checkHeader);
 
     return ( 
         <div className="navbar">
@@ -38,10 +39,12 @@ function Nav(props) {
                 <div id="9" onClick={handleClick} className="nav-item" >Totals</div>
             </Scrollspy>
 
-            <Filter 
+            {props.filterEnabled && 
+                <Filter 
                 filter={props.filter}
                 handleFilterChange={props.handleFilterChange}
                 candidates = {props.candidates} />
+            }
                 
         </div>
     );

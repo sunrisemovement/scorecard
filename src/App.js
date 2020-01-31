@@ -34,6 +34,9 @@ class App extends React.Component {
   // Toggle to remove Sunrise header/footer/nav for embed mode
   embedMode = false;
 
+  // Toggle to enable filter for multiple candidates. Set to 'true' for phase 2 release.
+  filterEnabled = false;
+
   // Check if the current browser is IE
   checkIe = () => {
     let ua = navigator.userAgent;
@@ -151,6 +154,7 @@ class App extends React.Component {
                           onClickNav={this.onClickNav}
                           scorecardData={data}
                           onClickRow={this.onClickRow}
+                          filterEnabled={this.filterEnabled}
                           filter={this.state.filter}
                           handleFilterChange={this.handleFilterChange}
                           />
