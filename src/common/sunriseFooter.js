@@ -32,7 +32,7 @@ function SunriseFooter(props) {
                 <a href="https://instagram.com/sunrisemvmt" target="_blank" rel="noopener noreferrer"><img id="sunrise-social-icon" alt="Instagram social button" src={insta}></img></a>
             </div>
             <div className="sunrise-copyright">
-            © 2019 Sunrise. 
+            © {new Date().getFullYear()} Sunrise. 
             </div>
         </div>
     );

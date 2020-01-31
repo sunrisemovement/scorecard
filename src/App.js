@@ -6,11 +6,16 @@ import SunriseNav from './common/sunriseNav.js'
 import MobileNav from './common/mobileNav.js'
 import SunriseFooter from './common/sunriseFooter.js'
 import IeBanner from './common/ieBanner.js'
+import smoothscroll from 'smoothscroll-polyfill';
+
 // Import dummy data to fill scorecard
 import scorecardData from './data.js';
 
 // We don't commit real data to this repo
 const data = window.data ? window.data : scorecardData;
+
+// Initiate smoothscroll polyfill for Safari
+smoothscroll.polyfill();
 
 class App extends React.Component {
 
@@ -28,6 +33,9 @@ class App extends React.Component {
 
   // Toggle to remove Sunrise header/footer/nav for embed mode
   embedMode = false;
+
+  // Toggle to enable filter for multiple candidates. Set to 'true' for phase 2 release.
+  filterEnabled = false;
 
   // Check if the current browser is IE
   checkIe = () => {
@@ -66,7 +74,13 @@ class App extends React.Component {
   onClickNav = (id) => {
     var tableId = "#table-" + id
     var table = document.querySelector(tableId);
-    table.scrollIntoView({behavior: "smooth"});
+    var offset = (this.filterEnabled) ? 50 : 0;
+
+      window.scrollTo({
+        top: (table.offsetTop - offset),
+        left: 0,
+        behavior: 'smooth'
+      })
     }
 
   onClickModalNav = (e) => {
@@ -78,7 +92,7 @@ class App extends React.Component {
     this.setState({
       candidate: newCandidate
     })
-    }
+   }
 
   openModal(lastClicked) {
     var modal = document.getElementById("info-modal");
@@ -121,6 +135,15 @@ class App extends React.Component {
     });
   }
 
+  handleFilterChange = (selection, i) => {
+      var newFilter = [...this.state.filter];
+      newFilter[i] = selection;
+
+      this.setState({
+        filter: newFilter
+     })
+   }
+
   render () {
     return (
       <div className="App scorecard-app">
@@ -132,7 +155,9 @@ class App extends React.Component {
                           onClickNav={this.onClickNav}
                           scorecardData={data}
                           onClickRow={this.onClickRow}
+                          filterEnabled={this.filterEnabled}
                           filter={this.state.filter}
+                          handleFilterChange={this.handleFilterChange}
                           />
             <InfoModal scorecardData={data}
                       candidate={this.state.candidate}

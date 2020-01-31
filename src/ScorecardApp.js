@@ -7,12 +7,17 @@ import Nav from './common/nav.js'
 const ScorecardApp = (props) => (
         <div className="scorecard-container">
             <Header onClickNav={props.onClickNav} />
-            <Nav onClickNav={props.onClickNav} />
-            <Tables onClickCell={props.onClickCell} 
-                    scorecardData={props.scorecardData}
-                    onClickRow={props.onClickRow}
-                    filter={props.filter}
-                    />
+            <Nav 
+                onClickNav={props.onClickNav}
+                filterEnabled={props.filterEnabled}
+                filter={props.filter}
+                handleFilterChange={props.handleFilterChange}
+                candidates = {Object.keys(props.scorecardData.tables[0].subtotals)} />
+            <Tables 
+                onClickCell={props.onClickCell} 
+                scorecardData={props.scorecardData}
+                onClickRow={props.onClickRow}
+                filter={props.filter} />
         </div>
     );
 

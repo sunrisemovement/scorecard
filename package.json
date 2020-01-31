@@ -1,7 +1,7 @@
 {
-  "name": "scorecard-widget",
+  "name": "presidential-scorecard",
   "version": "0.1.0",
-  "description": "A scorecard widget for presidential candidates",
+  "description": "Sunrise 2020 Presidential Candidate Scorecard",
   "author": "Sunrise",
   "private": true,
   "dependencies": {
@@ -11,7 +11,8 @@
     "react-dom": "^16.12.0",
     "react-markdown": "^4.2.2",
     "react-scripts": "3.2.0",
-    "react-scrollspy": "^3.4.0"
+    "react-scrollspy": "^3.4.0",
+    "smoothscroll-polyfill": "^0.4.4"
   },
   "repository": {
     "type": "git",
