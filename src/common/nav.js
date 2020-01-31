@@ -28,7 +28,7 @@ function Nav(props) {
     // Add color change on nav scroll for phase 2
     if (props.filterEnabled) window.addEventListener('scroll', checkHeader);
 
-    var offset = props.filterEnabled ? -150 : -100;
+    var offset = props.filterEnabled ? -150 : -120;
 
     return ( 
         <div className="navbar">
