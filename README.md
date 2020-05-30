@@ -45,11 +45,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 This widget is deployed with [netlify](https://www.netlify.com/). It automatically deploys upon merging to master. You can preview the widget here: https://priceless-williams-fb7e44.netlify.com/
 
-We are moving deployments to Github Pages. Right now the process is quite manual:
-- `npm run build` to build the app
-- Publish the `build` folder to the `gh-pages` branch
-
-We hope to automate this process soon!
+We are moving deployments to Github Pages. Travis CI will automatically build and push to https://sunrisemovement.github.io/scorecard/ upon merging to master.
 
 ## Adding Scorecard Data
 - Request the scorecard spreadsheet from The Sunrise team and download it as a CSV - it should be in the same format as "src/data/fakeData.csv" for this to work

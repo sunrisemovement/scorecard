@@ -11,6 +11,18 @@ cache:
 install:
   - npm install
 
-script:
+before_script:
   - npm test
 
+script:
+  - npm run build
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  target_branch: gh-pages
+  local_dir: build
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  on:
+    branch: master
