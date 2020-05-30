@@ -45,19 +45,6 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 This widget is deployed with [netlify](https://www.netlify.com/). It automatically deploys upon merging to master. You can preview the widget here: https://priceless-williams-fb7e44.netlify.com/
 
-Netlify also makes the our static assets available a la carte, so that we can embed them in other Sunrise sites. Netlify is configured to run `npm run build:deploy` as a build script, which makes our assets available for use here:
-- [JavaScript](https://priceless-williams-fb7e44.netlify.com/main.js)
-- [CSS](https://priceless-williams-fb7e44.netlify.com/main.css)
-
-To embed, add the following to your project:
-```
-<div id="sc-root"></div>
-<script src="https://priceless-williams-fb7e44.netlify.com/runtime.js"></script>
-<script src="https://priceless-williams-fb7e44.netlify.com/main.js"></script>
-<script src="https://priceless-williams-fb7e44.netlify.com/2.js"></script>
-<link rel="stylesheet" type="text/css" href="https://priceless-williams-fb7e44.netlify.com/main.css" />
-```
-
 ## Adding Scorecard Data
 - Request the scorecard spreadsheet from The Sunrise team and download it as a CSV - it should be in the same format as "src/data/fakeData.csv" for this to work
 - Move a copy of the CSV to the root directory of this repo and name it 'Data.csv'
